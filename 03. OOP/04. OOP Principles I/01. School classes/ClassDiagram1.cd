@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="_01.School_classes.SchoolObject">
+    <Position X="5.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>SchoolObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.School_classes.Student">
+    <Position X="6.5" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.School_classes.Teacher">
+    <Position X="9" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAQAAAAECAAAAAAAAAAAAEAAAACAA=</HashCode>
+      <FileName>Teacher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.School_classes.Class">
+    <Position X="1.25" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAQAAAgAAAAAAAAAAAAIAAAAAAAAgAAAgI=</HashCode>
+      <FileName>Class.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.School_classes.Human">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Human.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_01.School_classes.Discipline">
+    <Position X="4" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAQAQAAEAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Discipline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
