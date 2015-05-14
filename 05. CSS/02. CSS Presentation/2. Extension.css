@@ -1,0 +1,41 @@
+﻿body {
+    background: #d791ff;
+    background: -moz-linear-gradient(top, #d791ff 0%, #9215f2 21%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d791ff), color-stop(21%,#9215f2));
+    background: -webkit-linear-gradient(top, #d791ff 0%,#9215f2 21%);
+    background: -o-linear-gradient(top, #d791ff 0%,#9215f2 21%);
+    background: -ms-linear-gradient(top, #d791ff 0%,#9215f2 21%);
+    background: linear-gradient(to bottom, #d791ff 0%,#9215f2 21%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d791ff', endColorstr='#9215f2',GradientType=0 );
+}
+
+    body header nav,
+    body section article {
+        border-color: #551a83;
+        border-radius: 15px;
+        border-width: 2px;
+        color: white;
+    }
+
+        body section article a {
+            color: #ce8ff7;
+        }
+
+    body footer {
+        text-align: center;
+    }
+
+    body aside ul li {
+        border-color: #551a83;
+        border-width: 2px;
+    }
+
+#tb-username, #tb-password {
+    background: #b35ef3;
+}
+
+body header div#header-container div#reg-form-container button#btn-register {
+    color: white;
+    background: none;
+    border-color: #bb90dc #6c3695 #6c3695 #bb90dc;
+}

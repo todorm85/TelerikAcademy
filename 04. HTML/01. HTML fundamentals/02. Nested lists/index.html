@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested lists</title>
+</head>
+<body>
+    <div>
+        Velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst.
+    </div>
+    <!-- Type this zen coding: div>ol[type="I"]>li*3>{List Item $} -->
+    <div>
+        <ol type="I">
+            <li>
+                List Item 1
+                <ol type="a">
+                    <li>Nested Item 1.1</li>
+                    <li>Nested Item 1.2</li>
+                </ol>
+            </li>
+            <li>
+                List Item 2
+                <ol type="1">
+                    <li>Nested Item 2.1</li>
+                    <li>
+                        Nested Item 2.2
+                        <ul type="circle">
+                            <li>Nested Item 2.2.1</li>
+                            <li>
+                                Nested Item 2.2.2
+                                <ul type="square">
+                                    <li>Nested Item 2.2.2.1</li>
+                                    <li>Nested Item 2.2.2.2</li>
+                                </ul>
+                            </li>
+                            <li>Nested Item 2.2.3</li>
+                        </ul>
+                    </li>
+                    <li>Nested Item 2.3</li>
+                </ol>
+            </li>
+            <li>
+                List Item 3
+                <ul type="disc">
+                    <li>Nested Item 3.1</li>
+                    <li>Nested Item 3.2</li>
+                    <li>Nested Item 3.3</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

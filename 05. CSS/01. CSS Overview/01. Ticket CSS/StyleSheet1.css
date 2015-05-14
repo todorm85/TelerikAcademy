@@ -1,0 +1,61 @@
+﻿html, body, p, h1, table, header, main, table, tr, td, th {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+body {
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 14px;
+    background-color: #595959;
+    padding: 4px;
+}
+
+header {
+    color: #bbbbbb;
+    font-size: .55em;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+th, td {
+    text-align: left;
+    vertical-align: top;
+    font-size: .8em;
+}
+
+th {
+    font-style: italic;
+    color: white;
+    width: 100px;
+}
+
+td {
+    padding-bottom: 15px;
+}
+
+.table-link {
+    margin-top: 15px;
+}
+
+.link {
+    color: #fff7b6;
+    text-decoration: none;
+}
+
+.details {
+    color: #afb5ba
+}
+
+.support-status {
+    color: red;
+}
+
+.status {
+    color: orange;
+}
+
+img {
+    height: 10px;
+}

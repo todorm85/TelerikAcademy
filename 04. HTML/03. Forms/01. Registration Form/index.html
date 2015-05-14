@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <form method="get">
+        <label for="LastName">Last Name</label>
+        <input type="text" id="LastName" />
+        <br />
+        <label for="FirstName">First Name</label>
+        <input type="text" id="FirstName" />
+        <br />  
+        <label for="address">Address</label>
+        <textarea id="address"></textarea>
+        <br />
+        <label for="city">City</label>
+        <input type="text" id="city" />
+        <label for="state">State</label>
+        <input type="text" id="state" />
+        <br />
+        <label for="code">Zip/Postal Code</label>
+        <input type="text" id="code" pattern="[0-9]" />
+        <br />
+        <label for="country">Country</label>
+        <select id="country">
+            <option value="BG">Bulgaria</option>
+            <option value="EN">England</option>
+        </select>
+        <br />
+        <label for="phone">Phone</label>
+        (+
+        <input type="text" id="phone" pattern="[0-9]{3}" style="width:30px"/>
+        )
+        <input type="text" pattern="[0-9]{3}" style="width:30px"/>
+        <input type="text" pattern="[0-9]{6}" />
+        <br />
+        <label for="mail">E-mail</label>
+        <input type="email" id="mail" />
+        <br />
+        <label for="birthdate">Birth date</label>
+        <input type="date" name="date" />
+        <br />
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+        <br />
+        Starting date
+        <input type="radio" name="Starting Date" value="Spring2015" /> Spring 2015
+        <input type="radio" name="Starting Date" value="Summer2015" /> Summer 2015
+        <br />
+        <label for="Comments">Comments/Questions</label>
+        <textarea id="Comments"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clean This Form" />
+    </form>    
+</body>
+</html>

@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Windows Calculator</title>
+    <link href="4. Win Calc.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="window-container">
+        <img id="window-buttons" src="images/window-buttons.jpg" alt="" />
+        <div id="calculator-container">
+            <header>
+                <img id="logo" src="images/calc-logo.png" alt="" />
+                <span id="title">Calculator</span>
+                <nav id="menu">
+                    <ul>
+                        <li>View</li>
+                        <li>Edit</li>
+                        <li>Help</li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="main">
+                <div id="result-display">
+                    <p>
+                        8854455
+                    </p>
+                </div>
+                <div id="bits-display">
+                    <table>
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="bit-index">63</td>
+                            <td colspan="3" class="bit-index">47</td>
+                            <td class="bit-index last-bit-index">32</td>
+                        </tr>
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>1000</td>
+                            <td>0111</td>
+                            <td>0001</td>
+                            <td>1011</td>
+                            <td>1011</td>
+                            <td>0111</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="bit-index">31</td>
+                            <td colspan="3" class="bit-index">15</td>
+                            <td class="bit-index last-bit-index">0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="controls-container">
+                    <table>
+                        <tr>
+                            <td rowspan="3" colspan="2" class="radio-buttons">
+                                <form>
+                                    <input type="radio" id="Hex" name="numeric-base" />
+                                    <label for="Hex">Hex</label> <br />
+                                    <input type="radio" id="Dec" name="numeric-base" checked />
+                                    <label for="Dec">Dec</label> <br />
+                                    <input type="radio" id="Oct" name="numeric-base" />
+                                    <label for="Oct">Oct</label> <br />
+                                    <input type="radio" id="Bin" name="numeric-base" />
+                                    <label for="Bin">Bin</label>
+                                </form>
+                            </td>
+                            <td class="single-button"></td>
+                            <td class="single-button active">Mod</td>
+                            <td class="single-button">A</td>
+                            <td class="single-button">MC</td>
+                            <td class="single-button">MR</td>
+                            <td class="single-button">MS</td>
+                            <td class="single-button">M+</td>
+                            <td class="single-button">M-</td>
+                        </tr>
+                        <tr>
+                            <td class="single-button active">(</td>
+                            <td class="single-button active">)</td>
+                            <td class="single-button">B</td>
+                            <td class="single-button active">&leftarrow;</td>
+                            <td class="single-button active">CE</td>
+                            <td class="single-button active">C</td>
+                            <td class="single-button active">&plusmn;</td>
+                            <td class="single-button">&Sqrt;</td>
+                        </tr>
+                        <tr>
+                            <td class="single-butto activen">Rol</td>
+                            <td class="single-button active">RoR</td>
+                            <td class="single-button">C</td>
+                            <td class="single-button active">7</td>
+                            <td class="single-button active">8</td>
+                            <td class="single-button active">9</td>
+                            <td class="single-button active">/</td>
+                            <td class="single-button">%</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" colspan="2" class="radio-buttons">
+                                <form>
+                                    <input type="radio" id="Qword" name="word-base" />
+                                    <label for="Qword">Qword</label> <br />
+                                    <input type="radio" id="Dword" name="word-base" checked />
+                                    <label for="Dword">Dword</label> <br />
+                                    <input type="radio" id="Word" name="word-base" />
+                                    <label for="Word">Word</label> <br />
+                                    <input type="radio" id="Byte" name="word-base" />
+                                    <label for="Byte">Byte</label>
+                                </form>
+                            </td>
+                            <td class="single-button active">Or</td>
+                            <td class="single-button active">Xor</td>
+                            <td class="single-button">D</td>
+                            <td class="single-button active">4</td>
+                            <td class="single-button active">5</td>
+                            <td class="single-button active">6</td>
+                            <td class="single-button active">*</td>
+                            <td class="single-button">1/x</td>
+                        </tr>
+                        <tr>
+                            <td class="single-button active">Lsh</td>
+                            <td class="single-button active">Rsh</td>
+                            <td class="single-button">E</td>
+                            <td class="single-button active">1</td>
+                            <td class="single-button active">2</td>
+                            <td class="single-button active">3</td>
+                            <td class="single-button active">-</td>
+                            <td rowspan="2" class="active">=</td>
+                        </tr>
+                        <tr>
+                            <td class="single-button active">Not</td>
+                            <td class="single-button active">And</td>
+                            <td class="single-button">F</td>
+                            <td colspan="2" class="active">0</td>
+                            <td class="single-button">.</td>
+                            <td class="single-button active">+</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

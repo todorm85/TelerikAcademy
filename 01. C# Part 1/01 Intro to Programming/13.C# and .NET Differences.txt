@@ -1,0 +1,2 @@
+C# is a high level programming language.
+.NET is a whole framework that includes many standard libraries ( FCLs - that includes libraries that can be used by other programming languages besides c# ) and software enviroment ( CLR ) for running applications built upon .NET Framework. CLR is what makes .NET applications (Common Language Infrastructiure - CLS applications) cross-platform and hardware independent.

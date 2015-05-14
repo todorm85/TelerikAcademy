@@ -1,0 +1,28 @@
+﻿@font-face {
+    font-family: 'edwardian script';
+    src: url('/content/file.eot');
+    src: local('☺'), url('/content/file.woff') format('woff'), url('/content/file.ttf') format('truetype');
+}
+
+html, body, p, h1, table, header, main, table, tr, td, th {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+body {
+    padding: 35px 10px;
+    font-family: Consolas, sans-serif;
+    font-size: 16px;
+    color: #0094ff;
+}
+
+p:first-line {
+    font-weight: bold;
+    line-height: 2.2em;
+}
+
+p:first-letter {
+    font-size: 5em;
+    font-family: 'edwardian script', cursive;
+}

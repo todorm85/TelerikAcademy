@@ -1,0 +1,129 @@
+@import 'extensions.styl'
+
+themeBorderColor= #551A83
+themeBorder= 2px solid themeBorderColor
+
+html
+	background-color white		
+body
+	linearGradient(to bottom, (#D492FE) (#9215F2 20%))
+	color white
+	width 1200px		
+a
+	color white
+	text-decoration none				
+ul
+	list-style-type: none
+
+#header-container
+	@extend .clearfix
+	#logo-container
+		float left
+		padding-left 10px
+		padding-top 20px
+		img
+			height 58px
+	#reg-form-container
+		text-align right
+		padding-top 17px
+		padding-right 75px
+		input
+			border 1px solid themeBorderColor
+			background-color #B35EF3
+			height 13px
+			width 105px
+			border-radius 7px
+			margin-top 6px
+		label
+			font-size 12px
+		#btn-register
+			margin-right 100px
+			margin-top 5px
+			color white
+			background-color #B35EF3
+			border-radius 5px
+			font-size 11px
+			height 25px
+			width 65px		
+			
+nav
+	@extend .clearfix
+	border themeBorder
+	margin-top 12px
+	margin-left 25px
+	margin-right 22.5%
+	border-radius 10px
+	height 40px
+	padding-top 10px
+	padding-left 15px
+	
+	#main-nav-list	li
+		float left
+		margin-right 10px
+		font-size 15.5px
+	
+		.sub-nav-list
+			display: none
+			
+		&:hover .sub-nav-list
+			display block
+			position absolute
+			background-color rgba(183, 109, 247, .9)
+			border themeBorder
+			border-radius 5px
+			padding 5px
+			li
+				float none
+				
+section
+	padding-top 30px
+	padding-left 1%
+	float left
+	width 74%
+	margin-right 2%
+	article
+		padding	20px	
+		border themeBorder
+		border-radius 10px
+		margin-bottom 10px
+		header
+			font-size 13px
+			margin-bottom 5px
+		p
+			font-size 11px
+		footer
+			text-align right
+			padding-top 10px
+			p
+				font-size 12px
+				a
+					color #b76df7
+							
+aside
+	float left
+	width 21%
+	margin-top 30px
+	padding 10px
+	font-size 11px
+	> ul > li
+		border-radius 10px
+		border themeBorder
+		padding 10px
+		margin-bottom 10px
+		ul
+			list-style: square url("images/li-dot.png");
+			margin-left 35px
+			li
+				margin 7px 0
+		h2
+			margin-bottom 10px
+	a
+		color #b76df7
+	
+		
+
+body > footer
+	clear both
+	text-align center
+	padding 10px
+	font-size 12px

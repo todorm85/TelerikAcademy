@@ -1,0 +1,23 @@
+Homework: Text Files
+====================
+
+### Problem 01. Odd lines
+*	Write a program that reads a text file 
+
+### Problem 02. Concatenate text files
+*	Write a program that concatenates two text 
+
+### Problem 03. Line numbers
+*	Write a program that reads a text file 
+*	The result should be written to another text file.
+
+### Problem 04. Compare text files
+*	Write a program that compares two text.
+*	Assume the files have equal number of lines.
+
+### Problem 05. Maximal area sum
+*	Write a program that reads a text file contai
+*	Find an area of size `2 x 2` in the matrix, 
+	*	The first line in the input file
+	*	Each of the next `N` lines contain 
+	*	The output should be a single number

@@ -1,0 +1,41 @@
+﻿html, body, p, h1, table, header, main, table, tr, td, th, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+}
+
+body {
+    padding:20px;
+}
+
+ul {
+    width:60px;
+}
+
+    ul ul {
+        display: none;
+        width:90px;
+    }
+
+li {
+    list-style: none;
+}
+
+li:hover > ul {
+    display: block;
+    margin-left: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }    
+
+ul li ul a {
+    color: darkgray;
+}

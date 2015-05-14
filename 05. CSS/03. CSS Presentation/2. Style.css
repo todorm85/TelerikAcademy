@@ -1,0 +1,72 @@
+﻿html, body, div, h1, article, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial Narrow, sans-serif;
+    font-size: 12px;
+}
+
+#page-wrapper {
+    width: 420px;
+    background-color: #eeeeee;
+    border-radius: 7px;
+    padding-left: 13px;
+    padding-right: 9px;
+    padding-top: 12px;
+    padding-bottom: 25px;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+article {
+    border: 1px solid #999999;
+    padding: 15px 15px 17px 15px;
+    margin-top: 36px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+}
+
+    article.rock-concert {
+        background-image: url('images/rock concert 1.JPG');
+    }
+
+    article.rock-girl {
+        background-image: url('images/rock girl.JPG');
+        padding-bottom: 17px;
+    }
+
+    article.rock-hands {
+        background-image: url('images/rock hands.JPG');
+        margin-top: 38px;
+        padding-bottom: 12px;
+    }
+
+    article p {
+        font-family: Arial;
+        font-size: 1em;
+        margin-left: 152px;
+        width: 53%;
+        margin-bottom:20px;
+    }
+
+    article .buttons-wrapper {
+        text-align: right;
+    }
+
+        article .buttons-wrapper button {
+            border: 1px solid black;
+            height: 24px;
+            padding: 2px 17px 2px 21px;
+            color: white;
+            background-image: url('images/button.png');
+        }

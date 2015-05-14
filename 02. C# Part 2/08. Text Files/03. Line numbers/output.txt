@@ -1,0 +1,3 @@
+Line 1: This is text, from first line.
+Line 2: This is the second line text.
+Line 3: Finally we have the third line text!

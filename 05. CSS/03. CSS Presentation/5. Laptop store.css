@@ -1,0 +1,113 @@
+﻿html, body, header, ul, li, ol, section, div, p, fieldset {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    border: 3px solid black;
+    border-radius: 9px;
+    max-width: 1069px;
+}
+
+    body > header {
+        padding: 15px 35px;
+    }
+
+        body > header a {
+            font-size: 1.15em;
+            color: #00adef;
+        }
+
+        body > header ul {
+            border-bottom: 3px solid black;
+            text-align: center;
+            padding-bottom: 14px;
+        }
+
+            body > header ul li {
+                display: inline-block;
+            }
+
+    body main {
+        vertical-align: central;
+    }
+
+        body main > section {
+            border: 3px solid black;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 15px;
+            padding: 3px 6px 6px 6px;
+            width: 692px;
+            margin-bottom: 20px;
+        }
+
+            body main > section fieldset {
+                font-size: .8rem;
+                width: 332px;
+                height: 214px;
+                text-align: center;
+                border: 3px solid black;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                padding: 43px 15px 10px 0;
+                background-image: url('images/laptop.PNG');
+                background-repeat: no-repeat;
+                background-size: 171px 100px;
+                background-position: 11px 23px;
+            }
+
+                body main > section fieldset ul li {
+                    margin-bottom: 22px;
+                    text-align: right;
+                }
+
+                    body main > section fieldset ul li + li + li {
+                        float: left;
+                        margin-left: 34px;
+                    }
+
+            body main > section > ul > li {
+                float: left;
+            }
+
+                body main > section > ul > li:nth-of-type(2n+1) {
+                    clear: left;
+                }
+
+        body main > aside {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 15px;
+            font-size: 1em;
+        }
+
+            body main > aside input {
+                width: 280px;
+                margin: 20px 0 25px 0;
+            }
+
+            body main > aside p {
+                margin: 20px 0 15px 0;
+            }

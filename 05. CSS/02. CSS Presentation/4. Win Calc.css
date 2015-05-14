@@ -1,0 +1,182 @@
+﻿html, body, header, div, ul, ol, li, input, table, tr, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+#window-container {
+    border: 1px solid black;
+    width: 445px;
+    height: 430px;
+    background-color: #bbdbfb;
+}
+
+#calculator-container {
+    margin: 3px 5px 5px;
+    background-color: #d9e4f1;
+}
+
+#logo {
+    margin-top: 3px;
+}
+
+#title {
+    margin-left: 5px;
+    position: relative;
+    bottom: 3px;
+}
+
+#window-buttons {
+    float: right;
+    margin-right: 5px;
+}
+
+nav {
+    font-size: .9em;
+    border: 1px solid black;
+    border-bottom: 0;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e3e8f8 50%, #d3daed 51%, #e3e8f8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#e3e8f8), color-stop(51%,#d3daed), color-stop(100%,#e3e8f8));
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e3e8f8 50%,#d3daed 51%,#e3e8f8 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#e3e8f8 50%,#d3daed 51%,#e3e8f8 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#e3e8f8 50%,#d3daed 51%,#e3e8f8 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#e3e8f8 50%,#d3daed 51%,#e3e8f8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e3e8f8',GradientType=0 );
+}
+
+    nav ul {
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+            nav ul li::first-letter {
+                text-decoration: underline;
+            }
+
+#main {
+    border: 1px solid black;
+    border-top: 1px solid #c1c5d1;
+}
+
+    #main div {
+        border-radius: 2px;
+    }
+
+#result-display {
+    width: 410px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: right;
+    background: #e5effb;
+    background: -moz-linear-gradient(top, #e5effb 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5effb), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top, #e5effb 0%,#ffffff 100%);
+    background: -o-linear-gradient(top, #e5effb 0%,#ffffff 100%);
+    background: -ms-linear-gradient(top, #e5effb 0%,#ffffff 100%);
+    background: linear-gradient(to bottom, #e5effb 0%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5effb', endColorstr='#ffffff',GradientType=0 );
+}
+
+    #result-display p {
+        margin-top: 22px;
+        margin-right: 5px;
+    }
+
+#bits-display {
+    font-family: Consolas;
+    font-size: .75em;
+    width: 410px;
+    height: 70px;
+    margin: 5px auto;
+    border: 1px solid black;
+}
+
+    #bits-display table {
+        border-spacing: 1px;
+        position: relative;
+        top: 2px;
+        left: 0;
+    }
+
+        #bits-display table tr td {
+            font-weight: bold;
+            padding: 0 11px;
+        }
+
+            #bits-display table tr td.bit-index {
+                font-family: Arial;
+                color: #444;
+            }
+
+            #bits-display table tr td.last-bit-index {
+                text-align: right;
+            }
+
+#controls-container {
+    width: 421px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 6px;
+}
+
+    #controls-container table {
+        border-spacing: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+        #controls-container table tr {
+            font-size: .8em;
+            text-align: center;
+        }
+
+            #controls-container table tr td:not(.radio-buttons) {
+                border: 1px solid black;
+                border-radius: 2px;
+                width: 35px;
+                height: 29px;
+            }
+
+            #controls-container table tr td.radio-buttons {
+                border: 1px solid black;
+                border-radius: 2px;
+                text-align: left;
+            }
+
+                #controls-container table tr td.radio-buttons label {
+                    font-size: .9em;
+                    position: relative;
+                    bottom: 2px;
+                }
+
+                #controls-container table tr td.radio-buttons input {
+                    margin-left: 5px;
+                    margin-top: 5px;
+                }
+
+            .active {
+                background: #f9f9f9;
+background: -moz-linear-gradient(top,  #f9f9f9 0%, #f9feff 50%, #edf4f9 51%, #e3eefc 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(50%,#f9feff), color-stop(51%,#edf4f9), color-stop(100%,#e3eefc));
+background: -webkit-linear-gradient(top,  #f9f9f9 0%,#f9feff 50%,#edf4f9 51%,#e3eefc 100%);
+background: -o-linear-gradient(top,  #f9f9f9 0%,#f9feff 50%,#edf4f9 51%,#e3eefc 100%);
+background: -ms-linear-gradient(top,  #f9f9f9 0%,#f9feff 50%,#edf4f9 51%,#e3eefc 100%);
+background: linear-gradient(to bottom,  #f9f9f9 0%,#f9feff 50%,#edf4f9 51%,#e3eefc 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e3eefc',GradientType=0 );
+
+            }

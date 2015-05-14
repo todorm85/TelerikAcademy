@@ -1,0 +1,51 @@
+﻿html, body, p, h1, table, header, main, table, thead, tr, td, th {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+img {
+    height: 1em;
+}
+body {
+    font-family:Arial;
+    font-size:12px;
+}
+th {
+    text-align:left;
+}
+th, td {
+    padding:5px;
+    border-right:1px solid #c0bea4;
+    vertical-align:central;
+}
+
+tr th:last-of-type, 
+tr td:last-of-type {
+    border-right:none;
+}
+.first-col {
+    width:130px;
+}
+.second-col {
+    width:100px;
+}
+.third-col {
+    width:110px;
+}
+.fourth-col {
+    width:50px;
+}
+table tr:nth-child(2n) {
+    background-color:#ececd8;
+}
+tr th {
+    border-right:1px solid #378d05;
+    border-bottom:1px solid #378d05;
+}
+thead tr:first-of-type {
+    background-color:#56b906;
+    color:white;
+}
+table {
+    border-bottom:1px solid #c0bea4;
+}

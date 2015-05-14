@@ -1,0 +1,22 @@
+Java
+Many developers around the global hate Java due to it’s long syntax and complexity of codes. However, due to the magic of ‘bytecode‘ this language bypass the dependencies of platform and can be used at almost any computing latform.
+C# includes more primitive types and the functionality to catch arithmetic exceptions. Includes a large number of notational conveniences over Java, many of which, such as operator overloading and user-defined casts, are already familiar to the large community of C++ programmers.
+
+Python
+Python is rich, general purpose, high level programming language which supports multiple programming paradigms such as procedural,object oriented. What i mean by rich is that, python has so many libraries already built up which speed up your development process.
+Python is used in research area a lot, some of the popular web projects such as YouTube (entirely on Python), Google (some part on python) using python.
+Python has very popular web framework called ‘django‘ which makes python tough competitor to other web frameworks.
+C# has richer standard library and more language features, tools, better performance. Python is easier to learn and has many open source libraries available.
+
+c++
+C++ is a ‘C with classes‘. It’s very powerful object oriented programming language developed as successor of C. It is widely used in ‘Game programming‘ and various areas.
+Big advantage of C# is automated garbage collection. So you don't spend as much time in C# (if any) thinking about pointers or explicitly freeing memory.
+
+
+PHP
+PHP is high level interpreted programming language developed for web projects. It is widely used in Web development.Some of the popular web projects such as Facebook uses PHP as core language. PHP supports Object oriented paradigm as well.
+C# is just a programming language as PHP is, but with the difference that C# targets a platform (.NET) that also accepts other languages, including PHP.
+For high-end solutions, the .NET platform has more robustness 
+
+C
+C is one of the first high level programming language. C is powerful, robust, foundation of many popular programming language such as C++.It has less support for the web.Both C and C++ give you a lower level of abstraction that, with increased complexity, provides a breadth of access to underlying machine functionality that are not necessarily exposed with other languages.C# provides a managed memory model that adds a higher level of abstraction again. This level of abstraction adds convenience and improves development times, but complicates access to lower level APIs and makes specialized performance requirements problematic.
