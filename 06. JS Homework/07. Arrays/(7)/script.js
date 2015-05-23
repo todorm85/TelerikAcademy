@@ -18,7 +18,7 @@ console.log('Found index: ' + foundIndex + ' (If -1 then number was not found!)'
 
 function binarySearch (key,startIndex,endIndex,arr) {
 	if (startIndex>endIndex) {return -1;}
-	var middleIndex = (startIndex + (endIndex-startIndex)/2 + .5) | 0;
+	var middleIndex = (startIndex + (endIndex-startIndex)/2 + 0.5) | 0;
 	if (key===arr[middleIndex]) {
 		return middleIndex;
 	}
