@@ -51,9 +51,9 @@
 1. [CSS Overview](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/01.%20CSS%20Overview) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/01.%20CSS%20Overview/README.md))
 2. [CSS Presentation](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/02.%20CSS%20Presentation) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/02.%20CSS%20Presentation/README.md))
 4. [CSS Layout](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/03.%20CSS%20Layout) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/03.%20CSS%20Layout/README.md))
-5. [CSS Preprocessors](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/04.%20CSS%20Preprocessors) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/04.%20CSS%20Preprocessors/README.md)/README.md)
+5. [CSS Preprocessors](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/04.%20CSS%20Preprocessors) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/04.%20CSS%20Preprocessors/README.md))
 
-## JavaScript - Essentia/README.mdl/README.mds
+## JavaScript - Essentials
 
 3. [Data Types and Variables](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/03.%20Data%20types%20and%20Variables) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/03.%20Data%20types%20and%20Variables/README.md))
 4. [Operators and Expressions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/04.%20Operators%20and%20Expressions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/04.%20Operators%20and%20Expressions/README.md))
