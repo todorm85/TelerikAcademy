@@ -41,32 +41,30 @@
 
 ## HTML Basics
 
-1. Web Front End Tools
-2. [HTML Fundamentals](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/01.%20HTML%20fundamentals) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/01.%20HTML%20fundamentals))
-3. [HTML Tables](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/02.%20HTML%20tables) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/02.%20HTML%20tables))
-4. [HTML Forms, Frames](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/03.%20Forms) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/03.%20Forms))
-5. [Semantic Web](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/04.%20HTML%20semantics) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/04.%20HTML%20semantics))
+1. [HTML Fundamentals](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/01.%20HTML%20fundamentals) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/01.%20HTML%20fundamentals/README.md))
+2. [HTML Tables](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/02.%20HTML%20tables) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/02.%20HTML%20tables/README.md))
+3. [HTML Forms, Frames](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/03.%20Forms) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/03.%20Forms/README.md))
+4. [Semantic Web](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/04.%20HTML%20semantics) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/04.%20HTML%20semantics/README.md)/README.md)
 
-## CSS Styling
+## CSS Styli/README.mdn/README.mdg
 
-1. [CSS Overview](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/01.%20CSS%20Overview) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/01.%20CSS%20Overview))
-2. [CSS Presentation](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/02.%20CSS%20Presentation) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/02.%20CSS%20Presentation))
-4. [CSS Layout](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/03.%20CSS%20Layout) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/03.%20CSS%20Layout))
-5. [CSS Preprocessors](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/04.%20CSS%20Preprocessors) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/04.%20CSS%20Preprocessors))
+1. [CSS Overview](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/01.%20CSS%20Overview) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/01.%20CSS%20Overview/README.md))
+2. [CSS Presentation](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/02.%20CSS%20Presentation) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/02.%20CSS%20Presentation/README.md))
+4. [CSS Layout](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/03.%20CSS%20Layout) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/03.%20CSS%20Layout/README.md))
+5. [CSS Preprocessors](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/04.%20CSS%20Preprocessors) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/04.%20CSS%20Preprocessors/README.md)/README.md)
 
-## JavaScript - Essentials
+## JavaScript - Essentia/README.mdl/README.mds
 
-1. Introduction to JavaScript Development
-2. Data Types and Variables
-3. [Operators and Expressions]() - ([assignment]())
-4. [Conditional Statements]() - ([assignment]())
-5. [Loops]() - ([assignment]())
-6. [Arrays]() - ([assignment]())
-7. [Functions]() - ([assignment]())
-8. [Objects]() - ([assignment]())
-9. [Strings]() - ([assignment]())
-10. Exam Preparation
-11. [Exam]() - ([assignment]())
+3. [Data Types and Variables](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/03.%20Data%20types%20and%20Variables) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/03.%20Data%20types%20and%20Variables/README.md))
+4. [Operators and Expressions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/04.%20Operators%20and%20Expressions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/04.%20Operators%20and%20Expressions/README.md))
+5. [Conditional Statements](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/05.%20Conditional%20Statements) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/05.%20Conditional%20Statements/README.md))
+6. [Loops](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/06.%20Loops) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/06.%20Loops/README.md))
+7. [Arrays](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/07.%20Arrays) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/07.%20Arrays/README.md))
+8. [Functions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/08.%20Functions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/08.%20Functions/README.md))
+9. [Objects](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/09.%20Using%20Objects) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/09.%20Using%20Objects/README.md))
+10. [Array Methods](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/10.%20Array%20Methods) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/10.%20Array%20Methods/README.md))
+11. [Strings]https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/11.%20Strings) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/11.%20Strings/README.md))
+12. [Regular Expressions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/12.%20RegEx) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/12.%20RegEx/README.md))
 
 ##  JavaScript - Object-Oriented Programming
 
