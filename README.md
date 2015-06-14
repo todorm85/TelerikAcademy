@@ -29,6 +29,7 @@
 5. [Using Classes and Objects](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/05.%20Using%20Classes%20and%20Objects) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/05.%20Using%20Classes%20and%20Objects/README.md))
 6. [Exception Handling](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/07.%20Exception%20Handling) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/07.%20Exception%20Handling/README.md))
 7. [Text Files](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/08.%20Text%20Files) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/08.%20Text%20Files/README.md))
+8. [Teamwork]() - ([assignment]())
 
 ## Object-Oriented Programming
 
@@ -38,6 +39,7 @@
 4. [Fundamental Principles - Part I](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/04.%20OOP%20Principles%20I) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/04.%20OOP%20Principles%20I/README.md))
 5. [Fundamental Principles - Part II](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/05.%20OOP%20Principles%20II) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/05.%20OOP%20Principles%20II/README.md))
 6. [Common Type System](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS/README.md))
+7. [Teamwork]() - ([assignment]())
 
 ## HTML Basics
 
