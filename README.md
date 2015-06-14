@@ -1,10 +1,10 @@
-# Telerik Academy Homeworks
+# Telerik Academy Homeworks 2015
 
 <a href="http://academy.telerik.com/?utm_source=site&amp;utm_medium=banner&amp;utm_content=468x60&amp;utm_campaign=community" title="Уроци по програмиране">
     <img src="http://academy.telerik.com/images/default-album/telerik-academy-banner.jpg?sfvrsn=2" alt="Академия на Телерик" />
 </a>
 
-|     | Programming                                                         | Web Design                                                                                  |
+|     | Programming 2015                                                    | Web Design 2015                                                                             |
 | --- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | 1.  | [C# - Part I](#c---part-i)                                          | [HTML Basics](#html-basics)                                                                 |
 | 2.  | [C# - Part II](#c---part-ii)                                        | [CSS Styling](#css-styling)                                                                 |
@@ -13,12 +13,12 @@
 
 ## C# - Part I
 
-1. [Introduction to Programming]() - ([assignment]())
-2. [Primitive Data Types and Variables]() - ([assignment]())
-3. [Operators, Expressions and Statements]() - ([assignment]())
-4. [Console Input/Output]() - ([assignment]())
-5. [Conditional Statements]() - ([assignment]())
-6. [Loops]() - ([assignment]())
+1. [Introduction to Programming](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/01.%20C%23%20Part%201/01%20Intro%20to%20Programming) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/01.%20C%23%20Part%201/01%20Intro%20to%20Programming/README.md))
+2. [Primitive Data Types and Variables](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/01.%20C%23%20Part%201/02%20Data%20Types%20and%20Variables) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/01.%20C%23%20Part%201/02%20Data%20Types%20and%20Variables/README.md))
+3. [Operators, Expressions and Statements](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/01.%20C%23%20Part%201/03%20Operators%20and%20Expressions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/01.%20C%23%20Part%201/03%20Operators%20and%20Expressions/README.md))
+4. [Console Input/Output](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/01.%20C%23%20Part%201/04%20Console%20Input%20Output) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/01.%20C%23%20Part%201/04%20Console%20Input%20Output/README.md))
+5. [Conditional Statements](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/01.%20C%23%20Part%201/05%20Conditional%20Statements) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/01.%20C%23%20Part%201/05%20Conditional%20Statements/README.md))
+6. [Loops](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/01.%20C%23%20Part%201/06%20Loops) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/01.%20C%23%20Part%201/06%20Loops/README.md))
 
 ## C# - Part II
 
@@ -65,8 +65,6 @@
 7. Exam Preparation
 8. [Exam]() - ([assignment]())
 
----
-
 ## JavaScript - Essentials
 
 1. Introduction to JavaScript Development
@@ -81,7 +79,16 @@
 10. Exam Preparation
 11. [Exam]() - ([assignment]())
 
----
+##  JavaScript - Object-Oriented Programming
+
+1. [DOM Manipulation]() - ([assignment]())
+2. [Advanced Functions]() - ([assignment]())
+3. [JavaScript OOP]() - ([assignment]())
+4. [JavaScript APIs]() - ([assignment]())
+5. [Events]() - ([assignment]())
+6. Exceptions
+7. Exam Preparation
+8. [Exam]() - ([assignment]())
 
 ## High-Quality Code
 
@@ -105,14 +112,3 @@
 18. [Teamwork](https://github.com/TeamPotassium/BattleField)
 19. [Exam Preparation]() - ([assignment]())
 20. [Exam]() - ([assignment]())
-
-##  JavaScript - Object-Oriented Programming
-
-1. [DOM Manipulation]() - ([assignment]())
-2. [Advanced Functions]() - ([assignment]())
-3. [JavaScript OOP]() - ([assignment]())
-4. [JavaScript APIs]() - ([assignment]())
-5. [Events]() - ([assignment]())
-6. Exceptions
-7. Exam Preparation
-8. [Exam]() - ([assignment]())
