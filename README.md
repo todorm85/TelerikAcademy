@@ -63,7 +63,7 @@
 8. [Functions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/08.%20Functions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/08.%20Functions/README.md))
 9. [Objects](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/09.%20Using%20Objects) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/09.%20Using%20Objects/README.md))
 10. [Array Methods](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/10.%20Array%20Methods) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/10.%20Array%20Methods/README.md))
-11. [Strings]https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/11.%20Strings) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/11.%20Strings/README.md))
+11. [Strings](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/11.%20Strings) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/11.%20Strings/README.md))
 12. [Regular Expressions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/12.%20RegEx) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/03.%20JS%20Essentials/12.%20RegEx/README.md))
 
 ##  JavaScript - Object-Oriented Programming
