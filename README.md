@@ -44,9 +44,9 @@
 1. [HTML Fundamentals](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/01.%20HTML%20fundamentals) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/01.%20HTML%20fundamentals/README.md))
 2. [HTML Tables](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/02.%20HTML%20tables) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/02.%20HTML%20tables/README.md))
 3. [HTML Forms, Frames](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/03.%20Forms) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/03.%20Forms/README.md))
-4. [Semantic Web](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/04.%20HTML%20semantics) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/04.%20HTML%20semantics/README.md)/README.md)
+4. [Semantic Web](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/04.%20HTML%20semantics) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/04.%20HTML%20semantics/README.md))
 
-## CSS Styli/README.mdn/README.mdg
+## CSS Styling
 
 1. [CSS Overview](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/01.%20CSS%20Overview) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/01.%20CSS%20Overview/README.md))
 2. [CSS Presentation](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/02.%20CSS%20Presentation) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/02.%20CSS%20Presentation/README.md))
