@@ -22,16 +22,13 @@
 
 ## C# - Part II
 
-1. [Arrays]() - ([assignment]())
-2. [Multidimensional Arrays]() - ([assignment]())
-3. [Methods]() - ([assignment]())
-4. [Numeral Systems]() - ([assignment]())
-5. [Using Classes and Objects]() - ([assignment]())
-6. [Exception Handling]() - ([assignment]())
-7. [Text Files]() - ([assignment]())
-8. [Strings and Text Processing]() - ([assignment]())
-9. [Exam Preparation]() - ([assignment]())
-10. [Exam]() - ([assignment]())
+1. [Arrays](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/01.%20Arrays) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/01.%20Arrays/README.md))
+2. [Multidimensional Arrays](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/02.%20Multidimensional%20Arrays) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/02.%20Multidimensional%20Arrays/README.md))
+3. [Methods](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/03.%20Methods) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/03.%20Methods/README.md))
+4. [Numeral Systems](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/04.%20Numeral%20Systems) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/04.%20Numeral%20Systems/README.md))
+5. [Using Classes and Objects](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/05.%20Using%20Classes%20and%20Objects) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/05.%20Using%20Classes%20and%20Objects/README.md))
+6. [Exception Handling](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/07.%20Exception%20Handling) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/07.%20Exception%20Handling/README.md))
+7. [Text Files](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/08.%20Text%20Files) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/02.%20C%23%20Part%202/08.%20Text%20Files/README.md))
 
 ## Object-Oriented Programming
 
