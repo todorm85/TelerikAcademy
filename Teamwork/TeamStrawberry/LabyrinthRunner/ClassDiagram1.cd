@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LabyrinthRunner.AI.CpuPlayer" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAIAAAQAAAAAAAAAAAgAAAAAAAAAAABAAEAAAAAQ=</HashCode>
+      <FileName>AI\CpuPlayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LabyrinthRunner.Common.Air" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Air.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.Bonus" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Bonus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.BonusEventArgs" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Bonus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.BonusBox" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="LabyrinthRunner.Common.BonusBox.BonusEffectHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Common\BonusBox.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAEAICAAAAAAAAAAAAAAAAAAAgAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Common\BonusBox.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LabyrinthRunner.Common.BonusListGenerator" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAIAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BonusesGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.BrickWall" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BrickWall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.Collision" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Collision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.GameEngine" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIDAEAUAQAAAAEQAAAAIAAAgAQoAAEAAAAACABAA=</HashCode>
+      <FileName>Common\GameEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.GameFactory" Collapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAEAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Common\GameFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.Gold" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAACAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Gold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.HumanPlayer" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAACAAAAAAAAAAAAACABAAAAAAAAA=</HashCode>
+      <FileName>Common\HumanPlayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LabyrinthRunner.Common.Labyrinth" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAUAECABAAIAEAACAAAAAABAQAAAAAgA=</HashCode>
+      <FileName>Common\Labyrinth.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LabyrinthRunner.Common.Life" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Life.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.ParseFileException" Collapsed="true">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAEAAIABAAAA=</HashCode>
+      <FileName>Common\ParseFileException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.Player" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LabyrinthRunner.Common.Scoreboard" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAQAAAAAAAAABAAAAAAAAEAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Common\Scoreboard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LabyrinthRunner.Common.Spawn" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Common\Spawn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.Common.Structure" Collapsed="true">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Common\Structure.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LabyrinthRunner.Common.WorldObject" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAIAAAAAABAAAABQAAAAQAAAA=</HashCode>
+      <FileName>Common\WorldObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.UI.ConsoleModifiers" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>UI\ConsoleModifiers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.UI.EntryPoint" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>UI\EntryPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.UI.Menus" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Menus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabyrinthRunner.UI.Settings" Collapsed="true">
+    <Position X="17.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAkAAAAAAAAA=</HashCode>
+      <FileName>UI\Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="LabyrinthRunner.Common.Position" Collapsed="true">
+    <Position X="14" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQACAAEAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Position.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LabyrinthRunner.UI.ConsoleCoords" Collapsed="true">
+    <Position X="12.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAACAAAQACAAEAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\ConsoleCoords.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="LabyrinthRunner.Common.IGatherable" Collapsed="true">
+    <Position X="12.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\IGatherable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LabyrinthRunner.Common.IImpenetrable" Collapsed="true">
+    <Position X="14" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\IImpenetrable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LabyrinthRunner.Common.IMovable" Collapsed="true">
+    <Position X="15.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LabyrinthRunner.Common.IRenderable" Collapsed="true">
+    <Position X="17.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Common\IRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LabyrinthRunner.Common.IScoreboard" Collapsed="true">
+    <Position X="12.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAABAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\IScoreboard.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="LabyrinthRunner.Common.Direction" Collapsed="true">
+    <Position X="12.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Common\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LabyrinthRunner.Common.WorldObjectType" Collapsed="true">
+    <Position X="14" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAABAAAAAAEAAAAAAAAAAAAAAEAAAQ=</HashCode>
+      <FileName>Common\WorldObject.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
