@@ -32,35 +32,27 @@
 
 ## Object-Oriented Programming
 
-1. [Defining Classes - Part I]() - ([assignment]())
-2. [Defining Classes - Part II]() - ([assignment]())
-3. [Extension Methods, Delegates, Lambda, LINQ]() - ([assignment]())
-4. [Fundamental Principles - Part I]() - ([assignment]())
-5. [Fundamental Principles - Part II]() - ([assignment]())
-6. [Common Type System]() - ([assignment]())
-7. [Teamwork]()
-8. [Exam Preparation]() - ([assignment]())
-9. [Exam]() - ([assignment]())
+1. [Defining Classes - Part I](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/01.DefiningClassesI) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/01.DefiningClassesI/README.md))
+2. [Defining Classes - Part II](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/02.DefiningClassesII) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/02.DefiningClassesII/README.md))
+3. [Extension Methods, Delegates, Lambda, LINQ](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/03.Extensions%2CLambda%2CLINQ) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/03.Extensions%2CLambda%2CLINQ/README.md))
+4. [Fundamental Principles - Part I](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/04.%20OOP%20Principles%20I) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/04.%20OOP%20Principles%20I/README.md))
+5. [Fundamental Principles - Part II](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/05.%20OOP%20Principles%20II) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/05.%20OOP%20Principles%20II/README.md))
+6. [Common Type System](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS/README.md))
 
 ## HTML Basics
 
 1. Web Front End Tools
-2. [HTML Fundamentals]() - ([assignment]())
-3. [HTML Tables]() - ([assignment]())
-4. [HTML Forms, Frames]() - ([assignment]())
-5. [Semantic Web]() - ([assignment]())
-6. Sample Test
-7. Test
+2. [HTML Fundamentals](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/01.%20HTML%20fundamentals) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/01.%20HTML%20fundamentals))
+3. [HTML Tables](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/02.%20HTML%20tables) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/02.%20HTML%20tables))
+4. [HTML Forms, Frames](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/03.%20Forms) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/03.%20Forms))
+5. [Semantic Web](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/04.%20HTML%20semantics) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/01.%20HTML/04.%20HTML%20semantics))
 
 ## CSS Styling
 
-1. [CSS Overview]() - ([assignment]())
-2. [CSS Presentation]() - ([assignment]())
-4. [CSS Layout]() - ([assignment]())
-5. [SASS]() - ([assignment]())
-6. [LESS]() - ([assignment]())
-7. Exam Preparation
-8. [Exam]() - ([assignment]())
+1. [CSS Overview](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/01.%20CSS%20Overview) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/01.%20CSS%20Overview))
+2. [CSS Presentation](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/02.%20CSS%20Presentation) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/02.%20CSS%20Presentation))
+4. [CSS Layout](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/03.%20CSS%20Layout) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/03.%20CSS%20Layout))
+5. [CSS Preprocessors](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/04.%20CSS%20Preprocessors) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/02.%20CSS/04.%20CSS%20Preprocessors))
 
 ## JavaScript - Essentials
 
@@ -78,34 +70,8 @@
 
 ##  JavaScript - Object-Oriented Programming
 
-1. [DOM Manipulation]() - ([assignment]())
-2. [Advanced Functions]() - ([assignment]())
-3. [JavaScript OOP]() - ([assignment]())
-4. [JavaScript APIs]() - ([assignment]())
-5. [Events]() - ([assignment]())
-6. Exceptions
-7. Exam Preparation
-8. [Exam]() - ([assignment]())
+SOON
 
 ## High-Quality Code
 
-1. What is High-Quality Programming Code?
-2. [Code Formatting]() - ([assignment]())
-3. [Naming Identifiers]() - ([assignment]())
-4. [Code Documentation and Comments]() - ([assignment]())
-5. [Using Variables, Data, Expressions and Constants]() - ([assignment]())
-6. [Using Control Structures, Conditional Statements and Loops]() - ([assignment]())
-7. [High-Quality Methods]() - ([assignment]())
-8. [High-Quality Classes]() - ([assignment]())
-9. [Defensive Programming and Exceptions]() - ([assignment]())
-10. [Code Tuning and Optimization]() - ([assignment]())
-11. [Unit Testing]() - ([assignment]())
-12. [Test-Driven Development]() - ([assignment]())
-13. [Refactoring]() - ([assignment]())
-14. Debugging
-15. [Development Tools]() - ([assignment]())
-16. [Design Patterns]() - ([assignment]())
-17. Software Engineering Fundamentals
-18. [Teamwork](https://github.com/TeamPotassium/BattleField)
-19. [Exam Preparation]() - ([assignment]())
-20. [Exam]() - ([assignment]())
+SOON
