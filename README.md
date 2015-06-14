@@ -39,7 +39,7 @@
 4. [Fundamental Principles - Part I](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/04.%20OOP%20Principles%20I) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/04.%20OOP%20Principles%20I/README.md))
 5. [Fundamental Principles - Part II](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/05.%20OOP%20Principles%20II) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/05.%20OOP%20Principles%20II/README.md))
 6. [Common Type System](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS/README.md))
-7. [Teamwork](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/07.%20Teamwork) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/07.%20Teamwork/README.md))
+7. [Teamwork](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/07.%20Teamwork) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/03.%20OOP/07.%20Teamwork/OOP-Teamwork-Assignment-March-2015.pdf))
 
 ## HTML Basics
 
