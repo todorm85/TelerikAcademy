@@ -39,7 +39,7 @@ function findPrimes(start, end) {
 	}
 
 	// check that arguments are numbers
-	if (!(Number(start) && Number(end))) {
+	if ((isNaN(+start) || isNaN(+end))) {
 		throw 'Please supply numbers as start and end'
 	}
 

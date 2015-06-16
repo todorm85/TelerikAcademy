@@ -45,5 +45,3 @@ function sum(numsArr) {
 }
 
 module.exports = sum;
-
-console.log(sum([1,2,3]));
