@@ -70,7 +70,7 @@
 
 ##  JavaScript - Object-Oriented Programming
 
-SOON
+1. [01. Functions and Function Expressions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/04.%20JS%20OOP/01.%20Functions%20and%20Function%20Expressions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/04.%20JS%20OOP/01.%20Functions%20and%20Function%20Expressions/README.md))
 
 ## High-Quality Code
 
