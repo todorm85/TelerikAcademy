@@ -73,9 +73,9 @@
 1. [Functions and Function Expressions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/04.%20JS%20OOP/01.%20Functions%20and%20Function%20Expressions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/04.%20JS%20OOP/01.%20Functions%20and%20Function%20Expressions/README.md))
 2. [Scopes and Closures](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/04.%20JS%20OOP/02.%20Scopes%20and%20Closures) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/04.%20JS%20OOP/02.%20Scopes%20and%20Closures/README.md))
 3. [Classical Inheritance](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/03.%20Classical%20Inheritance) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/03.%20Classical%20Inheritance/README.md))
-4. [Modules and Patterns (soon)](#) - ([assignment](#))
-5. [AMD and RequireJS (soon)](#) - ([assignment](#))
-6. [Creating and using exceptions (soon)](#) - ([assignment](#))
+4. [Modules and Patterns (SOON)](#javascript---object-oriented-programming) - ([assignment](#javascript---object-oriented-programming))
+5. [AMD and RequireJS (SOON)](#javascript---object-oriented-programming) - ([assignment](#javascript---object-oriented-programming))
+6. [Creating and using exceptions (SOON)](#javascript---object-oriented-programming) - ([assignment](#javascript---object-oriented-programming))
 
 ## High-Quality Code
 
