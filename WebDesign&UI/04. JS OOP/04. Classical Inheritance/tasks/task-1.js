@@ -40,7 +40,7 @@ function solve() {
 			}
 
 			if (!isValid) {
-				throw new Error;
+				throw new Error();
 			}
 		}
 
@@ -59,7 +59,7 @@ function solve() {
 			}
 
 			if (!isValid) {
-				throw new Error;
+				throw new Error();
 			}
 		}
 
