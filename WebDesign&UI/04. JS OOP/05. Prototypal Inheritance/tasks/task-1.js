@@ -110,7 +110,7 @@ function solve() {
                 value: function(child) {
                     if ((typeof child === 'object' &&
                             Object.getPrototypeOf(child) === domElement) ||
-                            (typeof child === 'string' && child !== '')) {
+                        (typeof child === 'string' && child !== '')) {
                         this._children.push(child);
                     } else {
                         throw 'Invalid child';
@@ -172,18 +172,16 @@ function solve() {
                     var result = '<' + this.type,
                         child,
                         attribute,
-                        attributesAsStrings = [],
                         attributesLength = this._attributes.length,
                         i;
 
                     this._attributes = this._attributes.sort(sortAttributesByName);
                     for (i = 0; i < attributesLength; i += 1) {
                         attribute = this._attributes[i];
-                        attributesAsStrings.push(' ' + attribute.name + '="' +
-                            attribute.value + '"');
+                        result += ' ' + attribute.name + '="' + attribute.value + '"';
                     }
 
-                    result += attributesAsStrings.join('') + '>';
+                    result += '>';
 
                     this.children.forEach(function(child) {
                         if (typeof child === 'string') {
@@ -256,24 +254,13 @@ function solve() {
     //     .init('meta')
     //     .addAttribute('charset', 'utf-8');
 
-    // // console.log('\nMETA');
-    // // console.log(meta.attributes);
-    // // console.log(meta.children);
-
     // var head = Object.create(domElement)
     //     .init('head')
     //     .appendChild(meta);
 
-    // // console.log('\nHEAD');
-    // // console.log(head.attributes);
-    // // console.log(head.children);
-    // // console.log(head.innerHTML);
-
     // var div = Object.create(domElement)
     //     .init('div')
     //     .addAttribute('style', 'font-size: 42px');
-
-    // // console.log(div);
 
     // div.content = 'Hello, world!';
 
