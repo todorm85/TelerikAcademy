@@ -108,9 +108,10 @@ function solve() {
             },
             appendChild: {
                 value: function(child) {
-                    if ((typeof child === 'object' &&
-                            Object.getPrototypeOf(child) === domElement) ||
-                        (typeof child === 'string' && child !== '')) {
+                    if (typeof child === 'object' && Object.getPrototypeOf(child) === domElement) {
+                        child._parent = this;
+                        this._children.push(child);
+                    } else  if (typeof child === 'string' && child !== '') {
                         this._children.push(child);
                     } else {
                         throw 'Invalid child';
@@ -151,18 +152,26 @@ function solve() {
             },
             removeAttribute: {
                 value: function(name) {
+                    var notFound;
+
                     if (!validateName(name)) {
                         throw 'Invalid attribute name. Cannot remove!';
                     }
 
-                    this._attributes = this._attributes.filther(
+                    notFound = true;
+                    this._attributes = this._attributes.filter(
                         function(attribute) {
                             if (attribute.name === name) {
+                                notFound = false;
                                 return false;
                             }
 
                             return true;
                         });
+
+                    if (notFound) {
+                        throw 'Attribute does not exist!';
+                    }
 
                     return this;
                 }
@@ -226,7 +235,7 @@ function solve() {
                 set: function(parent) {
                     if (typeof parent === 'object' &&
                         Object.getPrototypeOf(parent) === domElement) {
-                        this._parent = parent;
+                        // this._parent = parent;
                         parent.appendChild(this);
                     } else {
                         throw 'Parent must be of type domElement!';
@@ -248,54 +257,18 @@ function solve() {
         return domElement;
     }());
 
-    // TEST 0
-
-    // var meta = Object.create(domElement)
-    //     .init('meta')
-    //     .addAttribute('charset', 'utf-8');
-
-    // var head = Object.create(domElement)
-    //     .init('head')
-    //     .appendChild(meta);
-
-    // var div = Object.create(domElement)
-    //     .init('div')
-    //     .addAttribute('style', 'font-size: 42px');
-
-    // div.content = 'Hello, world!';
-
-    // var body = Object.create(domElement)
-    //     .init('body')
-    //     .appendChild(div)
-    //     .addAttribute('id', 'cuki')
-    //     .addAttribute('bgcolor', '#012345');
-
-    // var root = Object.create(domElement)
-    //     .init('html')
-    //     .appendChild(head)
-    //     .appendChild(body);
-
-    // console.log(root.innerHTML);
-
-    // END TEST
-
-    // TEST 1 CHILD STRING
-
-    // var head = Object.create(domElement)
-    //     .init('head')
-    //     .appendChild('stringChild1')
-    //     .appendChild('stringChild2');
-
-    // console.log('\nHEAD');
-    // console.log(head.attributes);
-    // console.log(head.children);
-    // console.log(head.innerHTML);
-
-    // END TEST
-
     return domElement;
 }
 
 module.exports = solve;
 
-solve();
+// TESTs
+// var domElement = solve();
+
+// // test 0
+// var meta = Object.create(domElement)
+//     .init('meta')
+//     .addAttribute('charset', 'utf-8');
+// console.log(meta);
+// meta.removeAttribute('charset');
+// console.log(meta);
