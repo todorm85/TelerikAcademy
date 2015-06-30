@@ -51,11 +51,7 @@ function solve() {
     }
 
     function isString(literal) {
-        if (typeof literal === 'string') {
-            return true;
-        } else {
-            return false;
-        }
+        return typeof literal === 'string';
     }
 
     function validateStudentName(name) {
@@ -63,7 +59,7 @@ function solve() {
             throw 'Student name must be string!';
         }
 
-        if (!/^[A-Z][a-z]* [A-Z][a-z]*$/.exec(name)) {
+        if (!/^[A-Z][a-z]* *[A-Z][a-z]*$/.exec(name)) {
             throw 'Please enter exactly in the format "Firstname Lastname"';
         }
 
@@ -125,6 +121,8 @@ function solve() {
             throw 'Invalid homework ID. No such presentation!';
         }
 
+        validateStudentID(studentID);
+
         if (this._homeworks[studentID].some(
                 function(currentHomeworkID) {
                     return currentHomeworkID === homeworkID;
@@ -142,7 +140,7 @@ function solve() {
 
         results.forEach(function(resultEntry, index, results) {
             validateStudentID.call(this, resultEntry.StudentID);
-            if (results.indexOf(resultEntry) !== index) {
+            if (results.lastIndexOf(resultEntry) !== index) {
                 throw 'No duplicate entries allowed in exam results!';
             }
         });
@@ -153,14 +151,11 @@ function solve() {
             var examScore = 0,
                 homeworkScore = 0;
 
-            this._results.some(
+            this._results.forEach(
                 function(resultEntry, index, results) {
                     if (resultEntry.StudentID === student.id) {
                         examScore = results[index];
-                        return true;
                     }
-
-                    return false;
                 });
             homeworkScore = this._homeworks[student.id].length / this._presentationTitles.length;
             student.score = (examScore * .75) + (homeworkScore * .25);
