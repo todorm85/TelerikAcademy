@@ -16,123 +16,106 @@
 		*	enables method-chaining
 */
 function solve() {
+    var Person = function(firstname, lastname, age) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+    }
 
-	var Person = (function() {
+    Object.defineProperties(Person.prototype, {
+        firstname: {
+            get: function() {
+                return this._firstname;
+            },
+            set: function(value) {
+                validateName(value);
+                this._firstname = value;
+            }
+        },
+        lastname: {
+            get: function() {
+                return this._lastname;
+            },
+            set: function(value) {
+                validateName(value);
+                this._lastname = value;
+            }
+        },
+        age: {
+            get: function() {
+                return this._age;
+            },
+            set: function(value) {
+                validateAge(value);
+                this._age = value;
+            }
+        },
+        fullname: {
+            get: function() {
+                return this.firstname + ' ' + this.lastname;
+            },
+            set: function(value) {
+                validateFullname(value);
+                this.firstname = value.split(' ')[0];
+                this.lastname = value.split(' ')[1] || '';
+            }
+        },
+        introduce: {
+            value: function() {
+                return 'Hello! My name is ' + this.fullname + ' and I am ' + this.age + '-years-old';
+            }
+        }
+    });
 
-		function Person(firstname, lastname, age) {
-			this.firstname = firstname;
-			this.lastname = lastname;
-			this.age = age;
-		}
+    function isString(value) {
+        return typeof value === 'string';
+    }
 
-		function validateName(name) {
-			var isValid = true;
-			if (typeof name !== 'string') {
-				isValid = false;
-			}
+    function isNumber(num) {
+        return !isNaN(parseFloat(num)) && Number.isFinite(num);
+    }
 
-			if (name.length > 20 || name.length < 3) {
-				isValid = false;
-			}
+    function validateName(name) {
+        var namePattern = new RegExp('^[A-Za-z]{3,20}$');
 
-			if (name.replace(/[a-zA-Z]*/, '') !== '') {
-				isValid = false;
-			}
+        if (!isString(name)) {
+            throw new Error('Name must be string!');
+        }
 
-			if (!isValid) {
-				throw new Error();
-			}
-		}
+        if (!namePattern.test(name)) {
+            throw new Error('Name must be between 3 and 20 characters, containing only Latin letters');
+        }
+    }
 
-		function isNumber(num) {
-			return !isNaN(parseFloat(num)) && isFinite(num);
-		}
+    function validateAge(value) {
+        var minAge = 0;
+        var maxAge = 150;
 
-		function validateAge(age) {
-			var isValid = true;
-			if (!isNumber(age)) {
-				isValid = false;
-			}
+        if (!isNumber(value)) {
+            throw new Error('Age must be a number!');
+        }
 
-			if (age > 150 || age < 0) {
-				isValid = false;
-			}
+        if (value < minAge || value > maxAge) {
+            throw new Error('Age muse be in range 0 - 150');
+        }
+    }
 
-			if (!isValid) {
-				throw new Error();
-			}
-		}
+    function validateFullname(value) {
+        var fullnamePattern = new RegExp('^[A-Za-z]+$|^[A-Za-z]+ [A-Za-z]+$');
 
-		function parseNames(value) {
-			var namesArr = value.trim().split(' ');
-			return namesArr;
-		}
+        if (!isString(value)) {
+            throw new Error('Fullname must be string!');
+        }
 
-		Object.defineProperties(Person.prototype, {
-			'firstname': {
-				get: function() {
-					return this._firstname;
-				},
-				set: function(value) {
-					validateName(value);
-					this._firstname = value;
-				}
-			},
-			'lastname': {
-				get: function() {
-					return this._lastname;
-				},
-				set: function(value) {
-					validateName(value);
-					this._lastname = value;
-				}
-			},
-			'age': {
-				get: function() {
-					return this._age;
-				},
-				set: function(value) {
-					validateAge(value);
-					this._age = value;
-				}
-			},
-			'fullname': {
-				get: function() {
-					return this.firstname + ' ' + this.lastname;
-				},
-				set: function(value) {
-					var firstname;
-					var lastname;
+        if (!fullnamePattern.test(value)) {
+            throw new Error('Fullname must be in format "Firstname Lastname"');
+        }
+    }
 
-					if (typeof value !== 'string') {
-						isValid = false;
-					}
-
-					firstname = parseNames(value)[0];
-					lastname = parseNames(value)[1];
-
-					this.firstname = firstname;
-					this.lastname = lastname;
-				}
-			}
-		});
-
-		Person.prototype.introduce = function () {
-			return 'Hello! My name is ' + this.fullname + ' and I am ' + this.age + '-years-old';
-		}
-
-		return Person;
-	}());
-
-	// Testing
-
-	// var ivan = new Person('Ivan', 'Mavrodiev', 5);
-	// console.log(ivan.introduce());
-
-	// End Testing
-
-	return Person;
+    return Person;
 }
 module.exports = solve;
 
-// solve();
+var Person = solve();
+var ivan = new Person('Ivan', 'Ivanov', 35);
+console.log(ivan);
