@@ -1,231 +1,37 @@
-/* Task Description */
-/*
- * Create an object domElement, that has the following properties and methods:
- * use prototypal inheritance, without function constructors
- * method init() that gets the domElement type
- * i.e. `Object.create(domElement).init('div')`
- * property type that is the type of the domElement
- * a valid type is any non-empty string that contains only Latin letters and digits
- * property innerHTML of type string
- * gets the domElement, parsed as valid HTML
- * <type attr1="value1" attr2="value2" ...> .. content / children's.innerHTML .. </type>
- * property content of type string
- * sets the content of the element
- * works only if there are no children
- * property attributes
- * each attribute has name and value
- * a valid attribute has a non-empty string for a name that contains only Latin letters and digits or dashes (-)
- * property children
- * each child is a domElement or a string
- * property parent
- * parent is a domElement
- * method appendChild(domElement / string)
- * appends to the end of children list
- * method addAttribute(name, value)
- * throw Error if type is not valid
- * // method removeAttribute(attribute)
- */
-
-/* Example
-
-var meta = Object.create(domElement)
-    .init('meta')
-    .addAttribute('charset', 'utf-8');
-
-var head = Object.create(domElement)
-    .init('head')
-    .appendChild(meta)
-
-var div = Object.create(domElement)
-    .init('div')
-    .addAttribute('style', 'font-size: 42px');
-
-div.content = 'Hello, world!';
-
-var body = Object.create(domElement)
-    .init('body')
-    .appendChild(div)
-    .addAttribute('id', 'cuki')
-    .addAttribute('bgcolor', '#012345');
-
-var root = Object.create(domElement)
-    .init('html')
-    .appendChild(head)
-    .appendChild(body);
-
-console.log(root.innerHTML);
-Outputs:
-<html><head><meta charset="utf-8"></meta></head><body bgcolor="#012345" id="cuki"><div style="font-size: 42px">Hello, world!</div></body></html>
-*/
-
 function solve() {
-
     var domElement = (function() {
+        var ATTRIBUTE_NAME_PATTERN = /^[A-Za-z\d-]+$/;
+        var TYPE_NAME_PATTERN = /^[A-Za-z\d]+$/;
 
         var domElement = {};
-
-        function validateName(name, regEx) {
-            if (name === undefined || typeof name !== 'string' || name === '') {
-                return false;
-            }
-
-            regEx = regEx || /[^A-Za-z\d-]/;
-            if (regEx.exec(name)) {
-                return false;
-            }
-
-            return true;
-        }
-
-        function hasNoChildren(domElement) {
-            if (domElement.children.length === 0) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-
-        function sortAttributesByName(previousAttribute, currentAttribute) {
-            if (previousAttribute.name > currentAttribute.name) {
-                return 1;
-            }
-
-            if (previousAttribute.name < currentAttribute.name) {
-                return -1;
-            }
-
-            return 0;
-        }
 
         Object.defineProperties(domElement, {
             init: {
                 value: function(type) {
                     this.type = type;
-                    this._children = [];
                     this._attributes = [];
-                    return this;
-                }
-            },
-            appendChild: {
-                value: function(child) {
-                    if (typeof child === 'object' && Object.getPrototypeOf(child) === domElement) {
-                        child._parent = this;
-                        this._children.push(child);
-                    } else  if (typeof child === 'string' && child !== '') {
-                        this._children.push(child);
-                    } else {
-                        throw 'Invalid child';
-                    }
-
-                    return this;
-                }
-            },
-            addAttribute: {
-                value: function(name, value) {
-                    var isFound,
-                        attributeToPush,
-                        self;
-
-                    if (!validateName(name, /[^A-Za-z\d-]/)) {
-                        throw 'Invalid attribute name!';
-                    }
-
-                    attributeToPush = {
-                        name: name,
-                        value: value
-                    };
-                    isFound = this._attributes.some(
-                        function(attribute, index) {
-                            if (attribute.name === name) {
-                                attribute.value = value;
-                                return true;
-                            }
-
-                            return false;
-                        });
-                    if (!isFound) {
-                        this._attributes.push(attributeToPush);
-                    }
-
-                    return this;
-                }
-            },
-            removeAttribute: {
-                value: function(name) {
-                    var notFound;
-
-                    if (!validateName(name)) {
-                        throw 'Invalid attribute name. Cannot remove!';
-                    }
-
-                    notFound = true;
-                    this._attributes = this._attributes.filter(
-                        function(attribute) {
-                            if (attribute.name === name) {
-                                notFound = false;
-                                return false;
-                            }
-
-                            return true;
-                        });
-
-                    if (notFound) {
-                        throw 'Attribute does not exist!';
-                    }
-
+                    this._children = [];
+                    this._content = '';
                     return this;
                 }
             },
             innerHTML: {
                 get: function() {
-                    var result = '<' + this.type,
-                        child,
-                        attribute,
-                        attributesLength = this._attributes.length,
-                        i;
-
-                    this._attributes = this._attributes.sort(sortAttributesByName);
-                    for (i = 0; i < attributesLength; i += 1) {
-                        attribute = this._attributes[i];
-                        result += ' ' + attribute.name + '="' + attribute.value + '"';
-                    }
-
-                    result += '>';
-
-                    this.children.forEach(function(child) {
-                        if (typeof child === 'string') {
-                            result += child;
-                        } else {
-                            result += child.innerHTML;
-                        }
-                    });
-
-                    if (hasNoChildren(this)) {
-                        result += this.content;
-                    }
-
-                    result += '</' + this.type + '>';
-                    return result;
+                    return parseDomElementToString.call(this);
                 }
             },
             type: {
-                get: function() {
-                    return this._type;
-                },
-                set: function(value) {
-                    if (validateName(value, /[^A-Za-z\d]/)) {
-                        this._type = value;
-                    } else {
-                        throw 'Invalid type';
-                    }
+                set: function(typeName) {
+                    validateString(typeName, TYPE_NAME_PATTERN, 'Invalid type format!');
+                    this._type = typeName;
+                    return this;
                 }
             },
             content: {
-                get: function() {
-                    return this._content || '';
-                },
                 set: function(value) {
-                    this._content = value;
+                    validateContent(value);
+                    this._content = (hasChildren.call(this)) ? '' : value;
+                    return this;
                 }
             },
             parent: {
@@ -233,42 +39,185 @@ function solve() {
                     return this._parent;
                 },
                 set: function(parent) {
-                    if (typeof parent === 'object' &&
-                        Object.getPrototypeOf(parent) === domElement) {
-                        // this._parent = parent;
-                        parent.appendChild(this);
-                    } else {
-                        throw 'Parent must be of type domElement!';
+                    validateParent(parent);
+                    this._parent = parent;
+                    return this;
+                }
+            },
+            appendChild: {
+                value: function(child) {
+                    validateChild(child);
+                    this._children.push(child);
+                    this._content = '';
+
+                    if (typeof child === 'object' && child.parent !== this) {
+                        child.parent = this;
                     }
+
+                    return this;
                 }
             },
-            children: {
-                get: function() {
-                    return this._children.slice();
+            addAttribute: {
+                value: function(name, value) {
+                    validateString(name, ATTRIBUTE_NAME_PATTERN, 'Invalid attribute name to add');
+
+                    if (!checkAttributeExistance.call(this, name)) {
+                        this._attributes.push({
+                            name: name,
+                            value: value
+                        });
+                    } else {
+                        overwriteExistingAttributeValue.call(this, name, value);
+                    }
+
+                    return this;
                 }
             },
-            attributes: {
-                get: function() {
-                    return this._attributes.slice();
+            removeAttribute: {
+                value: function(name) {
+                    validateString(name, ATTRIBUTE_NAME_PATTERN, 'Invalid attribute name to remove');
+                    if (!checkAttributeExistance.call(this, name)) {
+                        throw new Error('No such attribute to remove!');
+                    }
+
+                    this._attributes = removeArrayElementByProperty(this._attributes, name);
+                    return this;
                 }
             }
         });
 
+        // Validations
+
+        function isNumber(num) {
+            return !isNaN(parseFloat(num)) && Number.isFinite(num);
+        }
+
+        function isString(value) {
+            return typeof value === 'string';
+        }
+
+        function validateContent(content) {
+            if (!isString(content)) {
+                throw new Error('Content must be string!');
+            }
+        }
+
+        function hasChildren() {
+            if (this._children.length !== 0) {
+                return true;
+            }
+
+            return false;
+        }
+
+        function validateChild(child) {
+            if (!isString(child) && !domElement.isPrototypeOf(child)) {
+                throw new Error('Child must be string or domElement');
+            }
+        }
+
+        function validateString(value, pattern, errorMessage) {
+            pattern = pattern || /.*/g;
+            if (!isString(value)) {
+                throw new Error(errorMessage + 'Must be string.');
+            }
+
+            if (!pattern.test(value)) {
+                throw new Error(errorMessage + 'Pattern mismatch for: ' + value);
+            }
+        }
+
+        function checkAttributeExistance(name) {
+            var isFound = this._attributes.some(
+                function(existingAttribute) {
+                    return existingAttribute.name === name;
+                });
+            return isFound;
+        }
+
+        function overwriteExistingAttributeValue(name, value) {
+            this._attributes.map(
+                function(attribute) {
+                    if (attribute.name === name) {
+                        attribute.value = value;
+                    }
+                });
+        }
+
+        function validateParent(parent) {
+            if (!domElement.isPrototypeOf(parent)) {
+                throw new Error('Parent must be dom element!');
+            }
+        }
+
+        // Functionalities
+
+        function removeArrayElementByProperty(array, propertyName) {
+            array = array.filter(
+                function(existingAttribute) {
+                    return existingAttribute.name !== propertyName;
+                });
+            return array;
+        }
+
+        function parseAttributesToString() {
+            var attributesAsString = '',
+                name,
+                value;
+
+            this._attributes.sort(
+                function(currentAttribute, nextAttribute) {
+                    return currentAttribute.name > nextAttribute.name;
+                });
+
+            for (index in this._attributes) {
+                name = this._attributes[index].name;
+                value = this._attributes[index].value;
+
+                attributesAsString += ' ' + name + '="' + value + '"';
+            }
+
+            return attributesAsString;
+        }
+
+        function parseChildrenToString() {
+            var childrenAsString = '',
+                index,
+                child;
+
+            if (hasChildren.call(this)) {
+                for (index in this._children) {
+                    child = this._children[index];
+
+                    if (!isString(child)) {
+                        childrenAsString += child.innerHTML;
+                    } else {
+                        childrenAsString += child;
+                    }
+                }
+            } else {
+                childrenAsString += this._content;
+            }
+
+            return childrenAsString;
+        }
+
+        function parseDomElementToString() {
+            var domElementAsString,
+                attributesAsString,
+                childrenAsString;
+
+            attributesAsString = parseAttributesToString.call(this);
+            childrenAsString = parseChildrenToString.call(this);
+            domElementAsString = '<' + this._type + attributesAsString + '>' +
+                childrenAsString + '</' + this._type + '>';
+
+            return domElementAsString;
+        }
+
         return domElement;
     }());
-
     return domElement;
 }
 
 module.exports = solve;
-
-// TESTs
-// var domElement = solve();
-
-// // test 0
-// var meta = Object.create(domElement)
-//     .init('meta')
-//     .addAttribute('charset', 'utf-8');
-// console.log(meta);
-// meta.removeAttribute('charset');
-// console.log(meta);
