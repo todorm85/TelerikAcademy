@@ -22,7 +22,8 @@ function solve() {
             },
             type: {
                 set: function(typeName) {
-                    validateString(typeName, TYPE_NAME_PATTERN, 'Invalid type format!');
+                    validateType(typeName, 'Invalid type format!');
+                    
                     this._type = typeName;
                     return this;
                 }
@@ -59,7 +60,7 @@ function solve() {
             },
             addAttribute: {
                 value: function(name, value) {
-                    validateString(name, ATTRIBUTE_NAME_PATTERN, 'Invalid attribute name to add');
+                    validateAttributeName(name, 'Invalid attribute name to add.');
 
                     if (!checkAttributeExistance.call(this, name)) {
                         this._attributes.push({
@@ -75,7 +76,7 @@ function solve() {
             },
             removeAttribute: {
                 value: function(name) {
-                    validateString(name, ATTRIBUTE_NAME_PATTERN, 'Invalid attribute name to remove');
+                    validateAttributeName(name, 'Invalid attribute name to remove.');
                     if (!checkAttributeExistance.call(this, name)) {
                         throw new Error('No such attribute to remove!');
                     }
@@ -94,6 +95,10 @@ function solve() {
 
         function isString(value) {
             return typeof value === 'string';
+        }
+
+        function validateType(typeName, errorMessage) {
+            validateString(typeName, TYPE_NAME_PATTERN, errorMessage);
         }
 
         function validateContent(content) {
@@ -118,6 +123,8 @@ function solve() {
 
         function validateString(value, pattern, errorMessage) {
             pattern = pattern || /.*/g;
+            errorMessage = errorMessage || '';
+            
             if (!isString(value)) {
                 throw new Error(errorMessage + 'Must be string.');
             }
@@ -125,6 +132,11 @@ function solve() {
             if (!pattern.test(value)) {
                 throw new Error(errorMessage + 'Pattern mismatch for: ' + value);
             }
+        }
+
+        function validateAttributeName(name, errorMessage) {
+            validateString(name, ATTRIBUTE_NAME_PATTERN, errorMessage);
+
         }
 
         function checkAttributeExistance(name) {
