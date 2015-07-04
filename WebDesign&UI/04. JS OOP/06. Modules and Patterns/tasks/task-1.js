@@ -56,13 +56,13 @@ function solve() {
             var students,
                 course = this;
 
-            validateExamResults(results);
+            validateExamResults(course, results);
 
             students = this._students;
             results.forEach(
                 function(result) {
-                    var student = students[result.studentID - 1];
-                    student[examResult] = result.Score;
+                    var student = students[(result.StudentID - 1)];
+                    student.examResult = result.score;
                 });
             return this;
         },
@@ -155,10 +155,10 @@ function solve() {
         }
 
         processedIDs = [];
-        results.forEach(function(result, index, results) {
+        results.forEach(function(result) {
             var isFoundDuplicateID;
             validateStudentID(course, result.StudentID);
-            if (!isNumber(result.Score)) {
+            if (!isNumber(result.score)) {
                 throw new Error('Score must be number!');
             }
 
@@ -170,7 +170,7 @@ function solve() {
                 throw new Error('One student cannot submit exam results twice!')
             }
 
-            processedIDs.push(result.studentID);
+            processedIDs.push(result.StudentID);
         });
     }
 
