@@ -179,7 +179,11 @@ function solve() {
 
             this._attributes.sort(
                 function(currentAttribute, nextAttribute) {
-                    return currentAttribute.name > nextAttribute.name;
+                    if (currentAttribute.name > nextAttribute.name) {
+                        return 1;
+                    }
+
+                    return -1;
                 });
 
             for (index in this._attributes) {
