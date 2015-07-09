@@ -71,8 +71,8 @@
 ##  JavaScript - Object-Oriented Programming
 
 1. [Functions and Function Expressions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/04.%20JS%20OOP/01.%20Functions%20and%20Function%20Expressions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/04.%20JS%20OOP/01.%20Functions%20and%20Function%20Expressions/README.md))
-2. [Scopes and Closures](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/04.%20JS%20OOP/02.%20Scopes%20and%20Closures) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/WebDesign%26UI/04.%20JS%20OOP/02.%20Scopes%20and%20Closures/README.md))
-3. [Classical Inheritance](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/03.%20Classical%20Inheritance) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/03.%20Classical%20Inheritance/README.md))
+2. [Scopes and Closures](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/03.%20Scopes%20and%20Closures) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/03.%20Scopes%20and%20Closures/README.md))
+3. [Classical Inheritance](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/04.%20Classical%20Inheritance) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/04.%20Classical%20Inheritance/README.md))
 4. [Prototypal Inheritance](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/05.%20Prototypal%20Inheritance) - ([assignment](https://github.com/todorm85/TelerikAcademy/blob/master/WebDesign%26UI/04.%20JS%20OOP/05.%20Prototypal%20Inheritance/README.md))
 5. [Modules and Patterns](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/06.%20Modules%20and%20Patterns) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/WebDesign%26UI/04.%20JS%20OOP/06.%20Modules%20and%20Patterns/README.md))
 
