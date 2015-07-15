@@ -35,6 +35,12 @@
             set;
         }
 
+        internal static double CalcDistance3D(Point p1, Point p2)
+        {
+            double distance = Math.Sqrt(((p2.X - p1.X) * (p2.X - p1.X)) + ((p2.Y - p1.Y) * (p2.Y - p1.Y)) + ((p2.Z - p1.Z) * (p2.Z - p1.Z)));
+            return distance;
+        }
+
         internal double CalcVolume()
         {
             double volume = this.Width * this.Height * this.Depth;
@@ -62,12 +68,6 @@
         internal double CalcDiagonalYZ()
         {
             double distance = CalcDistance3D(new Point(0, 0, 0), new Point(0, this.Height, this.Depth));
-            return distance;
-        }
-
-        internal static double CalcDistance3D(Point p1, Point p2)
-        {
-            double distance = Math.Sqrt(((p2.X - p1.X) * (p2.X - p1.X)) + ((p2.Y - p1.Y) * (p2.Y - p1.Y)) + ((p2.Z - p1.Z) * (p2.Z - p1.Z)));
             return distance;
         }
 

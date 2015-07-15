@@ -1,11 +1,17 @@
-﻿using System;
-
-namespace Abstraction
+﻿namespace Abstraction
 {
-    abstract class Figure
+    using System;
+
+    public abstract class Figure
     {
         private double width;
         private double height;
+
+        public Figure(double width, double height)
+        {
+            this.Width = width;
+            this.Height = height;
+        }
 
         public virtual double Width
         {
@@ -13,6 +19,7 @@ namespace Abstraction
             {
                 return this.width;
             }
+
             set
             {
                 if (value <= 0)
@@ -30,6 +37,7 @@ namespace Abstraction
             {
                 return this.height;
             }
+
             set
             {
                 if (value <= 0)
@@ -41,13 +49,8 @@ namespace Abstraction
             }
         }
 
-        public Figure(double width, double height)
-        {
-            this.Width = width;
-            this.Height = height;
-        }
-
         public abstract double CalcPerimeter();
+
         public abstract double CalcSurface();
     }
 }

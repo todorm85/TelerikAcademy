@@ -1,25 +1,29 @@
-﻿using System;
-
-namespace Abstraction
+﻿namespace Abstraction
 {
-    class FiguresExample
+    using System;
+
+    public class FiguresExample
     {
-        static void Main()
+        public static void Main()
         {
             Circle circle = new Circle(5);
-            Console.WriteLine("I am a circle. " +
+            Console.WriteLine(
+                "I am a circle. " +
                 "My perimeter is {0:f2}. My surface is {1:f2}.",
-                circle.CalcPerimeter(), circle.CalcSurface());
+                circle.CalcPerimeter(), 
+                circle.CalcSurface());
             Rectangle rect = new Rectangle(2, 3);
-            Console.WriteLine("I am a rectangle. " +
+            Console.WriteLine(
+                "I am a rectangle. " +
                 "My perimeter is {0:f2}. My surface is {1:f2}.",
-                rect.CalcPerimeter(), rect.CalcSurface());
+                rect.CalcPerimeter(), 
+                rect.CalcSurface());
             PrintFigure(circle);
             circle.Radius = 40;
             PrintFigure(circle);
         }
 
-        static void PrintFigure(Figure figure)
+        private static void PrintFigure(Figure figure)
         {
             Console.WriteLine(figure.Height);
         }

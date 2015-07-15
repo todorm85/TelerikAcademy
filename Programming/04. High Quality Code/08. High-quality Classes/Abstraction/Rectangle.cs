@@ -1,12 +1,13 @@
-﻿using System;
-
-namespace Abstraction
+﻿namespace Abstraction
 {
-    class Rectangle : Figure
+    using System;
+
+    public class Rectangle : Figure
     {
         public Rectangle(double width, double height)
             : base(width, height)
-        { }
+        {
+        }
 
         public override double CalcPerimeter()
         {

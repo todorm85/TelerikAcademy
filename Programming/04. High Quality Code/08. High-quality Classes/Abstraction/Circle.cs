@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace Abstraction
+﻿namespace Abstraction
 {
-    class Circle : Figure
+    using System;
+
+    public class Circle : Figure
     {
         private double radius;
 
@@ -18,6 +18,7 @@ namespace Abstraction
             {
                 return this.radius;
             }
+
             set
             {
                 if (value <= 0)
@@ -35,6 +36,7 @@ namespace Abstraction
             {
                 return this.Radius * 2;
             }
+
             set
             {
                 if (value <= 0)
@@ -52,6 +54,7 @@ namespace Abstraction
             {
                 return this.Radius * 2;
             }
+
             set
             {
                 if (value <= 0)

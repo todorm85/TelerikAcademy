@@ -1,10 +1,10 @@
-﻿using System;
-
-namespace CohesionAndCoupling
+﻿namespace CohesionAndCoupling
 {
-    class UtilsExamples
+    using System;
+
+    public class UtilsExamples
     {
-        static void Main()
+        public static void Main()
         {
             Console.WriteLine("File Utils testing...");
             Console.WriteLine(FileUtils.GetFileExtension("example"));
@@ -24,7 +24,7 @@ namespace CohesionAndCoupling
             TestSpaceMethods(mySpace);
         }
 
-        static void TestSpaceMethods(OrthogonalSpace3D space)
+        private static void TestSpaceMethods(OrthogonalSpace3D space)
         {
             Console.WriteLine(space.CalcDiagonalXY());
             Console.WriteLine(space.CalcDiagonalXYZ());
