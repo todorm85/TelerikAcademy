@@ -1,20 +1,24 @@
-﻿using System;
-using System.Globalization;
-
-namespace Methods
+﻿namespace Methods
 {
-    class Student
+    using System;
+    using System.Globalization;
+
+    public class Student
     {
         private string otherInfo;
         private DateTime birthday;
 
         public string FirstName { get; set; }
+
         public string LastName { get; set; }
-        public string OtherInfo {
+
+        public string OtherInfo
+        {
             get
             {
                 return this.otherInfo;
             }
+
             set
             {
                 if (value.Length < 10)
@@ -41,9 +45,9 @@ namespace Methods
 
         public bool IsOlderThan(Student other)
         {
-
             DateTime currentStudentBirthday = this.birthday;
             DateTime otherStudentBirthday = other.birthday;
+
             // date comparison must be opposite, because student with 'lesser' date value is actually older
             bool isOlder = currentStudentBirthday < otherStudentBirthday;
             return isOlder;

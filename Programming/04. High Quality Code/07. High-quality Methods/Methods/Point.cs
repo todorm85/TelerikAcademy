@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Methods
+﻿namespace Methods
 {
-    struct Point
+    internal struct Point
     {
-        public double x;
-        public double y;
+        public double X;
+        public double Y;
 
         internal Point(double xCoord, double yCoord)
         {
-            x = xCoord;
-            y = yCoord;
+            this.X = xCoord;
+            this.Y = yCoord;
         }
     }
 }
