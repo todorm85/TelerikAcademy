@@ -3,13 +3,14 @@
     using System;
     using System.Collections.Generic;
     using System.Numerics;
+    using System.Text;
 
     public class Start
     {
-        const int AlienEncodingKey = 17;
-        const int EarthEncodingKey = 26;
+        public const int AlienEncodingKey = 17;
+        public const int EarthEncodingKey = 26;
 
-        static void Main()
+        public static void Main()
         {
             string[] alienWords = Console.ReadLine().Split(' ');
 
@@ -30,12 +31,12 @@
             Console.WriteLine(decodedMessage);
         }
 
-        static BigInteger DecodeWordToDecimal(string encodedWord, int encodingKey)
+        public static BigInteger DecodeWordToDecimal(string encodedWord, int encodingKey)
         {
             var extractedDecimalDigits = new List<int>();
             for (int i = 0; i < encodedWord.Length; i++)
             {
-                char currentLetter = Char.ToLower(encodedWord[i]);
+                char currentLetter = char.ToLower(encodedWord[i]);
                 int currentDigit = currentLetter - 'a';
                 extractedDecimalDigits.Add(currentDigit);
             }
@@ -50,7 +51,7 @@
             return decimalNumber;
         }
 
-        static string EncodeDecimalToWord(BigInteger num, int encodingKey)
+        public static string EncodeDecimalToWord(BigInteger num, int encodingKey)
         {
             var result = new StringBuilder();
             do
@@ -59,7 +60,7 @@
                 num /= encodingKey;
                 result.Insert(0, (char)(remainder + 'a'));
             }
-            while ((num != 0));
+            while (num != 0);
             return result.ToString();
         }
     }
