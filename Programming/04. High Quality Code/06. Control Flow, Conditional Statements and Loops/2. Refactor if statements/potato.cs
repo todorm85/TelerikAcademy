@@ -1,25 +1,14 @@
-internal class Potato
+﻿namespace RefactorIf
 {
-
-}
-public class EntryPoint
-{
-    public void Main()
+    internal class Potato
     {
-        Potato myPotato = new Potato();
-        //... 
-        if (myPotato != null && myPotato.isPeeled && !myPotato.IsRotten)
-        {
-            Cook(myPotato);
-        }
+        public bool IsPeeled { get; set; }
 
-        bool xIsInRange = MinX <= x && x <= MaxX;
-        bool yIsInRange = MinY <= y && y <= MaxY;
-        if (xIsInRange && yIsInRange && shouldVisitCell)
+        public bool IsRotten { get; set; }
+
+        internal void Cook()
         {
-            VisitCell();
+            System.Console.WriteLine("Potato is being cooked!");
         }
     }
-
-
 }
