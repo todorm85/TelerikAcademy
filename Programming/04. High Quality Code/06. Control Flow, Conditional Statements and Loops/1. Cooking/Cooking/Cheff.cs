@@ -1,10 +1,25 @@
-﻿using Ingredients;
-using Utensils;
-
-namespace Cooking
+﻿namespace Cooking
 {
+    using Ingredients;
+    using Utensils;
+
     public class Cheff
     {
+        public void Cook()
+        {
+            Potato potato = this.GetPotato();
+            this.Peel(potato);
+            this.Cut(potato);
+
+            Carrot carrot = this.GetCarrot();
+            this.Peel(carrot);
+            this.Cut(carrot);
+
+            Bowl bowl = this.GetBowl();
+            bowl.Add(potato);
+            bowl.Add(carrot);
+        }
+        
         private Bowl GetBowl()
         {
             return new Bowl();
@@ -22,26 +37,10 @@ namespace Cooking
 
         private void Cut(IVegetable potato)
         {
-            //...
         }
 
         private void Peel(IVegetable vegetable)
         {
-        }
-
-        public void Cook()
-        {
-            Potato potato = GetPotato();
-            Peel(potato);
-            Cut(potato);
-
-            Carrot carrot = GetCarrot();
-            Peel(carrot);
-            Cut(carrot);
-
-            Bowl bowl = GetBowl();
-            bowl.Add(potato);
-            bowl.Add(carrot);
         }
     }
 }
