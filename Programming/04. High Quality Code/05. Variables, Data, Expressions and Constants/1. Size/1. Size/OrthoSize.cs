@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Size
+﻿namespace Size
 {
+    using System;
+
     public class OrthoSize
     {
         private double width,
@@ -54,8 +54,8 @@ namespace Size
             double sinModule = Math.Abs(Math.Sin(rotationAngle));
             double cosModule = Math.Abs(Math.Cos(rotationAngle));
 
-            double newWidth = cosModule * this.Width + sinModule * this.Height;
-            double newHeight = sinModule * this.Width + cosModule * this.Height;
+            double newWidth = (cosModule * this.Width) + (sinModule * this.Height);
+            double newHeight = (sinModule * this.Width) + (cosModule * this.Height);
 
             return new OrthoSize(newWidth, newHeight);
         }

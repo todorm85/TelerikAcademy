@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Printers
+﻿namespace Printers
 {
-    class GenericPrinter
+    internal class GenericPrinter
     {
         public void PrintStatistics(double[] numbers, int numbersCount)
         {
@@ -19,7 +13,7 @@ namespace Printers
                 }
             }
 
-            PrintMax(maxNumber);
+            this.PrintMax(maxNumber);
 
             double minNumber = double.MaxValue;
             for (int i = 0; i < numbersCount; i++)
@@ -30,7 +24,7 @@ namespace Printers
                 }
             }
 
-            PrintMin(minNumber);
+            this.PrintMin(minNumber);
 
             double numbersSum = 0;
             for (int i = 0; i < numbersCount; i++)
@@ -39,22 +33,19 @@ namespace Printers
             }
 
             double linearAverageNumber = numbersSum / numbersCount;
-            PrintAvg(linearAverageNumber);
+            this.PrintAvg(linearAverageNumber);
         }
 
         public void PrintMax(double input)
         {
-
         }
 
         public void PrintMin(double input)
-        {
-
+        { 
         }
 
         public void PrintAvg(double input)
-        {
-
+        { 
         }
     }
 }
