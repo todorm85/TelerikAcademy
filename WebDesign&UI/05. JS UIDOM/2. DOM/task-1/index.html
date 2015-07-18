@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SelectDivs</title>
+</head>
+<body>
+    <div id="main-div">
+        <div>Div 1
+            <div>
+                div 1.1
+            </div>
+        </div>
+        <div>Div 2
+            <section>
+                <div>
+                    Div 2.2
+                </div>
+            </section>    
+        </div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <ul id="nav">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+            <li><a href="#">Item 5</a></li>
+        </ul>
+    </div>
+    <script>
+        function printHTMLCollectionItems (collection){
+            for (var i = 0; i < collection.length; i++) {
+                console.log(collection[i].innerHTML);
+                console.log('------------');
+            }        
+        }
+
+        var queryDivs = document.querySelectorAll('div > div');
+        printHTMLCollectionItems (queryDivs);
+
+        console.log(Array(201).join('='));
+
+        var mainDiv = document.getElementById('main-div')
+        var getDivs = mainDiv.getElementsByTagName('div');
+        printHTMLCollectionItems (getDivs);
+
+    </script>
+</body>
+</html>
