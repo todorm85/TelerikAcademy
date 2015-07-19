@@ -4,21 +4,48 @@ using System.Text;
 
 class ExceptionsHomework
 {
+    /// <summary>
+    /// Extracts a subsequence of a sequence by a provided count of elements to be extracted and starting index. 
+    /// Extracts from the starting index to the end of the sequence.
+    /// If the resulting sequence from the provided starting index is shorter than the provided count of elements to extract returns the whole sequence.
+    /// </summary>
+    /// <param name="arr">The sequence from which to extract.</param>
+    /// <param name="startIndex">The starting index of extraction.</param>
+    /// <param name="count">The number of elements to extract.</param>
+    /// <returns>Returns the extracted sequence.</returns>
     public static T[] Subsequence<T>(T[] arr, int startIndex, int count)
     {
+        if (startIndex < 0 || arr.Length <= startIndex)
+        {
+            throw new ArgumentOutOfRangeException("Start index must be in the index range of the provided array.");
+        }
+
+        if ((startIndex + count) >= arr.Length )
+        {
+            count = arr.Length - startIndex;
+        }
+
         List<T> result = new List<T>();
         for (int i = startIndex; i < startIndex + count; i++)
         {
             result.Add(arr[i]);
         }
+
         return result.ToArray();
     }
 
+    /// <summary>
+    /// Extracts a certian number of characters from a string, starting from the end. If the string is 
+    /// shorter than the provided count of characters to be extracted returns the whole string.
+    /// </summary>
+    /// <param name="str">The provided string.</param>
+    /// <param name="count">The number of chars to be extracted</param>
+    /// <returns>The extracted string.</returns>
     public static string ExtractEnding(string str, int count)
     {
         if (count > str.Length)
         {
-            return "Invalid count!";
+            count = str.Length;
         }
 
         StringBuilder result = new StringBuilder();
@@ -26,18 +53,26 @@ class ExceptionsHomework
         {
             result.Append(str[i]);
         }
+
         return result.ToString();
     }
 
-    public static void CheckPrime(int number)
+    public static bool CheckPrime(int number)
     {
+        if (number <= 2)
+        {
+            return false;
+        }
+
         for (int divisor = 2; divisor <= Math.Sqrt(number); divisor++)
         {
             if (number % divisor == 0)
             {
-                throw new Exception("The number is not prime!");
+                return false;
             }
         }
+
+        return true;
     }
 
     static void Main()
@@ -59,25 +94,26 @@ class ExceptionsHomework
         Console.WriteLine(ExtractEnding("beer", 4));
         Console.WriteLine(ExtractEnding("Hi", 100));
 
-        try
+        int numberTwentyTree = 23;
+        if (CheckPrime(numberTwentyTree))
         {
-            CheckPrime(23);
-            Console.WriteLine("23 is prime.");
+            Console.WriteLine("{0} is prime", numberTwentyTree);
         }
-        catch (Exception ex)
+        else
         {
-            Console.WriteLine("23 is not prime");
+            Console.WriteLine("{0} is not a prime", numberTwentyTree);
         }
 
-        try
+        int numberThirtyTree = 33;
+        if (CheckPrime(numberTwentyTree))
         {
-            CheckPrime(33);
-            Console.WriteLine("33 is prime.");
+            Console.WriteLine("{0} is prime", numberThirtyTree);
         }
-        catch (Exception ex)
+        else
         {
-            Console.WriteLine("33 is not prime");
+            Console.WriteLine("{0} is not a prime", numberThirtyTree);
         }
+
 
         List<Exam> peterExams = new List<Exam>()
         {
