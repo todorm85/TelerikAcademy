@@ -1,0 +1,2 @@
+Problem is in unnecessary calculations in OrbitsCalculator.EarthRotation().
+Fix is to skip the loop and simply enter the last calculated value.
