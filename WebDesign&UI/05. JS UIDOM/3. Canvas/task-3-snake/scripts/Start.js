@@ -1,32 +1,17 @@
 (function() {
-    var pause = true;
-    var renderer = Object.create(RenderEngine.CanvasRenderer).init(640, 480);
-    var inputProvider = Object.create(InputProvider.Keyboard);
-    document.onkeydown = function(e) {
-                
-                if (e.keyCode === 37) {
-                    pause = !pause;
-                    // dir = 'left';
-                } else if (e.keyCode === 38) {
-                    // dir = 'up';
-                } else if (e.keyCode === 39) {
-                    // dir = 'right';
-                } else if (e.keyCode === 40) {
-                    // dir = 'down';
-                } else {
-                }
-            };
-    // var engine = Object.create(GameEngine);
-    var ui = Object.create(UI);
+    var inputProvider = Object.create(InputProviders.Keyboard).init();
+    var physicsEngine = Object.create(PhysicsEngines.StandartPhysicsEngine).init(inputProvider);
+    var renderEngine = Object.create(RenderEngines.CanvasRenderer).init(640, 480);
+    var gameEngine = Object.create(GameEngines.StandartGameEngine).init(renderEngine, physicsEngine);
 
-    // engine.init(renderer, inputProvider);
-    ui.init(renderer, inputProvider);
-    var gameOver = false;
-    // do {
-    ui.start();
-    while (pause) {1+1;}
-    renderer.clearScreen(0, 0, 640, 480);
-    // engine.start();
-    // } while (!gameOver);
+    // gameEngine.start();  // not working like that for some reason. Probably request animation frame must be in global scope when called??
+
+    function gameLoop() {
+        gameEngine.physicsEngine.updateState(gameEngine.gameObjects);
+        gameEngine.renderEngine.renderState(gameEngine.gameObjects);
+        requestAnimationFrame(gameLoop);
+    }
+
+    gameLoop();
 
 }());
