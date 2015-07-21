@@ -10,22 +10,22 @@
             int testsCount = 10;
             int operationsPerTest = 10000000;
 
-            //Console.WriteLine("Testing System.Float32");
-            //TestArithmeticOperationPerformance(1f, testsCount, operationsPerTest);
+            Console.WriteLine("Testing System.Float32");
+            TestArithmeticOperationPerformance(1f, testsCount, operationsPerTest);
 
             Console.WriteLine("Testing System.Float64");
             TestArithmeticOperationPerformance(1d, testsCount, operationsPerTest);
 
-            //Console.WriteLine("Testing System.Decimal");
-            //TestArithmeticOperationPerformance(1m, testsCount, operationsPerTest);
+            Console.WriteLine("Testing System.Decimal");
+            TestArithmeticOperationPerformance(1m, testsCount, operationsPerTest);
         }
 
-        private static void TestArithmeticOperationPerformance<T>(T value1, int testsCount, int operationsPerTest)
-            where T : struct, IConvertible
+        private static void TestArithmeticOperationPerformance(dynamic value, int testsCount, int operationsPerTest)
+            //where T : struct, IConvertible
         {
-            T value2 = value1;
-            T res;
-
+            double res;
+            value = 1;
+            Console.WriteLine(value.GetType());
             long squareRootElapsedMiliseconds = 0;
             long logElapsedMiliseconds = 0;
             long sinusElapsedMiliseconds = 0;
@@ -37,7 +37,7 @@
                 Stopwatch sw = Stopwatch.StartNew();
                 for (int i = 0; i < operationsPerTest; i++)
                 {
-                    res = Math.Sqrt((dynamic)value2);
+                    res = Math.Sqrt((dynamic)value);
                 }
 
                 squareRootElapsedMiliseconds += sw.ElapsedMilliseconds;
@@ -46,7 +46,7 @@
                 sw.Restart();
                 for (int i = 0; i < operationsPerTest; i++)
                 {
-                    res = Math.Log((dynamic)value2);
+                    res = Math.Log((dynamic)value);
                 }
 
                 logElapsedMiliseconds += sw.ElapsedMilliseconds;
@@ -55,7 +55,7 @@
                 sw.Restart();
                 for (int i = 0; i < operationsPerTest; i++)
                 {
-                    res = value1 / Math.Sin((dynamic)value2);
+                    res = Math.Sin((dynamic)value);
                 }
 
                 sinusElapsedMiliseconds += sw.ElapsedMilliseconds;
