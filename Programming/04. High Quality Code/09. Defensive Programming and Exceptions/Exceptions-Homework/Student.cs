@@ -4,39 +4,71 @@ using System.Collections.Generic;
 
 public class Student
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public IList<Exam> Exams { get; set; }
+    private string firstName;
+    private string lastName;
+    private IList<Exam> exams;
 
     public Student(string firstName, string lastName, IList<Exam> exams = null)
     {
-        if (firstName == null)
-        {
-            Console.WriteLine("Invalid first name!");
-            Environment.Exit(0);
-        }
-
-        if (lastName == null)
-        {
-            Console.WriteLine("Invalid first name!");
-            Environment.Exit(0);
-        }
-
         this.FirstName = firstName;
         this.LastName = lastName;
         this.Exams = exams;
     }
 
+    public string FirstName
+    {
+        get
+        {
+            return this.firstName;
+        }
+        set
+        {
+            if (value == null)
+            {
+                throw new ArgumentException("Invalid first name!");
+            }
+
+            this.firstName = value;
+        }
+    }
+
+    public string LastName
+    {
+        get
+        {
+            return this.lastName;
+        }
+        set
+        {
+            if (value == null)
+            {
+                throw new ArgumentException("Invalid last name!");
+            }
+
+            this.lastName = value;
+        }
+    }
+
+    public IList<Exam> Exams
+    {
+        get
+        {
+            return new List<Exam>(this.exams);
+        }
+        set
+        {
+            this.exams = new List<Exam>(value);
+        }
+    }
+
+    /// <summary>
+    /// Checks the results of all exams taken by the student.
+    /// </summary>
+    /// <returns>Returns list of exam results or null if there are no exams taken.</returns>
     public IList<ExamResult> CheckExams()
     {
-        if (this.Exams == null)
+        if (this.Exams == null || this.Exams.Count == 0)
         {
-            throw new Exception("Wow! Error happened!!!");
-        }
-
-        if (this.Exams.Count == 0)
-        {
-            Console.WriteLine("The student has no exams!");
             return null;
         }
 
@@ -49,26 +81,22 @@ public class Student
         return results;
     }
 
+    /// <summary>
+    /// Calculates the average result in percent of all exams taken by the student and returns it or -1 if there are no exams taken.
+    /// </summary>
     public double CalcAverageExamResultInPercents()
     {
-        if (this.Exams == null)
+        if (this.Exams == null || this.Exams.Count == 0)
         {
-            // Cannot calculate average on missing exams
-            throw new Exception();
-        }
-
-        if (this.Exams.Count == 0)
-        {
-            // No exams --> return -1;
             return -1;
         }
 
         double[] examScore = new double[this.Exams.Count];
-        IList<ExamResult> examResults = CheckExams();
+        IList<ExamResult> examResults = this.CheckExams();
         for (int i = 0; i < examResults.Count; i++)
         {
-            examScore[i] = 
-                ((double)examResults[i].Grade - examResults[i].MinGrade) / 
+            examScore[i] =
+                ((double)examResults[i].Grade - examResults[i].MinGrade) /
                 (examResults[i].MaxGrade - examResults[i].MinGrade);
         }
 
