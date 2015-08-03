@@ -57,6 +57,6 @@ function solve() {
       $matchedElements.append($ul);
     }
   };
-};
+}
 
 module.exports = solve;
