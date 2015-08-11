@@ -37,6 +37,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="ConsoleInputProvider.cs" />
     <Compile Include="ConsoleOutputProvider.cs" />

@@ -39,9 +39,10 @@ namespace WalkMatrix.Tests
         {
             var expected = "Enter a positive number \r\n" +
                             "You haven't entered a correct positive number\r\n" +
-                            "You haven't entered a correct positive number\r\n";
+                            "You haven't entered a correct positive number\r\n" +
+                            "    1\r\n";
 
-            using (StringReader input = new StringReader("-3\n101\n0\n"))
+            using (StringReader input = new StringReader("-3\n101\n1\n"))
             {
                 Console.SetIn(input);
                 using (StringWriter output = new StringWriter())

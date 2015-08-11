@@ -4,9 +4,7 @@ namespace WalkMatrix
 {
     public class MatrixGenerator
     {
-        public static void GetNextDirection(ref int currentDirectionRow, ref int currentDirectionCol)
-        {
-            int[][] directions = {
+        private static int[][] directions = {
                                      new int[]{1,1},
                                      new int[]{1,0},
                                      new int[]{1,-1},
@@ -17,12 +15,14 @@ namespace WalkMatrix
                                      new int[]{0,1}
                                  };
 
+        internal static void GetNextDirection(ref int currentRowDirection, ref int currentColDirection)
+        {
             int currentDirectionIndex = 0;
             for (int i = 0; i < 8; i++)
             {
                 var rowDirection = directions[i][0];
                 var colDirection = directions[i][1];
-                if (rowDirection == currentDirectionRow && colDirection == currentDirectionCol)
+                if (rowDirection == currentRowDirection && colDirection == currentColDirection)
                 {
                     currentDirectionIndex = i;
                     break;
@@ -34,31 +34,28 @@ namespace WalkMatrix
                 currentDirectionIndex = -1;
             }
 
-            currentDirectionRow = directions[currentDirectionIndex + 1][0];
-            currentDirectionCol = directions[currentDirectionIndex + 1][1];
+            currentRowDirection = directions[currentDirectionIndex + 1][0];
+            currentColDirection = directions[currentDirectionIndex + 1][1];
         }
 
-        public static bool CheckIfFreeNeighbourCellExists(int[,] arr, int currentRow, int currentCol)
+        internal static bool CheckIfFreeNeighbourCellExists(int[,] arr, int currentRow, int currentCol)
         {
-            int[] rowDirections = { 1, 1, 1, 0, -1, -1, -1, 0 };
-            int[] colDirections = { 1, 0, -1, -1, -1, 0, 1, 1 };
-
             for (int i = 0; i < 8; i++)
             {
-                if (currentRow + rowDirections[i] >= arr.GetLength(0) || currentRow + rowDirections[i] < 0)
+                var rowDirection = directions[i][0];
+                var colDirection = directions[i][1];
+
+                if (currentRow + rowDirection >= arr.GetLength(0) || currentRow + rowDirection < 0)
                 {
-                    rowDirections[i] = 0;
+                    continue;
                 }
 
-                if (currentCol + colDirections[i] >= arr.GetLength(0) || currentCol + colDirections[i] < 0)
+                if (currentCol + colDirection >= arr.GetLength(1) || currentCol + colDirection < 0)
                 {
-                    colDirections[i] = 0;
+                    continue;
                 }
-            }
 
-            for (int i = 0; i < 8; i++)
-            {
-                if (arr[currentRow + rowDirections[i], currentCol + colDirections[i]] == 0)
+                if (arr[currentRow + rowDirection, currentCol + colDirection] == 0)
                 {
                     return true;
                 }
@@ -67,7 +64,7 @@ namespace WalkMatrix
             return false;
         }
 
-        public static bool FindFirstFreeCell(int[,] arr, ref int row, ref int col)
+        internal static void FindFirstFreeCell(int[,] arr, ref int row, ref int col)
         {
             for (int i = 0; i < arr.GetLength(0); i++)
             {
@@ -77,12 +74,13 @@ namespace WalkMatrix
                     {
                         row = i;
                         col = j;
-                        return true;
+                        return;
                     }
                 }
             }
 
-            return false;
+            row = -1;
+            col = -1;
         }
 
         public static int[,] Generate(int n)
@@ -94,7 +92,7 @@ namespace WalkMatrix
                 rowDirection = 1,
                 colDirection = 1;
 
-            while (FindFirstFreeCell(matrix, ref row, ref col))
+            while (row != -1 && col != -1)
             {
                 stepCount++;
                 rowDirection = 1;
@@ -116,6 +114,8 @@ namespace WalkMatrix
                     stepCount++;
                     matrix[row, col] = stepCount;
                 }
+
+                FindFirstFreeCell(matrix, ref row, ref col);
             }
 
             return matrix;

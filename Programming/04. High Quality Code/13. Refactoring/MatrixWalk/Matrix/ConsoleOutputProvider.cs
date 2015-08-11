@@ -5,9 +5,9 @@ using System.Text;
 
 namespace WalkMatrix
 {
-    class ConsoleOutputProvider
+    internal class ConsoleOutputProvider
     {
-        public static void PrintMatrix(int[,] matrix)
+        internal static void PrintMatrix(int[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
