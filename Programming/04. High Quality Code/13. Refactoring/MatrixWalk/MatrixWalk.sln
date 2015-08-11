@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{4D520899-7061-4EAA-B67E-D14EE8B30462}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkMatrix", "Matrix\WalkMatrix.csproj", "{4D520899-7061-4EAA-B67E-D14EE8B30462}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix.Tests", "Matrix.Tests\Matrix.Tests.csproj", "{A914B35A-67D6-468E-8310-04E4F53EBAB9}"
 EndProject

@@ -27,7 +27,7 @@ namespace Matrix.Tests
                 {
                     Console.SetOut(output);                    
                    //run Methods for testing.....
-                    MatrixWalk.Main();
+                    EntryPoint.Main();
 
                     Assert.AreEqual(expected, output.ToString());
                 }
@@ -48,7 +48,7 @@ namespace Matrix.Tests
                 {
                     Console.SetOut(output);                    
                    //run Methods for testing.....
-                    MatrixWalk.Main();
+                    EntryPoint.Main();
 
                     Assert.AreEqual(expected, output.ToString());
                 }
@@ -61,11 +61,11 @@ namespace Matrix.Tests
             int currentDirRow = 0;
             int currentDirCol = 1;
 
-            MatrixWalk.GetNextDirection(ref currentDirRow, ref currentDirCol);
+            MatrixGenerator.GetNextDirection(ref currentDirRow, ref currentDirCol);
             Assert.AreEqual(1, currentDirRow);
             Assert.AreEqual(1, currentDirCol);
 
-            MatrixWalk.GetNextDirection(ref currentDirRow, ref currentDirCol);
+            MatrixGenerator.GetNextDirection(ref currentDirRow, ref currentDirCol);
             Assert.AreEqual(1, currentDirRow);
             Assert.AreEqual(0, currentDirCol);
         }

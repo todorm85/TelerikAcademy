@@ -2,7 +2,7 @@
 
 namespace Matrix
 {
-    public class MatrixWalk
+    public class MatrixGenerator
     {
         public static void GetNextDirection(ref int currentDirectionRow, ref int currentDirectionCol)
         {
@@ -85,29 +85,7 @@ namespace Matrix
             return false;
         }
 
-        public static void Main()
-        {
-            int n = GetMatrixLength();
-
-            int[,] matrix = GenerateMatrix(n);
-
-            PrintMatrix(matrix);
-        }
-
-        private static int GetMatrixLength()
-        {
-            Console.WriteLine("Enter a positive number ");
-            string input = Console.ReadLine();
-            int n = 0;
-            while (!int.TryParse(input, out n) || n < 0 || n > 100)
-            {
-                Console.WriteLine("You haven't entered a correct positive number");
-                input = Console.ReadLine();
-            }
-            return n;
-        }
-
-        private static int[,] GenerateMatrix(int n)
+        public static int[,] Generate(int n)
         {
             int[,] matrix = new int[n, n];
             int stepCount = 0,
@@ -143,17 +121,6 @@ namespace Matrix
             return matrix;
         }
 
-        public static void PrintMatrix(int[,] matrix)
-        {
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    Console.Write(string.Format("{0,5}", matrix[i, j]));
-                }
-
-                Console.WriteLine();
-            }
-        }
+        
     }
 }
