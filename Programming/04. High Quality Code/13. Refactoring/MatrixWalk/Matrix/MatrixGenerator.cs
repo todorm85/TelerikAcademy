@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Matrix
+namespace WalkMatrix
 {
     public class MatrixGenerator
     {
@@ -119,8 +119,6 @@ namespace Matrix
             }
 
             return matrix;
-        }
-
-        
+        }        
     }
 }

@@ -1,15 +1,15 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
-using Matrix;
+using WalkMatrix;
 
-namespace Matrix.Tests
+namespace WalkMatrix.Tests
 {
     [TestClass]
-    public class TestMatrix
+    public class TestProgram
     {
         [TestMethod]
-        public void MatrixWalkShouldWorkWithValidInput()
+        public void ExpectProgramToWork()
         {
             var expected = "Enter a positive number \r\n" +
                                 "    1   19   20   21   22   23   24\r\n" +
@@ -35,7 +35,7 @@ namespace Matrix.Tests
         }
 
         [TestMethod]
-        public void MatrixWalkShouldNotAcceptInvalidInput()
+        public void ExpectProgramToNotAcceptInocrrectInput()
         {
             var expected = "Enter a positive number \r\n" +
                             "You haven't entered a correct positive number\r\n" +
@@ -55,19 +55,6 @@ namespace Matrix.Tests
             }
         }
 
-        [TestMethod]
-        public void GetNextDirectionShouldSwitchDirectionCorrectly()
-        {
-            int currentDirRow = 0;
-            int currentDirCol = 1;
-
-            MatrixGenerator.GetNextDirection(ref currentDirRow, ref currentDirCol);
-            Assert.AreEqual(1, currentDirRow);
-            Assert.AreEqual(1, currentDirCol);
-
-            MatrixGenerator.GetNextDirection(ref currentDirRow, ref currentDirCol);
-            Assert.AreEqual(1, currentDirRow);
-            Assert.AreEqual(0, currentDirCol);
-        }
+        
     }
 }
