@@ -4,46 +4,29 @@ namespace WalkMatrix
 {
     public class MatrixGenerator
     {
-        private static int[][] directions = {
-                                     new int[]{1,1},
-                                     new int[]{1,0},
-                                     new int[]{1,-1},
-                                     new int[]{0,-1},
-                                     new int[]{-1,-1},
-                                     new int[]{-1,0},
-                                     new int[]{-1,1},
-                                     new int[]{0,1}
-                                 };
+        private static int[] rowDirections = { 1, 1, 1, 0, -1, -1, -1, 0 };
+        private static int[] colDirections = { 1, 0, -1, -1, -1, 0, 1, 1 };
+
+        private static int currentDirectionIndex = 0;
 
         internal static void GetNextDirection(ref int currentRowDirection, ref int currentColDirection)
         {
-            int currentDirectionIndex = 0;
-            for (int i = 0; i < 8; i++)
+            currentDirectionIndex++;
+            if (currentDirectionIndex >= 8)
             {
-                var rowDirection = directions[i][0];
-                var colDirection = directions[i][1];
-                if (rowDirection == currentRowDirection && colDirection == currentColDirection)
-                {
-                    currentDirectionIndex = i;
-                    break;
-                }
+                currentDirectionIndex = 0;
             }
 
-            if (currentDirectionIndex == 7)
-            {
-                currentDirectionIndex = -1;
-            }
-
-            currentRowDirection = directions[currentDirectionIndex + 1][0];
-            currentColDirection = directions[currentDirectionIndex + 1][1];
+            currentRowDirection = rowDirections[currentDirectionIndex];
+            currentColDirection = colDirections[currentDirectionIndex];
         }
 
         internal static bool CheckIfFreeNeighbourCellExists(int[,] arr, int currentRow, int currentCol)
         {
             for (int i = 0; i < 8; i++)
             {
-                var rowDirection = directions[i][0];
-                var colDirection = directions[i][1];
+                var rowDirection = rowDirections[i];
+                var colDirection = colDirections[i];
 
                 if (currentRow + rowDirection >= arr.GetLength(0) || currentRow + rowDirection < 0)
                 {
@@ -89,14 +72,14 @@ namespace WalkMatrix
             int stepCount = 0,
                 row = 0,
                 col = 0,
-                rowDirection = 1,
-                colDirection = 1;
+                rowDirection,
+                colDirection;
 
             while (row != -1 && col != -1)
             {
                 stepCount++;
-                rowDirection = 1;
-                colDirection = 1;
+                rowDirection = rowDirections[currentDirectionIndex];
+                colDirection = colDirections[currentDirectionIndex];
                 matrix[row, col] = stepCount;
 
                 while (CheckIfFreeNeighbourCellExists(matrix, row, col))
@@ -119,6 +102,6 @@ namespace WalkMatrix
             }
 
             return matrix;
-        }        
+        }
     }
 }

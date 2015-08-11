@@ -11,18 +11,16 @@ namespace WalkMatrix.Tests
         [TestMethod]
         public void MatrixGeneratorGetNextDirectionShouldSwitchDirectionCorrectly()
         {
-            int currentDirRow = 0;
-            int currentDirCol = 1;
+            int currentDirRow = -1;
+            int currentDirCol = -1;
 
-            MatrixGenerator.GetNextDirection(ref currentDirRow, ref currentDirCol);
+            for (int i = 0; i < 8; i++)
+            {                
+                MatrixGenerator.GetNextDirection(ref currentDirRow, ref currentDirCol);
+            }
 
             Assert.AreEqual(1, currentDirRow);
             Assert.AreEqual(1, currentDirCol);
-
-            MatrixGenerator.GetNextDirection(ref currentDirRow, ref currentDirCol);
-
-            Assert.AreEqual(1, currentDirRow);
-            Assert.AreEqual(0, currentDirCol);
         }
 
         [TestMethod]
