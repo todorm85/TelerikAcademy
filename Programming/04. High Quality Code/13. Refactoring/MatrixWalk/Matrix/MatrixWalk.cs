@@ -4,15 +4,25 @@ namespace Matrix
 {
     public class MatrixWalk
     {
-        public static void ChangeDirectionClockwise(ref int currentDirectionRow, ref int currentDirectionCol)
+        public static void GetNextDirection(ref int currentDirectionRow, ref int currentDirectionCol)
         {
-            int[] rowDirections = { 1, 1, 1, 0, -1, -1, -1, 0 };
-            int[] colDirections = { 1, 0, -1, -1, -1, 0, 1, 1 };
+            int[][] directions = {
+                                     new int[]{1,1},
+                                     new int[]{1,0},
+                                     new int[]{1,-1},
+                                     new int[]{0,-1},
+                                     new int[]{-1,-1},
+                                     new int[]{-1,0},
+                                     new int[]{-1,1},
+                                     new int[]{0,1}
+                                 };
 
             int currentDirectionIndex = 0;
             for (int i = 0; i < 8; i++)
             {
-                if (rowDirections[i] == currentDirectionRow && colDirections[i] == currentDirectionCol)
+                var rowDirection = directions[i][0];
+                var colDirection = directions[i][1];
+                if (rowDirection == currentDirectionRow && colDirection == currentDirectionCol)
                 {
                     currentDirectionIndex = i;
                     break;
@@ -24,8 +34,8 @@ namespace Matrix
                 currentDirectionIndex = -1;
             }
 
-            currentDirectionRow = rowDirections[currentDirectionIndex + 1];
-            currentDirectionCol = colDirections[currentDirectionIndex + 1];
+            currentDirectionRow = directions[currentDirectionIndex + 1][0];
+            currentDirectionCol = directions[currentDirectionIndex + 1][1];
         }
 
         public static bool CheckIfFreeNeighbourCellExists(int[,] arr, int currentRow, int currentCol)
@@ -77,6 +87,15 @@ namespace Matrix
 
         public static void Main()
         {
+            int n = GetMatrixLength();
+
+            int[,] matrix = GenerateMatrix(n);
+
+            PrintMatrix(matrix);
+        }
+
+        private static int GetMatrixLength()
+        {
             Console.WriteLine("Enter a positive number ");
             string input = Console.ReadLine();
             int n = 0;
@@ -85,9 +104,11 @@ namespace Matrix
                 Console.WriteLine("You haven't entered a correct positive number");
                 input = Console.ReadLine();
             }
+            return n;
+        }
 
-            //int n = 7;
-
+        private static int[,] GenerateMatrix(int n)
+        {
             int[,] matrix = new int[n, n];
             int stepCount = 0,
                 row = 0,
@@ -108,7 +129,7 @@ namespace Matrix
                     {
                         while ((row + rowDirection >= n || row + rowDirection < 0 || col + colDirection >= n || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0))
                         {
-                            ChangeDirectionClockwise(ref rowDirection, ref colDirection);
+                            GetNextDirection(ref rowDirection, ref colDirection);
                         }
                     }
 
@@ -119,7 +140,7 @@ namespace Matrix
                 }
             }
 
-            PrintMatrix(matrix);
+            return matrix;
         }
 
         public static void PrintMatrix(int[,] matrix)

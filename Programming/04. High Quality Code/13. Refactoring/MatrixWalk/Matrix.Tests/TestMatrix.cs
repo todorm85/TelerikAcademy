@@ -56,16 +56,16 @@ namespace Matrix.Tests
         }
 
         [TestMethod]
-        public void ChangeDirectionClockwiseShouldSwitchDirectionCorrectly()
+        public void GetNextDirectionShouldSwitchDirectionCorrectly()
         {
             int currentDirRow = 0;
             int currentDirCol = 1;
 
-            MatrixWalk.ChangeDirectionClockwise(ref currentDirRow, ref currentDirCol);
+            MatrixWalk.GetNextDirection(ref currentDirRow, ref currentDirCol);
             Assert.AreEqual(1, currentDirRow);
             Assert.AreEqual(1, currentDirCol);
 
-            MatrixWalk.ChangeDirectionClockwise(ref currentDirRow, ref currentDirCol);
+            MatrixWalk.GetNextDirection(ref currentDirRow, ref currentDirCol);
             Assert.AreEqual(1, currentDirRow);
             Assert.AreEqual(0, currentDirCol);
         }
