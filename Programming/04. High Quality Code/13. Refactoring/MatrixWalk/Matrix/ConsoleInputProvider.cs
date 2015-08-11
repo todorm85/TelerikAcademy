@@ -17,6 +17,7 @@ namespace WalkMatrix
                 Console.WriteLine("You haven't entered a correct positive number");
                 input = Console.ReadLine();
             }
+
             return n;
         }
     }

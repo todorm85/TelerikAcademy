@@ -9,6 +9,44 @@ namespace WalkMatrix
 
         private static int currentDirectionIndex = 0;
 
+        public static int[,] Generate(int matrixSize)
+        {
+            int[,] matrix = new int[matrixSize, matrixSize];
+            int stepCount = 0,
+                row = 0,
+                col = 0,
+                rowDirection,
+                colDirection;
+
+            while (row != -1 && col != -1)
+            {
+                stepCount++;
+                rowDirection = rowDirections[currentDirectionIndex];
+                colDirection = colDirections[currentDirectionIndex];
+                matrix[row, col] = stepCount;
+
+                while (CheckIfFreeNeighbourCellExists(matrix, row, col))
+                {
+                    if (row + rowDirection >= matrixSize || row + rowDirection < 0 || col + colDirection >= matrixSize || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0)
+                    {
+                        while (row + rowDirection >= matrixSize || row + rowDirection < 0 || col + colDirection >= matrixSize || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0)
+                        {
+                            GetNextDirection(ref rowDirection, ref colDirection);
+                        }
+                    }
+
+                    row += rowDirection;
+                    col += colDirection;
+                    stepCount++;
+                    matrix[row, col] = stepCount;
+                }
+
+                FindFirstFreeCell(matrix, ref row, ref col);
+            }
+
+            return matrix;
+        }
+
         internal static void GetNextDirection(ref int currentRowDirection, ref int currentColDirection)
         {
             currentDirectionIndex++;
@@ -64,44 +102,6 @@ namespace WalkMatrix
 
             row = -1;
             col = -1;
-        }
-
-        public static int[,] Generate(int matrixSize)
-        {
-            int[,] matrix = new int[matrixSize, matrixSize];
-            int stepCount = 0,
-                row = 0,
-                col = 0,
-                rowDirection,
-                colDirection;
-
-            while (row != -1 && col != -1)
-            {
-                stepCount++;
-                rowDirection = rowDirections[currentDirectionIndex];
-                colDirection = colDirections[currentDirectionIndex];
-                matrix[row, col] = stepCount;
-
-                while (CheckIfFreeNeighbourCellExists(matrix, row, col))
-                {
-                    if (row + rowDirection >= matrixSize || row + rowDirection < 0 || col + colDirection >= matrixSize || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0)
-                    {
-                        while ((row + rowDirection >= matrixSize || row + rowDirection < 0 || col + colDirection >= matrixSize || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0))
-                        {
-                            GetNextDirection(ref rowDirection, ref colDirection);
-                        }
-                    }
-
-                    row += rowDirection;
-                    col += colDirection;
-                    stepCount++;
-                    matrix[row, col] = stepCount;
-                }
-
-                FindFirstFreeCell(matrix, ref row, ref col);
-            }
-
-            return matrix;
         }
     }
 }
