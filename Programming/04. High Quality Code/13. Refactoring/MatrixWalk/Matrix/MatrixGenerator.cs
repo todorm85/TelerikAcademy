@@ -66,9 +66,9 @@ namespace WalkMatrix
             col = -1;
         }
 
-        public static int[,] Generate(int n)
+        public static int[,] Generate(int matrixSize)
         {
-            int[,] matrix = new int[n, n];
+            int[,] matrix = new int[matrixSize, matrixSize];
             int stepCount = 0,
                 row = 0,
                 col = 0,
@@ -84,9 +84,9 @@ namespace WalkMatrix
 
                 while (CheckIfFreeNeighbourCellExists(matrix, row, col))
                 {
-                    if (row + rowDirection >= n || row + rowDirection < 0 || col + colDirection >= n || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0)
+                    if (row + rowDirection >= matrixSize || row + rowDirection < 0 || col + colDirection >= matrixSize || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0)
                     {
-                        while ((row + rowDirection >= n || row + rowDirection < 0 || col + colDirection >= n || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0))
+                        while ((row + rowDirection >= matrixSize || row + rowDirection < 0 || col + colDirection >= matrixSize || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0))
                         {
                             GetNextDirection(ref rowDirection, ref colDirection);
                         }
