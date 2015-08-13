@@ -12,7 +12,7 @@ namespace WalkMatrix
         public static void Main()
         {
             int matrixLength = ConsoleInputProvider.GetInput();
-            int[,] matrix = Generator.Generate(matrixLength);
+            Matrix matrix = Generator.Generate(matrixLength);
             ConsoleOutputProvider.PrintMatrix(matrix);
         }
     }

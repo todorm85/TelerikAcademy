@@ -4,7 +4,7 @@ using System.Collections;
 
 namespace WalkMatrix.MatrixGenerator
 {
-    public static class Generator
+    internal static class Generator
     {
         private static readonly Position defaultPosition = new Position(0, 0);
         private static readonly Direction defaultDirection = Direction.DownRight;
@@ -19,16 +19,16 @@ namespace WalkMatrix.MatrixGenerator
             Direction.Right
         };
 
-        public static int[,] Generate(int matrixSize)
+        internal static Matrix Generate(int matrixSize)
         {
-            int[,] matrix = new int[matrixSize, matrixSize];
+            var matrix = new Matrix(matrixSize, matrixSize);
             int stepCount = 0;
             Position position = defaultPosition;
 
             while (position != null)
             {
                 stepCount++;
-                matrix[position.Row, position.Col] = stepCount;
+                matrix[position] = stepCount;
                 var direction = defaultDirection;
 
                 while (CheckIfFreeNeighbourCellExists(matrix, position))
@@ -43,7 +43,7 @@ namespace WalkMatrix.MatrixGenerator
 
                     position = newPosition;
                     stepCount++;
-                    matrix[position.Row, position.Col] = stepCount;
+                    matrix[position] = stepCount;
                 }
 
                 position = FindFirstFreeCellPosition(matrix);
@@ -52,7 +52,7 @@ namespace WalkMatrix.MatrixGenerator
             return matrix;
         }
 
-        internal static bool IsPositionValid(int[,] matrix, Position position)
+        internal static bool IsPositionValid(Matrix matrix, Position position)
         {
             var posRow = position.Row;
             var posCol = position.Col;
@@ -69,7 +69,7 @@ namespace WalkMatrix.MatrixGenerator
                 return false;
             }
 
-            if (matrix[posRow, posCol] != 0)
+            if (matrix[position] != 0)
             {
                 return false;
             }
@@ -89,7 +89,7 @@ namespace WalkMatrix.MatrixGenerator
             return directionsOrderClockwise[directionIndex];
         }
 
-        internal static bool CheckIfFreeNeighbourCellExists(int[,] matrix, Position position)
+        internal static bool CheckIfFreeNeighbourCellExists(Matrix matrix, Position position)
         {
             for (int i = 0; i < directionsOrderClockwise.Count; i++)
             {
@@ -101,7 +101,7 @@ namespace WalkMatrix.MatrixGenerator
                     continue;
                 }
 
-                if (matrix[neighbourPosition.Row, neighbourPosition.Col] == 0)
+                if (matrix[neighbourPosition] == 0)
                 {
                     return true;
                 }
@@ -110,19 +110,16 @@ namespace WalkMatrix.MatrixGenerator
             return false;
         }
 
-        internal static Position FindFirstFreeCellPosition(int[,] matrix)
+        internal static Position FindFirstFreeCellPosition(Matrix matrix)
         {
-            int row;
-            int col;
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int row = 0; row < matrix.GetLength(0); row++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int col = 0; col < matrix.GetLength(1); col++)
                 {
-                    if (matrix[i, j] == 0)
+                    var currentPosition = new Position(row, col);
+                    if (matrix[currentPosition] == 0)
                     {
-                        row = i;
-                        col = j;
-                        return new Position(row, col);
+                        return currentPosition;
                     }
                 }
             }

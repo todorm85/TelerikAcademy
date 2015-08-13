@@ -24,11 +24,13 @@ namespace WalkMatrix.Tests
         [TestMethod]
         public void MatrixGeneratorCheckIfFreeNeighbourCellExistsShouldWorkIfFreeNeighbourCellExists()
         {
-            var matrix = new int[,] {
+            var arr = new int[,] {
                 {1,1,1,1,1},
                 {1,0,1,1,1},
                 {1,0,1,1,1}
                          };
+            var matrix = new Matrix(3, 5);
+            matrix.MatrixBody = arr;
             var position = new Position(0, 0);
 
             var cellExist = Generator.CheckIfFreeNeighbourCellExists(matrix, position);
@@ -39,11 +41,13 @@ namespace WalkMatrix.Tests
         [TestMethod]
         public void MatrixGeneratorCheckIfFreeNeighbourCellExistsShouldWorkIfFreeNeighbourCellExistsAndPositionIsAtTheBorderOfMatrix()
         {
-            var matrix = new int[,] {
+            var arr = new int[,] {
                 {1,1,1,1,1},
                 {1,0,1,1,1},
                 {1,0,1,1,1}
                          };
+            var matrix = new Matrix(3, 5);
+            matrix.MatrixBody = arr;
             var position = new Position(2, 1);
 
             var cellExist = Generator.CheckIfFreeNeighbourCellExists(matrix, position);
@@ -54,11 +58,13 @@ namespace WalkMatrix.Tests
         [TestMethod]
         public void MatrixGeneratorCheckIfFreeNeighbourCellExistsShouldWorkIfFreeNeighbourCellDeosNotExists()
         {
-            var matrix = new int[,] {
+            var arr = new int[,] {
                 {1,1,1,1,1},
                 {1,0,1,1,1},
                 {1,1,1,1,1}
                          };
+            var matrix = new Matrix(3, 5);
+            matrix.MatrixBody = arr;
             var position = new Position(2, 3);
 
             var cellExist = Generator.CheckIfFreeNeighbourCellExists(matrix, position);
@@ -69,11 +75,13 @@ namespace WalkMatrix.Tests
         [TestMethod]
         public void MatrixGeneratorCheckIfFreeNeighbourCellExistsShouldWorkIfFreeNeighbourCellDeosNotExistsAndPositionIsAtTheBorder()
         {
-            var matrix = new int[,] {
+            var arr = new int[,] {
                 {1,1,1,1,1},
                 {1,0,1,1,1},
                 {1,1,1,1,1}
                          };
+            var matrix = new Matrix(3, 5);
+            matrix.MatrixBody = arr;
             var position = new Position(0, 4);
 
             var cellExist = Generator.CheckIfFreeNeighbourCellExists(matrix, position);
@@ -84,12 +92,13 @@ namespace WalkMatrix.Tests
         [TestMethod]
         public void MatrixGeneratorFindFirstFreeCellShouldWorkWhenFreeCellExists()
         {
-            var matrix = new int[,] {
+            var arr = new int[,] {
                 {1,1,1,1,1},
                 {1,0,1,1,1},
                 {1,1,0,1,1}
                          };
-
+            var matrix = new Matrix(3, 5);
+            matrix.MatrixBody = arr;
             var position = Generator.FindFirstFreeCellPosition(matrix);
 
             Assert.AreEqual(1, position.Row);
@@ -99,12 +108,13 @@ namespace WalkMatrix.Tests
         [TestMethod]
         public void MatrixGeneratorFindFirstFreeCellShouldWorkWhenFreeCellDoesNotExist()
         {
-            var matrix = new int[,] {
+            var arr = new int[,] {
                 {1,1,1,1,1},
                 {1,1,1,1,1},
                 {1,1,1,1,1}
                          };
-
+            var matrix = new Matrix(3, 5);
+            matrix.MatrixBody = arr;
             var position = Generator.FindFirstFreeCellPosition(matrix);
 
             Assert.AreEqual(null, position);
@@ -113,12 +123,13 @@ namespace WalkMatrix.Tests
         [TestMethod]
         public void IsPositionValidShouldReturnTrueOnValidPosition()
         {
-            var matrix = new int[,] {
+            var arr = new int[,] {
                 {1,1,1,1,0},
                 {1,1,1,1,1},
                 {1,1,1,0,0}
                          };
-
+            var matrix = new Matrix(3, 5);
+            matrix.MatrixBody = arr;
             var position = new Position(0, 4);
             Assert.IsTrue(Generator.IsPositionValid(matrix, position), "0 4");
             position = new Position(2, 4);
@@ -130,12 +141,13 @@ namespace WalkMatrix.Tests
         [TestMethod]
         public void IsPositionValidShouldReturnFalseOnInvalidPosition()
         {
-            var matrix = new int[,] {
+            var arr = new int[,] {
                 {1,1,1,1,1},
                 {1,1,1,1,1},
                 {1,1,1,1,1}
                          };
-
+            var matrix = new Matrix(3, 5);
+            matrix.MatrixBody = arr;
             var position = new Position(2, 4);
             Assert.IsFalse(Generator.IsPositionValid(matrix, position));
             position = new Position(2, -5);

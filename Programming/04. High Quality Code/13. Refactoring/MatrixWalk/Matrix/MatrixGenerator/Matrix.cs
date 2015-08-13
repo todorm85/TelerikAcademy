@@ -7,23 +7,34 @@ namespace WalkMatrix.MatrixGenerator
 {
     internal class Matrix
     {
-        private int[,] matrix;
+        private int[,] matrixBody;
+
+        internal int[,] MatrixBody
+        {
+            get { return matrixBody; }
+            set { matrixBody = value; }
+        }
 
         internal Matrix(int rowsLen, int colsLen)
         {
-            this.matrix = new int[rowsLen, colsLen];
+            this.matrixBody = new int[rowsLen, colsLen];
         }
 
-        internal int this[int row, int col]
+        internal int this[Position position]
         {
             get 
             {
-                return this.matrix[row, col];
+                return this.matrixBody[position.Row, position.Col];
             }
             set
             {
-                this.matrix[row, col] = value;
+                this.matrixBody[position.Row, position.Col] = value;
             }
+        }
+
+        internal int GetLength(int dimension)
+        {
+            return this.matrixBody.GetLength(dimension);
         }
     }
 }
