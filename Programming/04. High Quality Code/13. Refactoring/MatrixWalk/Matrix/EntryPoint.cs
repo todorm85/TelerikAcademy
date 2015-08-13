@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using WalkMatrix.IOProviders;
+using WalkMatrix.MatrixGenerator;
 
 namespace WalkMatrix
 {
@@ -10,7 +12,7 @@ namespace WalkMatrix
         public static void Main()
         {
             int matrixLength = ConsoleInputProvider.GetInput();
-            int[,] matrix = MatrixGenerator.Generate(matrixLength);
+            int[,] matrix = Generator.Generate(matrixLength);
             ConsoleOutputProvider.PrintMatrix(matrix);
         }
     }

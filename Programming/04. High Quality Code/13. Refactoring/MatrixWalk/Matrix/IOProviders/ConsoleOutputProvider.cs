@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WalkMatrix
+namespace WalkMatrix.IOProviders
 {
     internal class ConsoleOutputProvider
     {

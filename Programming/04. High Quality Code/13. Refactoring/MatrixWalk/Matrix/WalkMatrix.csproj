@@ -39,9 +39,12 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="EntryPoint.cs" />
-    <Compile Include="ConsoleInputProvider.cs" />
-    <Compile Include="ConsoleOutputProvider.cs" />
-    <Compile Include="MatrixGenerator.cs" />
+    <Compile Include="IOProviders\ConsoleInputProvider.cs" />
+    <Compile Include="IOProviders\ConsoleOutputProvider.cs" />
+    <Compile Include="MatrixGenerator\Direction.cs" />
+    <Compile Include="MatrixGenerator\Generator.cs" />
+    <Compile Include="MatrixGenerator\Matrix.cs" />
+    <Compile Include="MatrixGenerator\Position.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
