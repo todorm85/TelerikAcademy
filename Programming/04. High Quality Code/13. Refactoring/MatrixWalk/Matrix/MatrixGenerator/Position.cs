@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using WalkMatrix.Contracts;
+using WalkMatrix.MatrixGenerator;
 
-namespace WalkMatrix.MatrixGenerator
+namespace WalkMatrix
 {
-    internal class Position
+    public class Position : IPosition
     {
         private int row;
         private int col;
 
-        internal int Col
+        public int Col
         {
             get
             {
@@ -23,8 +25,7 @@ namespace WalkMatrix.MatrixGenerator
             }
         }
 
-
-        internal int Row
+        public int Row
         {
             get
             {
@@ -37,15 +38,15 @@ namespace WalkMatrix.MatrixGenerator
             }
         }
 
-        internal Position(int row, int col)
+        public Position(int row, int col)
         {
             this.Row = row;
             this.Col = col;
         }
 
-        internal Position getNeighbourPosition(Direction dir)
+        public IPosition getNeighbourPosition(Direction dir)
         {
-            Position newPosition = new Position(this.Row, this.Col);
+            IPosition newPosition = new Position(this.Row, this.Col);
 
             switch (dir)
             {

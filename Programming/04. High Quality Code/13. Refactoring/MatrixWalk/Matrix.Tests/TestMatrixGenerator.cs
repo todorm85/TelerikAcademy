@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
+using WalkMatrix;
 using WalkMatrix.MatrixGenerator;
 
 namespace WalkMatrix.Tests
@@ -15,7 +16,7 @@ namespace WalkMatrix.Tests
 
             for (int i = 0; i < 7; i++)
             {                
-                dir = Generator.GetNextDirection(dir);
+                dir =  Generator.GetNextDirection(dir);
             }
 
             Assert.AreEqual(Direction.Right, dir);
@@ -30,10 +31,10 @@ namespace WalkMatrix.Tests
                 {1,0,1,1,1}
                          };
             var matrix = new Matrix(3, 5);
-            matrix.MatrixBody = arr;
+            matrix.MatrixArray = arr;
             var position = new Position(0, 0);
 
-            var cellExist = Generator.CheckIfFreeNeighbourCellExists(matrix, position);
+            var cellExist = matrix.CheckIfAnyNeighbourCellContainsValue(position, 0);
 
             Assert.IsTrue(cellExist);
         }
@@ -47,10 +48,10 @@ namespace WalkMatrix.Tests
                 {1,0,1,1,1}
                          };
             var matrix = new Matrix(3, 5);
-            matrix.MatrixBody = arr;
+            matrix.MatrixArray = arr;
             var position = new Position(2, 1);
 
-            var cellExist = Generator.CheckIfFreeNeighbourCellExists(matrix, position);
+            var cellExist = matrix.CheckIfAnyNeighbourCellContainsValue(position, 0);
 
             Assert.IsTrue(cellExist);
         }
@@ -64,10 +65,10 @@ namespace WalkMatrix.Tests
                 {1,1,1,1,1}
                          };
             var matrix = new Matrix(3, 5);
-            matrix.MatrixBody = arr;
+            matrix.MatrixArray = arr;
             var position = new Position(2, 3);
 
-            var cellExist = Generator.CheckIfFreeNeighbourCellExists(matrix, position);
+            var cellExist = matrix.CheckIfAnyNeighbourCellContainsValue(position, 0);
 
             Assert.IsFalse(cellExist);
         }
@@ -81,10 +82,10 @@ namespace WalkMatrix.Tests
                 {1,1,1,1,1}
                          };
             var matrix = new Matrix(3, 5);
-            matrix.MatrixBody = arr;
+            matrix.MatrixArray = arr;
             var position = new Position(0, 4);
 
-            var cellExist = Generator.CheckIfFreeNeighbourCellExists(matrix, position);
+            var cellExist = matrix.CheckIfAnyNeighbourCellContainsValue(position, 0);
 
             Assert.IsFalse(cellExist);
         }
@@ -98,8 +99,8 @@ namespace WalkMatrix.Tests
                 {1,1,0,1,1}
                          };
             var matrix = new Matrix(3, 5);
-            matrix.MatrixBody = arr;
-            var position = Generator.FindFirstFreeCellPosition(matrix);
+            matrix.MatrixArray = arr;
+            var position = matrix.FindFirstCellPositionWithValue(0);
 
             Assert.AreEqual(1, position.Row);
             Assert.AreEqual(1, position.Col);
@@ -114,8 +115,8 @@ namespace WalkMatrix.Tests
                 {1,1,1,1,1}
                          };
             var matrix = new Matrix(3, 5);
-            matrix.MatrixBody = arr;
-            var position = Generator.FindFirstFreeCellPosition(matrix);
+            matrix.MatrixArray = arr;
+            var position = matrix.FindFirstCellPositionWithValue(0);
 
             Assert.AreEqual(null, position);
         }
@@ -129,13 +130,13 @@ namespace WalkMatrix.Tests
                 {1,1,1,0,0}
                          };
             var matrix = new Matrix(3, 5);
-            matrix.MatrixBody = arr;
+            matrix.MatrixArray = arr;
             var position = new Position(0, 4);
-            Assert.IsTrue(Generator.IsPositionValid(matrix, position), "0 4");
+            Assert.IsTrue(matrix.IsPositionValid(position), "0 4");
             position = new Position(2, 4);
-            Assert.IsTrue(Generator.IsPositionValid(matrix, position), "2 4");
+            Assert.IsTrue(matrix.IsPositionValid(position), "2 4");
             position = new Position(2, 3);
-            Assert.IsTrue(Generator.IsPositionValid(matrix, position), "2 3");
+            Assert.IsTrue(matrix.IsPositionValid(position), "2 3");
         }
 
         [TestMethod]
@@ -147,13 +148,13 @@ namespace WalkMatrix.Tests
                 {1,1,1,1,1}
                          };
             var matrix = new Matrix(3, 5);
-            matrix.MatrixBody = arr;
-            var position = new Position(2, 4);
-            Assert.IsFalse(Generator.IsPositionValid(matrix, position));
+            matrix.MatrixArray = arr;
+            var position = new Position(-2, 4);
+            Assert.IsFalse(matrix.IsPositionValid(position));
             position = new Position(2, -5);
-            Assert.IsFalse(Generator.IsPositionValid(matrix, position));
+            Assert.IsFalse(matrix.IsPositionValid(position));
             position = new Position(-1, 3);
-            Assert.IsFalse(Generator.IsPositionValid(matrix, position));
+            Assert.IsFalse(matrix.IsPositionValid(position));
         }
     }
 }

@@ -6,7 +6,7 @@
     <ProjectGuid>{A914B35A-67D6-468E-8310-04E4F53EBAB9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WalkMatrix.Tests</RootNamespace>
+    <RootNamespace>Matrix.Tests</RootNamespace>
     <AssemblyName>WalkMatrix.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

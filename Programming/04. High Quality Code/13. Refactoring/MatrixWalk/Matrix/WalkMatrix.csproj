@@ -14,7 +14,7 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -38,12 +38,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Contracts\IPosition.cs" />
     <Compile Include="EntryPoint.cs" />
+    <Compile Include="MatrixGenerator\Globals.cs" />
     <Compile Include="IOProviders\ConsoleInputProvider.cs" />
     <Compile Include="IOProviders\ConsoleOutputProvider.cs" />
     <Compile Include="MatrixGenerator\Direction.cs" />
+    <Compile Include="Matrix.cs" />
     <Compile Include="MatrixGenerator\Generator.cs" />
-    <Compile Include="MatrixGenerator\Matrix.cs" />
+    <Compile Include="MatrixGenerator\MatrixExtensions.cs" />
     <Compile Include="MatrixGenerator\Position.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

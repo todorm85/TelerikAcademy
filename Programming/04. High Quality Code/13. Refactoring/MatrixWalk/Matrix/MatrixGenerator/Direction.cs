@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WalkMatrix.MatrixGenerator
 {
-    enum Direction
+    public enum Direction
     {
         DownRight,
         Down,
