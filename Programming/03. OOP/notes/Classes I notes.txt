@@ -1,0 +1,37 @@
+attributes - properties of real objects
+behaviour - what this class(object) can do (methods), they are templates that manipulate properties of objects
+instances of classes - the objects that are created using the class(temlate).
+fields(poleta) - these are variables that are used only inside the class, they cannot be manipulated outside of it
+contants - fields that give name to certain values, they are used to make the code more readable
+properties - they are visible outside of the class
+indexer - give abilty to use a[string, int or other] to gain access to arrays etc.
+predefine operators: +.-.* and so on, we can give new logic
+constructor: can create an instane of a class
+encapsulation - we need to show only what we need to show outside of the class
+public - can be seen utside the class
+private - can be seen only inside the class
+protected - cannot be used with inheritance
+internal - only in our assembly (exe, dll)
+static - can be called and it is global for the whole class ( Console.WriteLine) we don`t have to create instance of class to use it
+if static is not used we have instance - we need to use it on a class instance
+
+Construtor Chaining Example (How and Why):
+class Foo {
+    private int id;
+    private string name;
+    public Foo() : this(0, "") {
+    }
+    public Foo(int id, string name) {
+        this.id = id;
+        this.name = name;
+    }
+    public Foo(int id) : this(id, "") {
+    }
+    public Foo(string name) : this(0, name) {
+    }
+}
+
+Enumerations:
+These are named constants, if no value is specified it is assumed from 0 to ... max.IntValue, the underlying integral type can be int,uint, long and so on... but not double, decimal or float.
+
+

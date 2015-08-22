@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"testing.sublime-project"
+			],
+			"path": "."
+		},
+		{
+			"path": "C:\\Users\\todorm85\\Documents\\exam"
+		}
+	]
+}

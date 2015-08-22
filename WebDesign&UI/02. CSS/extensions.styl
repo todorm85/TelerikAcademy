@@ -1,0 +1,49 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;box-sizing border-box}
+	
+linearGradient(direction, stops)
+	str = 'linear-gradient('
+	str = str + direction
+	for stop in stops
+		str = str + ', ' + stop[0]
+		if stop[1]
+			str = str + ' ' + stop[1]
+	str = str + ')'
+	background unquote(str)
+	
+diagGradient(start-color, start-pos, end-color, end-pos)
+	background: start-color;
+	background: -moz-linear-gradient(-45deg,  start-color start-pos, end-color end-pos);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(start-pos,start-color), color-stop(end-pos,end-color));
+	background: -webkit-linear-gradient(-45deg,  start-color start-pos,end-color end-pos);
+	background: -o-linear-gradient(-45deg,  start-color start-pos,end-color end-pos);
+	background: -ms-linear-gradient(-45deg,  start-color start-pos,end-color end-pos);
+	background: linear-gradient(135deg,  start-color start-pos,end-color end-pos);
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='start-color', endColorstr='end-color',GradientType=1 );
+	
+vertGradient(start-color, start-pos, end-color, end-pos)
+	background: start-color;
+	background: -moz-linear-gradient(top,  start-color start-pos, end-color end-pos);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(start-pos,start-color), color-stop(end-pos,end-color));
+	background: -webkit-linear-gradient(top,  start-color start-pos,end-color end-pos);
+	background: -o-linear-gradient(top,  start-color start-pos,end-color end-pos);
+	background: -ms-linear-gradient(top,  start-color start-pos,end-color end-pos);
+	background: linear-gradient(to bottom,  start-color start-pos,end-color end-pos);
+
+horGradient(start-color, start-pos, end-color, end-pos)
+	background: start-color;
+	background: -moz-linear-gradient(left,  start-color start-pos, end-color end-pos);
+	background: -webkit-gradient(linear, left top, right top, color-stop(start-pos,start-color), color-stop(end-pos,end-color));
+	background: -webkit-linear-gradient(left,  start-color start-pos,end-color end-pos);
+	background: -o-linear-gradient(left,  start-color start-pos,end-color end-pos);
+	background: -ms-linear-gradient(left,  start-color start-pos,end-color end-pos);
+	background: linear-gradient(to right,  start-color start-pos,end-color end-pos);
+
+.clearfix
+	zoom 1
+	&:after
+		display block
+		content " "
+		clear both
+		height 0
+		
+		

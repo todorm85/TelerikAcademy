@@ -1,0 +1,15 @@
+Static Classes
+Static classes cannot have instances - like the Console class in .net
+static constructors are called only once - the first time when a member from this class is called, then
+when a second time a member from the class is called, static constructors are skipped!
+Static classes and members are useful when they are needed as a global functionality in alomost all situations (like Math.Pow ect.)
+
+Structures
+Structures are used when we need to store a bunch of values (points in space, rectangle coordinates, circle parameters).
+Structures are generally used when our class does not need to have methods, when we don`t have behaviour. They are stored in
+static (heap) memory unlike classes. Structures always have empty constructors, whether we have defined or not non-empty constructor.
+Unlike classes where when we define non-empty constructor, our implicit empty constructor is removed. Of course, we can define
+it explicitly then with certain values that we chain to the non-empty constructor. Structures always have implicit empty constructor that
+initializes the values. Structures do not work well with properties in them, if we want to initialize non empty constructor assigning
+values to properties, we have to chain it to the default empty constructor otherwise it will not compile!
+

@@ -1,0 +1,15 @@
+ady osmani
+books = design patterns
+projects = yeoman
+
+TJ Holowaychuk
+naming and structuring to be productive
+
+Mariyan?
+projects: CodeMirror
+
+Brendan Eyke?
+
+Duglas Crockford
+books = JS the good parts
+lectures, yahoo? in youtube - must watch for programmers- 7,8parts 40 min

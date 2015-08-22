@@ -1,0 +1,32 @@
+Console.Write("Enter number (0 to 255): ");
+byte num = byte.Parse(Console.ReadLine());
+
+Console.Write("Enter number (-32768 to 32767): ");
+short num = short.Parse(Console.ReadLine());
+
+Console.Write("Enter number: ");
+long num = long.Parse(Console.ReadLine());
+
+Integer (-2,147,483,648 to 2,147,483,647)
+Console.Write("Enter number: ");
+int num = int.Parse(Console.ReadLine());
+
+Console.Write("Enter integer (0 to 4,294,967,295): ");
+uint num = uint.Parse(Console.ReadLine());
+
+Console.Write("Enter number ( -3.4 x 10e38 to + 3.4 x 10e38 ): ");
+float num = float.Parse(Console.ReadLine());
+
+Console.Write("Enter number ( (+/-)5.0 x 10e-324 to (+/-)1.7 x 10e+308 ): ");
+double num = double.Parse(Console.ReadLine());
+
+Console.Write("");
+string input = Console.ReadLine();
+
+----------------------------------------------------------------------------------
+ARRAYs
+----------------------------------------------------------------------------------
+
+// requires System.Linq. This is slower than using for cycles
+int[] nums = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+

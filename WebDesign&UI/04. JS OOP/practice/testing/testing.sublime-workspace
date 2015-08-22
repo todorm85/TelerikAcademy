@@ -1,0 +1,789 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"getSor",
+				"getSortedByDuration"
+			],
+			[
+				"medi",
+				"mediaCatalog"
+			],
+			[
+				"media",
+				"media2"
+			],
+			[
+				"getMe",
+				"getMedia"
+			],
+			[
+				"getMed",
+				"getMediaCatalog"
+			],
+			[
+				"ar",
+				"array"
+			],
+			[
+				"prop",
+				"propValue"
+			],
+			[
+				"fou",
+				"foundIndex"
+			],
+			[
+				"bo",
+				"book1"
+			],
+			[
+				"resu",
+				"results"
+			],
+			[
+				"argu",
+				"argument"
+			],
+			[
+				"get",
+				"getSortingFunction"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"is",
+				"isDuplicate"
+			],
+			[
+				"ge",
+				"genre"
+			],
+			[
+				"Med",
+				"Media"
+			],
+			[
+				"Bo",
+				"Book"
+			],
+			[
+				"item",
+				"itemDescription"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"valida",
+				"validateNonEmptyString"
+			],
+			[
+				"sear",
+				"searchName"
+			],
+			[
+				"foun",
+				"foundItems"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"valid",
+				"validateIfNumber"
+			],
+			[
+				"vali",
+				"validator"
+			],
+			[
+				"_",
+				"_items"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"Boo",
+				"BookCatalog"
+			],
+			[
+				"Medi",
+				"MediaCatalog"
+			],
+			[
+				"_las",
+				"_lastCatalogId"
+			],
+			[
+				"r",
+				"rating"
+			],
+			[
+				"home",
+				"homeworkID"
+			],
+			[
+				"Stu",
+				"StudentID"
+			],
+			[
+				"St",
+				"StudentID"
+			],
+			[
+				"pres",
+				"presentations"
+			],
+			[
+				"prese",
+				"_presentations"
+			],
+			[
+				"_play",
+				"_playables"
+			],
+			[
+				"found",
+				"foundPlayable"
+			],
+			[
+				"sea",
+				"searchPattern"
+			],
+			[
+				"song",
+				"songTitle"
+			],
+			[
+				"play",
+				"playlist"
+			],
+			[
+				"search",
+				"searchResult"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"tod",
+				"todPlayer"
+			],
+			[
+				"gener",
+				"generatePlayerPlaylists"
+			],
+			[
+				"ad",
+				"addPlaylist"
+			],
+			[
+				"getPl",
+				"getPlayer"
+			],
+			[
+				"video",
+				"videoRating"
+			],
+			[
+				"lis",
+				"listPlayables"
+			],
+			[
+				"aud",
+				"audio"
+			],
+			[
+				"audi",
+				"audioPlaylist"
+			],
+			[
+				"c",
+				"console.	console.log()"
+			],
+			[
+				"Play",
+				"Playable"
+			],
+			[
+				"Pla",
+				"Player"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"remove",
+				"removePlayable"
+			],
+			[
+				"pla",
+				"playlist"
+			],
+			[
+				"playlist",
+				"playlistToAdd"
+			],
+			[
+				"se",
+				"searchId"
+			],
+			[
+				"remo",
+				"removePlaylist"
+			],
+			[
+				"pro",
+				"prop	prop"
+			],
+			[
+				"addP",
+				"addPlaylist"
+			],
+			[
+				"module",
+				"module	module"
+			],
+			[
+				"au",
+				"author"
+			],
+			[
+				"modu",
+				"module	module"
+			],
+			[
+				"fu",
+				"foundPlayable"
+			],
+			[
+				"arr",
+				"arr2〔variable〕"
+			],
+			[
+				"cons",
+				"console.	console.log()"
+			],
+			[
+				"er",
+				"errMsg"
+			],
+			[
+				"ca",
+				"callerID"
+			],
+			[
+				"inde",
+				"indexOfElementByPropertyValue"
+			],
+			[
+				"ind",
+				"index〔variable〕"
+			],
+			[
+				"index",
+				"indexOfElementByPropertyName"
+			],
+			[
+				"fun",
+				"function	(task-1.js)"
+			],
+			[
+				"co",
+				"console.	console.log()"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"getPlay",
+				"getPlaylist"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/todorm85/GitHub/Homeworks/Programming/04. High Quality Code/05. Variables, Data, Expressions and Constants/README.md",
+			"settings":
+			{
+				"buffer_size": 1777,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ope",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"Snippet: prop",
+				"Snippet: prop"
+			],
+			[
+				"resource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"syntja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"synja",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: console.table(data[, columns])"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 411.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)  "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/testing",
+		"/C/Users/todorm85/Documents/exam"
+	],
+	"file_history":
+	[
+		"/C/Users/todorm85/GitHub/Homeworks/Programming/04. High Quality Code/06. Control Flow, Conditional Statements and Loops/README.md",
+		"/C/Users/todorm85/GitHub/Homeworks/Programming/04. High Quality Code/07. High-quality Methods/README.md",
+		"/C/Users/todorm85/GitHub/Homeworks/Programming/04. High Quality Code/08. High-quality Classes/README.md",
+		"/C/Users/todorm85/Documents/exam/solution-01.js",
+		"/C/Users/todorm85/Documents/exam/README.md",
+		"/C/Users/todorm85/GitHub/JSOOP Source/Sample exam/tasks/solution-tod-02.js",
+		"/C/Users/todorm85/Documents/exam/sample-usage.js",
+		"/C/Users/todorm85/GitHub/JSOOP Source/Sample exam/tasks/solution-ivaylo.js",
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/testing/test.js",
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/testing/useful_functions_codes.js",
+		"/C/Users/todorm85/GitHub/Homeworks/WebDesign&UI/04. JS OOP/03. Scopes and Closures/tasks/task-1.js",
+		"/C/Users/todorm85/GitHub/Homeworks/WebDesign&UI/04. JS OOP/03. Scopes and Closures/README.md",
+		"/C/Users/todorm85/GitHub/Homeworks/WebDesign&UI/04. JS OOP/04. Classical Inheritance/tasks/task-1.js",
+		"/C/Users/todorm85/GitHub/Homeworks/WebDesign&UI/04. JS OOP/05. Prototypal Inheritance/README.md",
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/06. Modules and Patterns/homework/tasks/task-1.js",
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/06. Modules and Patterns/homework/README.md",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/User/snippets/JS/prop.sublime-snippet",
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/testing/class-scheme",
+		"/C/Users/todorm85/GitHub/JSOOP Source/Sample exam/tasks/README.md",
+		"/C/Users/todorm85/GitHub/JSOOP Source/Sample exam/tasks/task-1.js",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/Better JavaScript/for-()-{}.sublime-snippet",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/Better JavaScript/for-()-{}-(faster).sublime-snippet",
+		"/C/Users/todorm85/GitHub/JSOOP Source/Sample exam/tasks/solution-tod-01.js",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/Better JavaScript/if.sublime-snippet",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/Better JavaScript/if-___-else.sublime-snippet",
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/testing/plain test",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/testing/testing.sublime-project",
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/useful_functions_codes.js",
+		"/C/Users/todorm85/GitHub/JSOOP Source/Sample exam/README.md",
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/test.js",
+		"/C/Users/todorm85/GitHub/JSOOP Source/Sample exam/tests/task-1-tests-playlist.js",
+		"/C/Users/todorm85/Google Drive/Telerik/Web Design and UI/04. JS OOP/practice/05. Prototypal Inheritance/tasks/task-1.js",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/User/snippets/JS/attrib.sublime-snippet",
+		"/C/Users/todorm85/GitHub/JSOOP Source/Sample exam/task-1.js",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/User/snippets/JS/module.sublime-snippet",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/User/snippets/JS/switch-case.sublime-snippet",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/User/snippets/JS/case.sublime-snippet",
+		"/C/Users/todorm85/GitHub/Homeworks/WebDesign&UI/04. JS OOP/05. Prototypal Inheritance/tasks/task-1.js",
+		"/C/Users/todorm85/AppData/Roaming/Sublime Text 3/Packages/User/nodejs.sublime-build",
+		"/C/Users/todorm85/Dropbox/Telerik/Web Design and UI/04. JS OOP/practice/06. Modules and Patterns/tasks/task-1.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"id",
+			"genre",
+			"javascript",
+			"catalog",
+			"sec",
+			"35",
+			"first",
+			"result",
+			"options",
+			"getSortingFunction",
+			"result",
+			"arguments",
+			"itemName",
+			"forEach",
+			"searchName",
+			"id",
+			"Item",
+			"item",
+			"MediaCatalog",
+			"name",
+			"arg",
+			"_item",
+			"item",
+			"_name",
+			"name",
+			"value",
+			"name",
+			"_genre",
+			"_isbn",
+			"Argument",
+			"g",
+			"maxLength",
+			"minLength",
+			"length",
+			"arg",
+			"genre",
+			"isbn",
+			"book",
+			"Book",
+			"name",
+			"Error",
+			"_isbn",
+			"value",
+			"isbn",
+			"                    ...",
+			"this",
+			"_id",
+			"value",
+			"arg",
+			"pattern",
+			"...",
+			"value",
+			"ModuleName",
+			"title",
+			"_students",
+			"title",
+			"courseTitle",
+			"audioTitle1",
+			"id",
+			"foundPlaylist",
+			"playable",
+			"forEach",
+			"playlist",
+			"15",
+			"audioLength",
+			"audioAuthor",
+			"audioTitle",
+			"_playabless",
+			"title",
+			"name",
+			"Playlist",
+			"name",
+			"Audio",
+			"name",
+			"Player",
+			"length",
+			"                    //",
+			"id",
+			"...\n",
+			"arg",
+			"...\n",
+			"_playlists",
+			"rem",
+			"_playlist",
+			"...\n",
+			"playlist",
+			"Playlist",
+			"PlayList",
+			"var",
+			"page",
+			"implement",
+			"searchKey",
+			"                    ...",
+			"id",
+			"length",
+			"Audio",
+			"id",
+			"autocomplete",
+			"undefined",
+			"5",
+			" &&",
+			"undefined",
+			"ab",
+			"5",
+			"num",
+			"fourth",
+			"arr",
+			"function",
+			"str",
+			"callerID",
+			"not",
+			"throw",
+			"callerID",
+			"return",
+			"index",
+			"first",
+			"second",
+			"lname",
+			"index",
+			"propertyName",
+			"id",
+			"i",
+			"id",
+			"collection",
+			"array",
+			"isValidString",
+			"string",
+			"isPatternMatch"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/todorm85/GitHub/Homeworks/Programming/04. High Quality Code/05. Variables, Data, Expressions and Constants/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								344,
+								344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 345.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "testing.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"use",
+				"testing\\useful_functions_codes.js"
+			],
+			[
+				"test",
+				"testing\\test.js"
+			],
+			[
+				"rea",
+				"exam\\README.md"
+			],
+			[
+				"read",
+				"06. Modules and Patterns\\homework\\README.md"
+			],
+			[
+				"task",
+				"06. Modules and Patterns\\homework\\tasks\\task-1.js"
+			],
+			[
+				"red",
+				"tasks\\README.md"
+			],
+			[
+				"ta",
+				"tasks\\task-1.js"
+			],
+			[
+				"re",
+				"tasks\\README.md"
+			],
+			[
+				"",
+				"testing\\test.js"
+			],
+			[
+				"sol",
+				"tasks\\solution-tod-01.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 198.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

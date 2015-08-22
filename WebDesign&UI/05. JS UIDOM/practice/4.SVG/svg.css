@@ -1,0 +1,8 @@
+svg #the-rect {
+    fill: #aaaaaa;
+    stroke: #ffffff;
+    stroke-width: 3;
+}
+body {
+    background-color: lightgray;
+}

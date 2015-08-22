@@ -1,0 +1,5 @@
+These are actually standard static methods in standart static classes that can be called on
+instances of already predefined classes (types).
+s.ExtensionMethod1(); 
+is the same as
+Extensions.ExtensionMethod1(s);
