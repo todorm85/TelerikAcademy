@@ -187,3 +187,10 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+
+
+## Custom ignore
+**/*.mp4
+**/node_modules/
+**/bower_components/
+**/course_videos/

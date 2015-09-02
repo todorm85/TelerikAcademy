@@ -1,0 +1,1188 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"new",
+				"newTile"
+			],
+			[
+				"crea",
+				"createDOMPlayerDashboard"
+			],
+			[
+				"q",
+				"q	JQUERY"
+			],
+			[
+				"click",
+				"clickedSquare"
+			],
+			[
+				"clicked",
+				"clickedTile"
+			],
+			[
+				"pare",
+				"qparent()	JQUERY"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"game",
+				"gameControl"
+			],
+			[
+				"clone",
+				"clone"
+			],
+			[
+				"rem",
+				"qremove()	JQUERY"
+			],
+			[
+				"sele",
+				"selectedDashTile"
+			],
+			[
+				"start",
+				"startMenu"
+			],
+			[
+				"play",
+				"playScreen"
+			],
+			[
+				"append",
+				"qappend	JQUERY"
+			],
+			[
+				"player",
+				"playerTiles"
+			],
+			[
+				"submit",
+				"submitButton"
+			],
+			[
+				"submi",
+				"submitButton"
+			],
+			[
+				"draw",
+				"drawPlayerState"
+			],
+			[
+				"att",
+				"qattr()	JQUERY"
+			],
+			[
+				"tile",
+				"tileSquare"
+			],
+			[
+				"css",
+				"qcss	JQUERY"
+			],
+			[
+				"add",
+				"qaddClass	JQUERY"
+			],
+			[
+				"cur",
+				"currentPlayer"
+			],
+			[
+				"qa",
+				"qajax	JQUERY AJAX"
+			],
+			[
+				"html",
+				"qhtml	JQUERY"
+			],
+			[
+				"ap",
+				"qappend	JQUERY"
+			],
+			[
+				"dat",
+				"dataObj"
+			],
+			[
+				"get",
+				"getJSON"
+			],
+			[
+				"promis",
+				"promise"
+			],
+			[
+				"resu",
+				"result1"
+			],
+			[
+				"promi",
+				"promiseCount"
+			],
+			[
+				"promise",
+				"promiseCount"
+			],
+			[
+				"for",
+				"for	for loop"
+			],
+			[
+				"id",
+				"idGen1"
+			],
+			[
+				"async",
+				"asyncPromised"
+			],
+			[
+				"console",
+				"consoleWriter"
+			],
+			[
+				"cons",
+				"consoleWriter"
+			],
+			[
+				"sor",
+				"usortBy	_, Collections"
+			],
+			[
+				"auth",
+				"author"
+			],
+			[
+				"lar",
+				"largestGroupCount"
+			],
+			[
+				"books",
+				"bookGroups"
+			],
+			[
+				"book",
+				"bookGroup"
+			],
+			[
+				"author",
+				"authorGroup"
+			],
+			[
+				"sort",
+				"usortBy	_, Collections"
+			],
+			[
+				"ma",
+				"umax	_, Collections"
+			],
+			[
+				"find",
+				"ufind	_, Collections"
+			],
+			[
+				"group",
+				"ugroupByShort	_, Collections"
+			],
+			[
+				"tot",
+				"totalLegs"
+			],
+			[
+				"anim",
+				"animal"
+			],
+			[
+				"grou",
+				"groupName"
+			],
+			[
+				"anima",
+				"animalGroupKeysDescending"
+			],
+			[
+				"animal",
+				"animalGroupKeysDescending"
+			],
+			[
+				"val",
+				"uvalue	_, Chaining"
+			],
+			[
+				"legs",
+				"legsCount"
+			],
+			[
+				"leg",
+				"legsCount"
+			],
+			[
+				"each",
+				"ueach	_, Collections"
+			],
+			[
+				"uv",
+				"uvalue	_, Chaining"
+			],
+			[
+				"aver",
+				"averageMark"
+			],
+			[
+				"av",
+				"averageMark"
+			],
+			[
+				"stu",
+				"student"
+			],
+			[
+				"studen",
+				"student"
+			],
+			[
+				"marks",
+				"marksSum"
+			],
+			[
+				"mark",
+				"marks"
+			],
+			[
+				"fir",
+				"firstName"
+			],
+			[
+				"ea",
+				"ueach	_, Collections"
+			],
+			[
+				"last",
+				"lastName"
+			],
+			[
+				"las",
+				"lastName"
+			],
+			[
+				"stud",
+				"student"
+			],
+			[
+				"filter",
+				"ufilter	_, Collections"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"fu",
+				"fullname"
+			],
+			[
+				"uso",
+				"usortByShort	_, Collections"
+			],
+			[
+				"ure",
+				"ureverse	_, Collections"
+			],
+			[
+				"is",
+				"isEven"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"u",
+				"ul	JQUERY"
+			],
+			[
+				"open",
+				"opened"
+			],
+			[
+				"docu",
+				"document	DOM"
+			],
+			[
+				"cre",
+				"createElement	DOM"
+			],
+			[
+				"sea",
+				"searchId"
+			],
+			[
+				"sear",
+				"searchId"
+			],
+			[
+				"tex",
+				"textId"
+			],
+			[
+				"remove",
+				"removeClass	JQUERY"
+			],
+			[
+				"prev",
+				"prevBtn"
+			],
+			[
+				"a",
+				"a	JQUERY"
+			],
+			[
+				"htm",
+				"html	JQUERY"
+			],
+			[
+				"ht",
+				"html	JQUERY"
+			],
+			[
+				"nex",
+				"nextButton"
+			],
+			[
+				"par",
+				"parent()	JQUERY"
+			],
+			[
+				"date",
+				"datepicker"
+			],
+			[
+				"item",
+				"itemToAdd"
+			],
+			[
+				"list",
+				"listItemText"
+			],
+			[
+				"items",
+				"itemsList"
+			],
+			[
+				"result",
+				"resultControls"
+			],
+			[
+				"clas",
+				"className	DOM"
+			],
+			[
+				"comm",
+				"comment"
+			],
+			[
+				"nextImg",
+				"nextImgIndex"
+			],
+			[
+				"next",
+				"nextImgIndex"
+			],
+			[
+				"clicke",
+				"clickedImageSrc"
+			],
+			[
+				"remo",
+				"removeClass	JQUERY"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"ad",
+				"addClass	JQUERY"
+			],
+			[
+				"e",
+				"each()	JQUERY"
+			],
+			[
+				"gall",
+				"galleryList"
+			],
+			[
+				"cont",
+				"contentElement"
+			],
+			[
+				"im",
+				"imageContainers"
+			],
+			[
+				"img",
+				"imgContainer"
+			],
+			[
+				"filt",
+				"filterKey"
+			],
+			[
+				"image",
+				"imageContainers"
+			],
+			[
+				"parent",
+				"parentNode	DOM"
+			],
+			[
+				"no",
+				"nodeName	DOM"
+			],
+			[
+				"input",
+				"inputBox"
+			],
+			[
+				"left",
+				"leftPane"
+			],
+			[
+				"text",
+				"textNode"
+			],
+			[
+				"inn",
+				"innerHTML	DOM"
+			],
+			[
+				"firs",
+				"firstContent"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"conte",
+				"content"
+			],
+			[
+				"on",
+				"onButtonClick"
+			],
+			[
+				"i",
+				"innerHTML"
+			],
+			[
+				"dom",
+				"domEl"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"doc",
+				"docFrag"
+			],
+			[
+				"se",
+				"second"
+			],
+			[
+				"style",
+				"style	Attr"
+			],
+			[
+				"sec",
+				"secondText"
+			],
+			[
+				"nod",
+				"nodeClass"
+			],
+			[
+				"c",
+				"c	console.log"
+			]
+		]
+	},
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/JSHint/JSHint.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Node.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/Node.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ren",
+		"selected_items":
+		[
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"de",
+				"File: Delete"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"open in",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"synja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ope ",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"ope",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"resou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"synt js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"re",
+				"File: Rename"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"canvas",
+				"Snippet: Canvas Tag"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: prop",
+				"Snippet: prop"
+			],
+			[
+				"resource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"syntja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: console.table(data[, columns])"
+			]
+		],
+		"width": 450.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)  "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/app/UI/playScreen.js",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/app/gameObjects/tile.js",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/app/gameObjects/player.js",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/app/UI/domFactory.js",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/index.html",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/app/entryPoint.js",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/styles/style.css",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/03. AMD/systemjs/app/db.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/03. AMD/systemjs/config.js",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/03. AMD/nodejs/AMD-loadModule.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/03. AMD/nodejs/AMD-exportModule.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/03. AMD/nodejs/AMD-fileOperations.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/08. Consuming Web Services/demos/js/http-request.js",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/app/uiProvider/webUiProvider.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/05. Web Storages/homework/tests/task-1-tests.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/08.RemoteData/08.js",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/08.RemoteData/07.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/08.RemoteData/06.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/08.RemoteData/05.js",
+		"/D/user/Telerik/06. JS APPS/notes/08.RemoteData/remote.html",
+		"/D/user/Telerik/06. JS APPS/notes/08.RemoteData/00.js",
+		"/D/user/Telerik/06. JS APPS/notes/08.RemoteData/05.js",
+		"/D/user/Telerik/06. JS APPS/notes/08.RemoteData/03.js",
+		"/D/user/Telerik/06. JS APPS/notes/08.RemoteData/04.js",
+		"/D/user/Telerik/06. JS APPS/notes/08.RemoteData/partial/part1.html",
+		"/D/user/Telerik/06. JS APPS/notes/08.RemoteData/01.js",
+		"/D/user/Telerik/06. JS APPS/notes/08.RemoteData/data.json",
+		"/D/user/Telerik/06. JS APPS/notes/06.Promises/07.js",
+		"/D/user/Telerik/06. JS APPS/notes/06.Promises/08.js",
+		"/D/user/Telerik/06. JS APPS/notes/test/test.html",
+		"/D/user/Telerik/06. JS APPS/notes/test/test.js",
+		"/D/user/Telerik/06. JS APPS/notes/06.Promises/index.html",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/06. Promises and asynchronous programming/demos/4. async operations/4.1. async-operations.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/06. Promises and asynchronous programming/demos/4. async operations/4.2. async-operations.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/06. Promises and asynchronous programming/demos/3. function-generators/3.2. advanced-function-generators.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/06. Promises and asynchronous programming/demos/3. function-generators/3.1. function-generators.js",
+		"/D/user/Telerik/06. JS APPS/notes/06.Promises/06.js",
+		"/D/user/Telerik/06. JS APPS/notes/06.Promises/07 PromisesDemo.js",
+		"/C/Users/todor/06.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/06.Promises/04.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/06.Promises/03.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/06.Promises/02.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/06.Promises/05.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/06.Promises/01.js",
+		"/C/Users/user/OneDrive/win 10 fixes/hotkeys.ahk",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/user/OneDrive/win 10 fixes/justNav.ahk",
+		"/C/Users/user/OneDrive/win 10 fixes/virtualDesktops.ahk",
+		"/D/user/Desktop/main.ahk",
+		"/D/user/Telerik/GitHub/BlackRussian/app/dbDefaultExport.js",
+		"/D/user/Telerik/GitHub/BlackRussian/config.js",
+		"/D/user/Telerik/06. JS APPS/notes/03. AMD/systemjs/config.js",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/config.js",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/app/dbDefaultExport.js",
+		"/C/Users/todor/Telerik/GitHub/BlackRussian/app/db.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/03. AMD/systemjs/app/consoleWriter.js",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/03. AMD/systemjs/app/app.js",
+		"/C/Users/todor/Telerik/06. JS APPS/JS-UI-DOM-Teamwork---Bramle/GUI.js",
+		"/C/Users/todor/Telerik/06. JS APPS/JS-UI-DOM-Teamwork---Bramle/catanEngine.js",
+		"/C/Users/todor/Telerik/06. JS APPS/JS-UI-DOM-Teamwork---Bramle/endGame.js",
+		"/C/Users/todor/Telerik/06. JS APPS/JS-UI-DOM-Teamwork---Bramle/catanFactory.js",
+		"/C/Users/todor/Telerik/06. JS APPS/JS-UI-DOM-Teamwork---Bramle/index.html",
+		"/C/Users/todor/Telerik/06. JS APPS/JS-UI-DOM-Teamwork---Bramle/nikascript.js",
+		"/C/Users/todor/Telerik/06. JS APPS/JS-UI-DOM-Teamwork---Bramle/startGame.js",
+		"/C/Users/todor/Telerik/06. JS APPS/JS-UI-DOM-Teamwork---Bramle/d6.js",
+		"/C/Users/todor/Telerik/06. JS APPS/JS-UI-DOM-Teamwork---Bramle/catanCSS.css",
+		"/C/Users/todor/Telerik/06. JS APPS/notes/03. AMD/systemjs/app/dbDefaultExport.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/03. AMD and SystemJS/demos/2. loopgifs-demo/index.html",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/03. AMD and SystemJS/demos/3. live-demo/index.html",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/03. AMD and SystemJS/demos/3. live-demo/config.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/03. AMD and SystemJS/demos/3. live-demo/bower.json",
+		"/C/Users/todor/Telerik/06. JS APPS/practice/AMD-exportModule.js",
+		"/C/Users/todor/Telerik/06. JS APPS/practice/AMD-loadModule.js",
+		"/C/Users/todor/Telerik/06. JS APPS/practice/archive/practice_underscore.js",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/sbc-api-my-JSUnderscore.sublime-settings",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tests/task-6-tests.js",
+		"/D/user/Telerik/06. JS APPS/practice/script.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-6.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-4.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-5.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tests/task-4-tests.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-3.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tests/task-3-tests.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-2.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-1.js",
+		"/D/user/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/README.md",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/User/sbc-api-my-JSUnderscore.sublime-settings",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-1.js",
+		"/C/Users/todor/Telerik/06. JS APPS/practice/script.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-2.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tests/task-1-tests.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-4.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-5.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-6.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/tasks/task-3.js",
+		"/C/Users/todor/Telerik/06. JS APPS/practice/practice_underscore.js",
+		"/C/Users/todor/Telerik/GitHub/JavaScript-Applications/04. Underscore.js overview/homework/README.md",
+		"/C/Users/todor/Telerik/06. JS APPS/practice/script_underscore.js",
+		"/C/Users/todor/Telerik/06. JS APPS/practice/index.html",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/User/sbc-setting.sublime-settings",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/User/sbc-api-my-JQUERY.sublime-settings",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/User/sbc-api-my-JS.sublime-settings",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/User/sbc-api-my-JSDOM.sublime-settings",
+		"/C/Users/todor/Telerik/GitHub/homeworks/WebDesign&UI/06. JS APPS/script.js",
+		"/C/Users/todor/Telerik/JavaScript-Applications/04. Underscore.js overview/slides/index.html",
+		"/C/Users/todor/Telerik/JS APPS 2015/JavaScript-Applications/02. best practices for writing javascript/demos/5. strict-mode/strict-mode-silent-errors.html",
+		"/C/Users/todor/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/todor/Desktop/code.js",
+		"/C/Users/todor/Telerik/homeworks/Programming/04. High Quality Code/04. Code Documentation and Comments/README.md",
+		"/C/Users/todor/Desktop/1/tasks/index.html",
+		"/C/Users/todor/Desktop/2/Task-2.html",
+		"/C/Users/todor/Desktop/2/Task-2.md",
+		"/C/Users/todor/Desktop/3/tests/task-3-tests.js",
+		"/C/Users/todor/Telerik/homeworks/WebDesign&UI/05. JS UIDOM/11. HTML Templates/tasks/task-1.js",
+		"/C/Users/todor/Desktop/3/tasks/styles.css",
+		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/first try/17-June-2014/task-2/task-resources/scripts.js",
+		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/second try/17-June-2014/task-2/README.md",
+		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/second try/17-June-2014/task-2/task-resources/styles.css",
+		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/second try/17-June-2014/task-3/task-files/styles.css",
+		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/second try/17-June-2014/task-3/README.md",
+		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/second try/17-June-2014/task-3/task-files/scripts.js",
+		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/second try/17-June-2014/task-3/task-files/result.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"content",
+			"tab",
+			"tab size",
+			"console",
+			"points",
+			"player",
+			"Player",
+			"player",
+			":",
+			"getTilesPool",
+			"tile",
+			"generateATiles",
+			"getAllTiles",
+			"Tile",
+			"tile",
+			"player",
+			"rom",
+			"$ ",
+			"domFactory",
+			"webUiProvider",
+			"writer",
+			"write",
+			"consoleWriter",
+			"var",
+			"get",
+			"add",
+			"checkFreeBoardPosition",
+			"isVerticalWord",
+			"validTilesPlacement",
+			"DOMFactory",
+			"createDOMBoard",
+			"selectedTile",
+			"else",
+			"clickedSquare",
+			"selectedTile",
+			"selectedDashTile",
+			"val",
+			"background",
+			"val",
+			"draw",
+			"board",
+			"addClass",
+			"dash",
+			"onDashTileClick",
+			"innerHTML",
+			"selectedLetter",
+			"document",
+			"\"#",
+			"webUiProvider",
+			"uiProvider",
+			"play",
+			"gameManager",
+			"gameEngine",
+			"плаъ",
+			"manager",
+			"play",
+			"manager",
+			"uiEngine",
+			"manager",
+			"}());\n",
+			"webUiProvider",
+			"game",
+			"gameMenu",
+			"Menu",
+			"game",
+			"getGameTiles",
+			"onBoardSquareClick",
+			"newTileSquare",
+			"fieldSquare",
+			"Playfield",
+			"dash-tile",
+			"letter",
+			"onDashLetterClick",
+			"logicProvider",
+			"gameManager",
+			"selector",
+			"tiles",
+			"drawPlayerState",
+			"div",
+			"createPlayfield",
+			"createPlayerDashboard",
+			"getCurrentPlayer",
+			"makeMove",
+			"response",
+			"tileSquare",
+			"board",
+			"createBoard",
+			"drawPlayer",
+			"drawBoard",
+			"id",
+			"15px",
+			"tile",
+			"board",
+			"loginbutton",
+			"старт",
+			"onLoginClick",
+			"button",
+			"onLoginClick",
+			"handleLoginResult",
+			"logForm",
+			"buttons",
+			"logform",
+			"gameMenu",
+			"container",
+			"loadLoginForm",
+			"loginClick",
+			"init",
+			"validateBoard",
+			"isBoardValid",
+			"validateBoard",
+			"player",
+			"startGame",
+			"players",
+			"stringfy",
+			"callback",
+			"sort",
+			"Array",
+			"sort",
+			"response",
+			"success",
+			"loaded",
+			"type",
+			"url",
+			"options",
+			"ajax",
+			"url",
+			"successl",
+			"url"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 612.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Node.sublime-build",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"play",
+				"app\\UI\\playScreen.js"
+			],
+			[
+				"tile",
+				"app\\gameObjects\\tile.js"
+			],
+			[
+				"db.js",
+				"systemjs\\app\\db.js"
+			],
+			[
+				"entry",
+				"app\\entryPoint.js"
+			],
+			[
+				"",
+				"app\\UI\\startMenu.js"
+			],
+			[
+				"mana",
+				"app\\gameEngine\\gameManager.js"
+			],
+			[
+				"start",
+				"app\\UI\\startMenu.js"
+			],
+			[
+				"pla",
+				"app\\UI\\playScreen.js"
+			],
+			[
+				".css",
+				"styles\\style.css"
+			],
+			[
+				"entr",
+				"app\\entryPoint.js"
+			],
+			[
+				"gamelogi",
+				"app\\gameEngine\\gameLogic.js"
+			],
+			[
+				"ui",
+				"uiProvider\\webUiProvider.js"
+			],
+			[
+				"00",
+				"00.js"
+			],
+			[
+				"0",
+				"05.js"
+			],
+			[
+				"part",
+				"08.RemoteData\\partial\\part1.html"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"2",
+				"02.js"
+			],
+			[
+				"02",
+				"02.js"
+			],
+			[
+				"game",
+				"app\\engine\\gameLogic.js"
+			],
+			[
+				"css",
+				"kinetic.css"
+			],
+			[
+				"js",
+				"kinetic.js"
+			],
+			[
+				"input",
+				"scripts\\InputProvider.js"
+			],
+			[
+				"ht",
+				"test.html"
+			],
+			[
+				"htm",
+				"test.html"
+			],
+			[
+				"use",
+				"testing\\useful_functions_codes.js"
+			],
+			[
+				"read",
+				"06. Modules and Patterns\\homework\\README.md"
+			],
+			[
+				"task",
+				"06. Modules and Patterns\\homework\\tasks\\task-1.js"
+			],
+			[
+				"red",
+				"tasks\\README.md"
+			],
+			[
+				"ta",
+				"tasks\\task-1.js"
+			],
+			[
+				"re",
+				"tasks\\README.md"
+			],
+			[
+				"test",
+				"testing\\test.js"
+			],
+			[
+				"sol",
+				"tasks\\solution-tod-01.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"d:\\user\\Documents\\BlackRussian.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"BundledCodeUnit"
+			]
+		],
+		"width": 529.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 194.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
