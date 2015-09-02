@@ -188,7 +188,6 @@ GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 
-
 ## Custom ignore
 **/*.mp4
 **/node_modules/
@@ -196,3 +195,5 @@ ModelManifest.xml
 **/course_videos/
 **/course_repo/
 **/teamwork/
+# this ignores every directory starting with '_'
+**/_*/
