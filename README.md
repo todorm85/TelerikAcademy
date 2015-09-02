@@ -4,14 +4,14 @@
     <img src="http://academy.telerik.com/images/default-album/telerik-academy-banner.jpg?sfvrsn=2" alt="Академия на Телерик" />
 </a>
 
-|     | ************************************* Programming 2015 ************************************* |
+|     | \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  Programming 2015 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  |
 | --- | ------------------------------------------------------------------------------------------- |
 | 1.  | [C# - Part I](#c---part-i)                                                                  |
 | 2.  | [C# - Part II](#c---part-ii)                                                                |
 | 3.  | [Object-Oriented Programming](#object-oriented-programming)                                 |
 | 4.  | [High-Quality Code](#high-quality-code)                                                     |
 
-|     | ************************************* Web Design 2015 ************************************* |
+|     | \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  Web Design 2015 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  |
 | --- | ------------------------------------------------------------------------------------------- |
 | 1.  | [HTML Basics](#html-basics)                                                                 |
 | 2.  | [CSS Styling](#css-styling)                                                                 |
