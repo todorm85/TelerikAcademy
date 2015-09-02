@@ -196,4 +196,4 @@ ModelManifest.xml
 **/course_repo/
 **/teamwork/
 # this ignores every directory starting with '_'
-**/_*/
+**/*_/
