@@ -4,20 +4,20 @@
     <img src="http://academy.telerik.com/images/default-album/telerik-academy-banner.jpg?sfvrsn=2" alt="Академия на Телерик" />
 </a>
 
-|     | ------------------------------------ Programming 2015 ------------------------------------ |
-| --- | ------------------------------------------------------------------------------------------- |
-| 1.  | [C# - Part I](#c---part-i)                                                                  |
-| 2.  | [C# - Part II](#c---part-ii)                                                                |
-| 3.  | [Object-Oriented Programming](#object-oriented-programming)                                 |
-| 4.  | [High-Quality Code](#high-quality-code)                                                     |
+| | Programming 2015 |
+| --- | --- |
+| 1. | [C# - Part I](#c---part-i) |
+| 2. | [C# - Part II](#c---part-ii) |
+| 3. | [Object-Oriented Programming](#object-oriented-programming) |
+| 4. | [High-Quality Code](#high-quality-code) |
 
-|     | ------------------------------------ Web Design 2015 ------------------------------------ |
-| --- | ------------------------------------------------------------------------------------------- |
-| 1.  | [HTML Basics](#html-basics)                                                                 |
-| 2.  | [CSS Styling](#css-styling)                                                                 |
-| 3.  | [JavaScript - Essentials](#javascript---essentials)                                         |
-| 4.  | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming)       |
-| 5.  | [JavaScript - UI and DOM](#JavaScript---UI-and-DOM)                                         |
+| | Web Design 2015 |
+| --- | --- |
+| 1. | [HTML Basics](#html-basics) |
+| 2. | [CSS Styling](#css-styling) |
+| 3. | [JavaScript - Essentials](#javascript---essentials) |
+| 4. | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming) |
+| 5. | [JavaScript - UI and DOM](#javascript---ui-and-dom) |
 
 ## C# - Part I
 
@@ -48,6 +48,22 @@
 5. [Fundamental Principles - Part II](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/05.%20OOP%20Principles%20II) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/05.%20OOP%20Principles%20II/README.md))
 6. [Common Type System](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS/README.md))
 7. [Teamwork](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/07.%20Teamwork) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/03.%20OOP/07.%20Teamwork/OOP-Teamwork-Assignment-March-2015.pdf))
+
+## Object-Oriented Programming
+
+1. [Code Formatting](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/02.%20Code%20Formatting) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/02.%20Code%20Formatting/README.md))
+2. [Naming Identifiers](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/03.%20Naming%20Identifiers) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/03.%20Naming%20Identifiers/README.md))
+3. [Code Documentation](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/04.%20Code%20Documentation%20and%20Comments) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/04.%20Code%20Documentation%20and%20Comments/README.md))
+4. [Variables and Expressions](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/05.%20Variables%2C%20Data%2C%20Expressions%20and%20Constants) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/05.%20Variables%2C%20Data%2C%20Expressions%20and%20Constants/README.md))
+5. [Control Flow](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/06.%20Control%20Flow%2C%20Conditional%20Statements%20and%20Loops) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/06.%20Control%20Flow%2C%20Conditional%20Statements%20and%20Loops/README.md))
+6. [High-quality Methods](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/07.%20High-quality%20Methods) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/07.%20High-quality%20Methods/README.md))
+7. [High-quality classes](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/08.%20High-quality%20Classes) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/08.%20High-quality%20Classes/README.md))
+8. [Defensive Programming and Exceptions](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/09.%20Defensive%20Programming%20and%20Exceptions) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/09.%20Defensive%20Programming%20and%20Exceptions/README.md))
+9. [Code Tuning and Optimization](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/10.%20Code%20Tuning%20and%20Optimization) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/10.%20Code%20Tuning%20and%20Optimization/README.md))
+10. [Unit Testing](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/11.%20Unit%20Testing) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/11.%20Unit%20Testing/README.md))
+11. [Test-Driven Development](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/12.%20Test-Driven%20Development) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/12.%20Test-Driven%20Development/README.md))
+12. [Refactoring](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/13.%20Refactoring) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/13.%20Refactoring/README.md))
+13. [Development Tools](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/15.%20Development%20Tools) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/15.%20Development%20Tools/README.md))
 
 ## HTML Basics
 
@@ -86,4 +102,10 @@
 
 ##  JavaScript - UI and DOM
 
-1. [Functions and Function Expressions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Web%20Design%20and%20UI/04.%20JS%20OOP/01.%20Functions%20and%20Function%20Expressions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Web%20Design%20and%20UI/04.%20JS%20OOP/01.%20Functions%20and%20Function%20Expressions/README.md))
+1. [DOM](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/2.%20DOM) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/2.%20DOM/README.md))
+2. [Canvas](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/3.%20Canvas) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/3.%20Canvas/README.md))
+3. [DOM Operations](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/07.%20DOM%20Operations) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/07.%20DOM%20Operations/README.md))
+4. [Event Model](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/08.%20Event%20Model) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/08.%20Event%20Model/README.md))
+7. [jQuery Plugins](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/09.%20jQuery%20Overview) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/09.%20jQuery%20Overview/README.md))
+5. [jQuery Plugins](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/10.%20jQuery%20Plugins) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/10.%20jQuery%20Plugins/README.md))
+6. [HTML Templates](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/11.%20HTML%20Templates) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/11.%20HTML%20Templates/README.md))
