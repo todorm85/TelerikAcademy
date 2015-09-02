@@ -4,12 +4,12 @@
     <img src="http://academy.telerik.com/images/default-album/telerik-academy-banner.jpg?sfvrsn=2" alt="Академия на Телерик" />
 </a>
 
-|     | Programming 2015                                                    |
-| --- | ------------------------------------------------------------------- |
-| 1.  | [C# - Part I](#c---part-i)                                          |
-| 2.  | [C# - Part II](#c---part-ii)                                        |
-| 3.  | [Object-Oriented Programming](#object-oriented-programming)         |
-| 4.  | [High-Quality Code](#high-quality-code)                             |
+|     | Programming 2015                                                                            |
+| --- | ------------------------------------------------------------------------------------------- |
+| 1.  | [C# - Part I](#c---part-i)                                                                  |
+| 2.  | [C# - Part II](#c---part-ii)                                                                |
+| 3.  | [Object-Oriented Programming](#object-oriented-programming)                                 |
+| 4.  | [High-Quality Code](#high-quality-code)                                                     |
 
 |     | Web Design 2015                                                                             |
 | --- | ------------------------------------------------------------------------------------------- |
@@ -18,12 +18,6 @@
 | 3.  | [JavaScript - Essentials](#javascript---essentials)                                         |
 | 4.  | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming)       |
 | 5.  | [JavaScript - UI and DOM](#JavaScript---UI-and-DOM)                                         |
-
-
-
-
-
-
 
 ## C# - Part I
 
