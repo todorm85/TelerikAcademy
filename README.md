@@ -49,7 +49,7 @@
 6. [Common Type System](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS/README.md))
 7. [Teamwork](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/07.%20Teamwork) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/03.%20OOP/07.%20Teamwork/OOP-Teamwork-Assignment-March-2015.pdf))
 
-## Object-Oriented Programming
+## High-quality Code
 
 1. [Code Formatting](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/02.%20Code%20Formatting) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/02.%20Code%20Formatting/README.md))
 2. [Naming Identifiers](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/03.%20Naming%20Identifiers) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/03.%20Naming%20Identifiers/README.md))
