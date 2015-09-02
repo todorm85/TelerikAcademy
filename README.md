@@ -10,6 +10,7 @@
 | 2.  | [C# - Part II](#c---part-ii)                                        | [CSS Styling](#css-styling)                                                                 |
 | 3.  | [Object-Oriented Programming](#object-oriented-programming)         | [JavaScript - Essentials](#javascript---essentials)                                         |
 | 4.  | [High-Quality Code](#high-quality-code)                             | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming)       |
+| 4.  |                              | [JavaScript - UI and DOM](#JavaScript - UI and DOM)       |
 
 ## C# - Part I
 
@@ -76,6 +77,6 @@
 4. [Prototypal Inheritance](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/04.%20JS%20OOP/05.%20Prototypal%20Inheritance) - ([assignment](https://github.com/todorm85/TelerikAcademy/blob/master/Web%20Design%20and%20UI/04.%20JS%20OOP/05.%20Prototypal%20Inheritance/README.md))
 5. [Modules and Patterns](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/04.%20JS%20OOP/06.%20Modules%20and%20Patterns) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/04.%20JS%20OOP/06.%20Modules%20and%20Patterns/README.md))
 
-## High-Quality Code
+##  JavaScript - UI and DOM
 
-SOON
+1. [Functions and Function Expressions](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Web%20Design%20and%20UI/04.%20JS%20OOP/01.%20Functions%20and%20Function%20Expressions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Web%20Design%20and%20UI/04.%20JS%20OOP/01.%20Functions%20and%20Function%20Expressions/README.md))
