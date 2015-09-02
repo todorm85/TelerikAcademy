@@ -49,7 +49,7 @@
 6. [Common Type System](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/06.CTS/README.md))
 7. [Teamwork](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/03.%20OOP/07.%20Teamwork) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/03.%20OOP/07.%20Teamwork/OOP-Teamwork-Assignment-March-2015.pdf))
 
-## Object-Oriented Programming
+## High-quality Code
 
 1. [Code Formatting](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/02.%20Code%20Formatting) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/02.%20Code%20Formatting/README.md))
 2. [Naming Identifiers](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/03.%20Naming%20Identifiers) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Programming/04.%20High%20Quality%20Code/Homework/03.%20Naming%20Identifiers/README.md))
@@ -106,6 +106,6 @@
 2. [Canvas](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/3.%20Canvas) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/3.%20Canvas/README.md))
 3. [DOM Operations](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/07.%20DOM%20Operations) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/07.%20DOM%20Operations/README.md))
 4. [Event Model](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/08.%20Event%20Model) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/08.%20Event%20Model/README.md))
-7. [jQuery Plugins](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/09.%20jQuery%20Overview) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/09.%20jQuery%20Overview/README.md))
+7. [jQuery Overview](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/09.%20jQuery%20Overview) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/09.%20jQuery%20Overview/README.md))
 5. [jQuery Plugins](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/10.%20jQuery%20Plugins) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/10.%20jQuery%20Plugins/README.md))
 6. [HTML Templates](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/11.%20HTML%20Templates) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/11.%20HTML%20Templates/README.md))
