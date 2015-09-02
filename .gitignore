@@ -197,4 +197,5 @@ ModelManifest.xml
 **/teamwork/
 # this ignores every directory starting with '_'
 **/*.ffs_db
+**/desktop.ini
 **/*_/
