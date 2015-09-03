@@ -1,0 +1,21 @@
+{
+  "name": "02. with templates",
+  "version": "0.0.0",
+  "homepage": "https://github.com/todorm85/TelerikAcademy",
+  "authors": [
+    "Todor Mitskovski <todorbm85@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.4.1",
+    "sammy": "~0.7.6",
+    "system.js": "~0.18.17"
+  }
+}

@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"item",
+				"item"
+			],
+			[
+				"c",
+				"c	console.log"
+			],
+			[
+				"samm",
+				"sammyObj"
+			],
+			[
+				"getI",
+				"getItemById"
+			],
+			[
+				"input",
+				"inputForm"
+			],
+			[
+				"add",
+				"addItem"
+			],
+			[
+				"app",
+				"qappend	JQUERY"
+			],
+			[
+				"on",
+				"qon	JQUERY"
+			],
+			[
+				"inp",
+				"inputForm"
+			],
+			[
 				"new",
 				"newTile"
 			],
@@ -26,10 +62,6 @@
 			[
 				"pare",
 				"qparent()	JQUERY"
-			],
-			[
-				"app",
-				"append"
 			],
 			[
 				"game",
@@ -86,10 +118,6 @@
 			[
 				"css",
 				"qcss	JQUERY"
-			],
-			[
-				"add",
-				"qaddClass	JQUERY"
 			],
 			[
 				"cur",
@@ -364,10 +392,6 @@
 				"datepicker"
 			],
 			[
-				"item",
-				"itemToAdd"
-			],
-			[
 				"list",
 				"listItemText"
 			],
@@ -448,10 +472,6 @@
 				"nodeName	DOM"
 			],
 			[
-				"input",
-				"inputBox"
-			],
-			[
 				"left",
 				"leftPane"
 			],
@@ -476,10 +496,6 @@
 				"content"
 			],
 			[
-				"on",
-				"onButtonClick"
-			],
-			[
 				"i",
 				"innerHTML"
 			],
@@ -498,22 +514,6 @@
 			[
 				"se",
 				"second"
-			],
-			[
-				"style",
-				"style	Attr"
-			],
-			[
-				"sec",
-				"secondText"
-			],
-			[
-				"nod",
-				"nodeClass"
-			],
-			[
-				"c",
-				"c	console.log"
 			]
 		]
 	},
@@ -678,6 +678,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/D/user/Telerik/GitHub/BlackRussian/.gitignore",
 		"/D/user/Telerik/GitHub/JavaScript-Applications/11. Simple SPA Applications with Sammy.js and jQuery/slides/README.md",
 		"/D/user/Telerik/06. JS APPS/notes/11.SPA/SPA.sublime-project",
@@ -732,7 +736,6 @@
 		"/C/Users/todor/Telerik/06. JS APPS/notes/06.Promises/05.js",
 		"/C/Users/todor/Telerik/06. JS APPS/notes/06.Promises/01.js",
 		"/C/Users/user/OneDrive/win 10 fixes/hotkeys.ahk",
-		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/user/OneDrive/win 10 fixes/justNav.ahk",
 		"/C/Users/user/OneDrive/win 10 fixes/virtualDesktops.ahk",
 		"/D/user/Desktop/main.ahk",
@@ -802,10 +805,7 @@
 		"/C/Users/todor/Desktop/3/tests/task-3-tests.js",
 		"/C/Users/todor/Telerik/homeworks/WebDesign&UI/05. JS UIDOM/11. HTML Templates/tasks/task-1.js",
 		"/C/Users/todor/Desktop/3/tasks/styles.css",
-		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/first try/17-June-2014/task-2/task-resources/scripts.js",
-		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/second try/17-June-2014/task-2/README.md",
-		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/second try/17-June-2014/task-2/task-resources/styles.css",
-		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/second try/17-June-2014/task-3/task-files/styles.css"
+		"/C/Users/todor/Telerik/Web Design and UI/05 JS UI&DOM/Sample Exams/first try/17-June-2014/task-2/task-resources/scripts.js"
 	],
 	"find":
 	{
@@ -823,6 +823,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"name",
+			"showItemsLinks",
+			"item",
+			"resolve",
+			"item",
+			"this",
+			"getById",
+			"get",
+			"item",
+			"name",
+			"items",
+			"reject",
 			"Right",
 			"Left",
 			"Right",
@@ -938,19 +950,7 @@
 			"validateBoard",
 			"player",
 			"startGame",
-			"players",
-			"stringfy",
-			"callback",
-			"sort",
-			"Array",
-			"sort",
-			"response",
-			"success",
-			"loaded",
-			"type",
-			"url",
-			"options",
-			"ajax"
+			"players"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -982,6 +982,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -992,6 +998,7 @@
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
@@ -1016,6 +1023,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"db",
+				"app\\db.js"
+			],
+			[
+				"app",
+				"app\\app.js"
+			],
 			[
 				"play",
 				"app\\UI\\playScreen.js"
@@ -1075,10 +1094,6 @@
 			[
 				"part",
 				"08.RemoteData\\partial\\part1.html"
-			],
-			[
-				"ind",
-				"index.html"
 			],
 			[
 				"2",
