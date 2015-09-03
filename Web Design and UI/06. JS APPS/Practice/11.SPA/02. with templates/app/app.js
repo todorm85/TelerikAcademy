@@ -18,12 +18,16 @@ var sammyApp = Sammy('#content', function () {
       db.getItems()
          .then(function (res) {
             items = res;
-            return templates.get('items');
+            return templates.get('itemsERRORTEST');
          })
          .then(function (htmlTemplate) {
-            var compiledHtmlTemplate = handlebars.compile(htmlTemplate);
-            $('#content').html(compiledHtmlTemplate(items));
-         });
+               var compiledHtmlTemplate = handlebars.compile(htmlTemplate);
+               $('#content').html(compiledHtmlTemplate(items));
+            },
+            function (errorMSG) {
+               console.log('Items template error: ' + errorMSG.statusText);
+            }
+         );
    });
 
    this.get('#/items/:id', function () {

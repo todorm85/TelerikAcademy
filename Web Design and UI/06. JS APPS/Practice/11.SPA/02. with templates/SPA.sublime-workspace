@@ -1017,12 +1017,12 @@
 		"selected_items":
 		[
 			[
-				".js",
-				"app\\templates\\templates.js"
-			],
-			[
 				"app",
 				"app\\app.js"
+			],
+			[
+				".js",
+				"app\\templates\\templates.js"
 			],
 			[
 				"inde",

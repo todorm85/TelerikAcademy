@@ -14,7 +14,11 @@ function get(htmlName) {
                htmlCache[htmlName] = res;
                resolve(res);
             }
-         });
+
+            // you could also just write this, and the resolve will be called with one param
+            // that will be the result of the ajax
+            // success: resolve
+         }).error(reject);
       }
    });
 }
