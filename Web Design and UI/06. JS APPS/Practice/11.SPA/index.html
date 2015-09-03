@@ -9,28 +9,14 @@
 </head>
 
 <body>
-  <a href="#/">HOME</a>
-  <a href="#/details">DETAILS</a>
+  <a href="#/home">home</a>
+  <a href="#/items">items</a>
   <div id="content"></div>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/sammy/lib/sammy.js"></script>
+
+  <script src="bower_components\system.js\dist\system.js"></script>
+  <script src="config.js"></script>
   <script>
-    console.log('entered');
-    var sammyApp = Sammy('#content', function() {
-
-      this.get('#/', function() {
-        console.log('home');
-      });
-
-      this.get('#/details', function() {
-        console.log('details');
-      });
-      
-    });
-
-    $(function() {
-      sammyApp.run('#/');
-    });
+    System.import('app/app.js');
   </script>
 </body>
 
