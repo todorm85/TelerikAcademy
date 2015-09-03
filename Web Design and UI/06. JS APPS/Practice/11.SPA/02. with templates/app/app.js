@@ -18,7 +18,7 @@ var sammyApp = Sammy('#content', function () {
       db.getItems()
          .then(function (res) {
             items = res;
-            return templates.get('itemsERRORTEST');
+            return templates.get('items');
          })
          .then(function (htmlTemplate) {
                var compiledHtmlTemplate = handlebars.compile(htmlTemplate);
