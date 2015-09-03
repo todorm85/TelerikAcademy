@@ -199,3 +199,4 @@ ModelManifest.xml
 **/*.ffs_db
 **/desktop.ini
 **/*_/
+**/*.sublime-*
