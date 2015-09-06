@@ -5,10 +5,15 @@ var data = (function () {
 
     function userLogin(user) {
         return new Promise(function (resolve, reject) {
+            var requestUser = {
+                username: user.username,
+                passHash: CryptoJS.SHA1(user.password).toString()
+            };
+
             $.ajax({
                 url: 'api/auth',
                 type: 'PUT',
-                data: JSON.stringify(user),
+                data: JSON.stringify(requestUser),
                 contentType: 'application/json',
                 success: function (response) {
                     localStorage.setItem(AUTH_KEY, response.authKey);
@@ -21,10 +26,15 @@ var data = (function () {
 
     function userRegister(user) {
         return new Promise(function (resolve, reject) {
+            var requestUser = {
+                username: user.username,
+                passHash: CryptoJS.SHA1(user.password).toString()
+            };
+
             $.ajax({
                 url: 'api/users',
                 type: 'POST',
-                data: JSON.stringify(user),
+                data: JSON.stringify(requestUser),
                 contentType: 'application/json',
                 success: function (response) {
                     localStorage.setItem(AUTH_KEY, response.authKey);

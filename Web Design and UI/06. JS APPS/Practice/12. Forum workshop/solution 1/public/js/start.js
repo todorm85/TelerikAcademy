@@ -15,11 +15,11 @@ var sammyApp = Sammy('#content', function () {
                 content.on('click', '#btn-login', function () {
                     var user = {
                         username: $('#tb-user').val(),
-                        passHash: $('#tb-pass').val()
+                        password: $('#tb-pass').val()
                     };
                     data.users.login(user)
                         .then(function (response) {
-                            console.log(response);
+                            // console.log(response);
                             $('#btn-go-to-login').hide();
                             $('#btn-logout').show();
                             context.redirect('#/');
@@ -29,7 +29,7 @@ var sammyApp = Sammy('#content', function () {
                 content.on('click', '#btn-register', function () {
                     var user = {
                         username: $('#tb-user').val(),
-                        passHash: $('#tb-pass').val()
+                        password: $('#tb-pass').val()
                     };
                     data.users.register(user)
                         .then(function (response) {
@@ -49,11 +49,15 @@ var sammyApp = Sammy('#content', function () {
                 $('#btn-go-to-login').show();
                 context.redirect('#/');
             });
-
     });
 
     this.get('#/', function (context) {
-        content.html('This is home.');
+        // content.html('This is home.');
+        this.redirect('#/threads');
+    });
+
+    this.get('#/threads', function (context) {
+        
     });
 });
 
