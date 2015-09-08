@@ -1,4 +1,4 @@
-# Telerik Academy Homeworks 2015
+# Telerik Academy Homeworks/Teamworks 2015
 
 <a href="http://academy.telerik.com/?utm_source=site&amp;utm_medium=banner&amp;utm_content=468x60&amp;utm_campaign=community" title="Уроци по програмиране">
     <img src="http://academy.telerik.com/images/default-album/telerik-academy-banner.jpg?sfvrsn=2" alt="Академия на Телерик" />
