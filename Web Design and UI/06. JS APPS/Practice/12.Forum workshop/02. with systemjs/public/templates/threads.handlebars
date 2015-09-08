@@ -1,0 +1,11 @@
+<a href="#/threads/add" class="btn btn-primary">add thread</a>
+{{#if this}}
+    {{#this}}
+        <h2><a href="#/threads/{{id}}">{{title}}</a></h2>
+        <p>by <a href="#/users/{{user.id}}">{{user.username}}</a> at {{postDate}}</p>
+    {{/this}}
+{{else}}
+    <div>
+        No threads
+    </div>
+{{/if}}

@@ -1,0 +1,8 @@
+<h2>Title: {{title}}</h2>
+<a href="#/thread/{{id}}/messages/add" class="btn btn-primary">Add message</a>
+<p>Messages:</p>
+{{#messages}}
+    <p>Message {{@index}}</p>
+    <p>{{text}}</p>
+    <p>by {{author}} at {{date}}</p>
+{{/messages}}
