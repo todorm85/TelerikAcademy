@@ -1,6 +1,5 @@
 <fieldset>
-    <h2>Click on category title to filter by category!</h2>
-    Sort by:
+    <h2>Click on category title to filter by category!</h2> Sort by:
     <select id="sort-selector">
         <option value="">none</option>
         <option value="likes">by likes</option>
@@ -9,11 +8,14 @@
     <button class="btn btn-default" id="btn-sort">Sort</button>
 </fieldset>
 {{#this}}
-    <h2><a href="#/home?category={{category}}">{{category}}</a></h2>
-    <p>{{text}}</p>
-    <img src="{{img}}" alt="">
-    <p id="{{id}}">Likes: <span class="likes">{{likes}}</span> Dislikes: <span class="dislikes">{{dislikes}}</span></p>
-    <button id="{{id}}" class="btn btn-primary like">Like</button>
-    <button id="{{id}}" class="btn btn-primary dislike">Dislike</button>
-    <p>shared on {{shareDate}}</p>
+    <div id="{{id}}" class="cookie-container">
+        <h2><a class="cookie-category" href="#/home?category={{category}}">{{category}}</a></h2>
+        <p class="cookie-text">{{text}}</p>
+        <img src="{{img}}" class="cookie-img-url" alt="">
+        <p id="{{id}}">Likes: <span class="likes">{{likes}}</span> Dislikes: <span class="dislikes">{{dislikes}}</span></p>
+        <button id="{{id}}" class="btn btn-primary like">Like</button>
+        <button id="{{id}}" class="btn btn-primary dislike">Dislike</button>
+        <button id="{{id}}" class="btn btn-primary reshare">Re-share</button>
+        <p>shared on {{shareDate}}</p>
+    </div>
 {{/this}}

@@ -55,7 +55,7 @@ function all(context) {
                 var clickedCookie = this;
                 data.cookies.like(this.id)
                     .then(function () {
-                        var selector = ('p#'+clickedCookie.id) + ' span.likes';
+                        var selector = ('p#' + clickedCookie.id) + ' span.likes';
                         var likesConatiner = $(selector);
                         var likes = +likesConatiner.html();
                         likes++;
@@ -69,7 +69,7 @@ function all(context) {
                 var clickedCookie = this;
                 data.cookies.dislike(this.id)
                     .then(function () {
-                        var selector = ('p#'+clickedCookie.id) + ' span.dislikes';
+                        var selector = ('p#' + clickedCookie.id) + ' span.dislikes';
                         var dislikesConatiner = $(selector);
                         var dislikes = +dislikesConatiner.html();
                         dislikes++;
@@ -77,13 +77,23 @@ function all(context) {
                     }, function (error) {
                         toastr.error(JSON.parse(error.responseText) + ' Probably not logged in');
                     });
-            }); 
+            });
 
             $(`#sort-selector option[value="${currentSortProp}"]`).attr('selected', '');
             $('#btn-sort').on('click', function () {
                 var sortBy = $('#sort-selector option:selected').val();
                 currentSortProp = sortBy;
                 context.redirect(`#/home?sortBy=${sortBy}`);
+            });
+
+            $('.reshare').on('click', function () {
+                var clickedCookie = $('div.cookie-container#' + this.id);
+
+                var clickedCategory = clickedCookie.find('.cookie-category').html();
+                var clickedImgUrl = clickedCookie.children('.cookie-img-url').attr('src');
+                var clickedText = clickedCookie.children('.cookie-text').html();
+
+                context.redirect(`#/cookies/share?category=${clickedCategory}&img=${clickedImgUrl}&cookieText=${clickedText}`);
             });
         });
 }
@@ -98,13 +108,21 @@ function share(context) {
     then(function (template) {
         context.$element().html(template());
 
+        var category = context.params.category;
+        var imgUrl = context.params.img;
+        var text = context.params.cookieText;
+
+        $('#tb-cookie-category').val(category);
+        $('#tb-cookie-text').html(text);
+        $('#tb-cookie-img').val(imgUrl);
+
         $('#btn-add-cookie').on('click', function () {
             var cookie = {
                 category: $('#tb-cookie-category').val(),
                 text: $('#tb-cookie-text').val(),
                 img: $('#tb-cookie-img').val(),
             };
-            
+
             data.cookies.share(cookie)
                 .then(function (response) {
                     context.redirect('#/home');

@@ -207,6 +207,17 @@
           "shareDate": "2015-09-09T14:53:30.290Z",
           "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
           "hours": 19
+        },
+        {
+          "category": "custom",
+          "text": "and don`t forget patrik too!",
+          "img": "http://cs1424.vk.me/u7847894/23999000/x_ea28bfc8.jpg",
+          "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
+          "likes": 2,
+          "dislikes": 1,
+          "shareDate": "2015-09-10T15:25:17.144Z",
+          "id": "477da6d5-e1f4-4bcd-909e-46514e307521",
+          "hours": 20
         }
       ]
     },
@@ -215,6 +226,26 @@
       "passHash": "f83cee18308b950cd2352f63e279b71373c7e133",
       "usernameToLower": "todorm",
       "id": "5ec15296-7938-4071-a18a-b9e94126c76e"
+    },
+    {
+      "username": "mario",
+      "passHash": "babd9c3daa1475721ba15e689bbb4c6bffc4c449",
+      "usernameToLower": "mario",
+      "id": "a2274d97-761a-4a24-b297-e65dbd472021",
+      "authKey": "a2274d97-761a-4a24-b297-e65dbd472021ezbwqgVAlVtqamAUtfHRZcER",
+      "myCookies": [
+        {
+          "text": "May the Force with you",
+          "category": "WOrk",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 31,
+          "dislikes": 7,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:56.482Z",
+          "id": "e2fdbf82-54c3-488f-add4-9af3262c2572",
+          "hours": 20
+        }
+      ]
     }
   ],
   "cookies": [
@@ -238,7 +269,7 @@
       "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
       "shareDate": "2015-09-09T14:53:56.482Z",
       "id": "e2fdbf82-54c3-488f-add4-9af3262c2572",
-      "hours": 9
+      "hours": 20
     },
     {
       "text": "Hello!",
@@ -265,10 +296,11 @@
       "text": "and don`t forget patrik too!",
       "img": "http://cs1424.vk.me/u7847894/23999000/x_ea28bfc8.jpg",
       "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
-      "likes": 0,
-      "dislikes": 0,
+      "likes": 2,
+      "dislikes": 1,
       "shareDate": "2015-09-10T15:25:17.144Z",
-      "id": "477da6d5-e1f4-4bcd-909e-46514e307521"
+      "id": "477da6d5-e1f4-4bcd-909e-46514e307521",
+      "hours": 20
     },
     {
       "category": "exam",
@@ -289,6 +321,26 @@
       "dislikes": 0,
       "shareDate": "2015-09-10T16:39:02.900Z",
       "id": "6dc3dac1-93c5-41a9-83ac-05f906388b2e"
+    },
+    {
+      "category": "custom reshared",
+      "text": "and don`t forget patrik too! RESHARED",
+      "img": "http://cs1424.vk.me/u7847894/23999000/x_ea28bfc8.jpg",
+      "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
+      "likes": 2,
+      "dislikes": 1,
+      "shareDate": "2015-09-10T17:19:03.526Z",
+      "id": "911bdfbf-64ea-4b5d-ad2e-e23d77cb4c41"
+    },
+    {
+      "category": "custom reshared",
+      "text": "sponge bob is here reshared",
+      "img": "http://nick.mtvnimages.com/nick/properties/spongebob-squarepants/characters/spongebob-about-web-desktop.jpg?quality",
+      "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
+      "likes": 0,
+      "dislikes": 0,
+      "shareDate": "2015-09-10T17:19:48.955Z",
+      "id": "a01d125a-e7d9-43a8-b4f3-65ff376217b4"
     }
   ]
 }
