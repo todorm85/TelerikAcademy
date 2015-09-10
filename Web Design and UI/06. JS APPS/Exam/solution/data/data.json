@@ -218,6 +218,28 @@
           "shareDate": "2015-09-10T15:25:17.144Z",
           "id": "477da6d5-e1f4-4bcd-909e-46514e307521",
           "hours": 20
+        },
+        {
+          "category": "custom",
+          "text": "and don`t forget patrik too!",
+          "img": "http://cs1424.vk.me/u7847894/23999000/x_ea28bfc8.jpg",
+          "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
+          "likes": 2,
+          "dislikes": 1,
+          "shareDate": "2015-09-10T15:25:17.144Z",
+          "id": "477da6d5-e1f4-4bcd-909e-46514e307521",
+          "hours": 20
+        },
+        {
+          "category": "custom",
+          "text": "and don`t forget patrik too!",
+          "img": "http://cs1424.vk.me/u7847894/23999000/x_ea28bfc8.jpg",
+          "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
+          "likes": 2,
+          "dislikes": 1,
+          "shareDate": "2015-09-10T15:25:17.144Z",
+          "id": "477da6d5-e1f4-4bcd-909e-46514e307521",
+          "hours": 20
         }
       ]
     },
@@ -238,8 +260,8 @@
           "text": "May the Force with you",
           "category": "WOrk",
           "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
-          "likes": 31,
-          "dislikes": 7,
+          "likes": 32,
+          "dislikes": 8,
           "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
           "shareDate": "2015-09-09T14:53:56.482Z",
           "id": "e2fdbf82-54c3-488f-add4-9af3262c2572",
@@ -264,8 +286,8 @@
       "text": "May the Force with you",
       "category": "WOrk",
       "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
-      "likes": 31,
-      "dislikes": 7,
+      "likes": 32,
+      "dislikes": 8,
       "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
       "shareDate": "2015-09-09T14:53:56.482Z",
       "id": "e2fdbf82-54c3-488f-add4-9af3262c2572",

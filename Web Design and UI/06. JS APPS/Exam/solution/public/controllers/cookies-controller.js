@@ -20,19 +20,26 @@ function my(context) {
 }
 
 var currentSortProp = '';
+var currentFilterCategory = '';
 
 function all(context) {
     var cookies;
-    var category = context.params.category;
+    var filterCategory = context.params.category || currentFilterCategory;
     var sortBy = context.params.sortBy || currentSortProp;
+    var categories;
 
-    data.cookies.get()
+    data.cookies.getCategories()
+        .then(function (response) {
+            categories = response.result;
+            console.log(categories);
+            return data.cookies.get()
+        })
         .then(function (response) {
             cookies = response.result;
 
-            if (category) {
+            if (filterCategory) {
                 cookies = cookies.filter(function (cookie) {
-                    return cookie.category === category;
+                    return cookie.category === filterCategory;
                 });
             }
 
@@ -49,10 +56,16 @@ function all(context) {
             return templates.get('cookies-all')
         })
         .then(function (template) {
-            context.$element().html(template(cookies));
+            var templateData = {
+                categories: categories,
+                cookies: cookies,
+            };
+
+            context.$element().html(template(templateData));
 
             $('.like').on('click', function () {
                 var clickedCookie = this;
+
                 data.cookies.like(this.id)
                     .then(function () {
                         var selector = ('p#' + clickedCookie.id) + ' span.likes';
@@ -84,6 +97,13 @@ function all(context) {
                 var sortBy = $('#sort-selector option:selected').val();
                 currentSortProp = sortBy;
                 context.redirect(`#/home?sortBy=${sortBy}`);
+            });
+
+            $(`#category-selector option[value="${currentFilterCategory}"]`).attr('selected', '');
+            $('#btn-filter-category').on('click', function () {
+                var filterByCategory = $('#category-selector option:selected').val();
+                currentFilterCategory = filterByCategory;
+                context.redirect(`#/home?category=${filterByCategory}`);
             });
 
             $('.reshare').on('click', function () {

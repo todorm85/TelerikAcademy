@@ -208,6 +208,17 @@ function dislikeCookie(id) {
     });
 }
 
+function getCookiesCategories() {
+    return new Promise(function (resolve, reject) {
+        jsonRequester.get('api/categories')
+            .then(function (resp) {
+                resolve(resp);
+            }, function (error) {
+                reject(error);
+            });
+    });
+}
+
 export default {
     users: {
         signIn,
@@ -215,14 +226,15 @@ export default {
         register,
         hasUser,
         get: usersGet,
-        getCurrent: getCurrentUser
+            getCurrent: getCurrentUser
     },
     cookies: {
         get: getCookies,
         getMy: getHourlyFortuneCookie,
         share: shareCookie,
         like: likeCookie,
-        dislike: dislikeCookie
+        dislike: dislikeCookie,
+        getCategories: getCookiesCategories
     },
     constants: {
         LOCAL_STORAGE_USERNAME_KEY,
