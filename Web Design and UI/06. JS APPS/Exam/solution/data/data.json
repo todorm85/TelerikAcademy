@@ -240,6 +240,28 @@
           "shareDate": "2015-09-10T15:25:17.144Z",
           "id": "477da6d5-e1f4-4bcd-909e-46514e307521",
           "hours": 20
+        },
+        {
+          "category": "custom reshared",
+          "text": "sponge bob is here reshared",
+          "img": "http://nick.mtvnimages.com/nick/properties/spongebob-squarepants/characters/spongebob-about-web-desktop.jpg",
+          "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
+          "likes": 0,
+          "dislikes": 0,
+          "shareDate": "2015-09-10T17:19:48.955Z",
+          "id": "a01d125a-e7d9-43a8-b4f3-65ff376217b4",
+          "hours": 21
+        },
+        {
+          "category": "custom reshared",
+          "text": "sponge bob is here reshared",
+          "img": "http://nick.mtvnimages.com/nick/properties/spongebob-squarepants/characters/spongebob-about-web-desktop.jpg",
+          "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
+          "likes": 0,
+          "dislikes": 0,
+          "shareDate": "2015-09-10T17:19:48.955Z",
+          "id": "a01d125a-e7d9-43a8-b4f3-65ff376217b4",
+          "hours": 21
         }
       ]
     },
@@ -268,6 +290,13 @@
           "hours": 20
         }
       ]
+    },
+    {
+      "username": "gosho",
+      "passHash": "29aa0a621bbe88c3f8a5442e59c61e94b9d67c74",
+      "usernameToLower": "gosho",
+      "id": "70580226-e724-429a-bbd9-25d483511cad",
+      "authKey": "70580226-e724-429a-bbd9-25d483511cadzlbFjgunItfZtYfUPByWyqZE"
     }
   ],
   "cookies": [
@@ -286,8 +315,8 @@
       "text": "May the Force with you",
       "category": "WOrk",
       "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
-      "likes": 32,
-      "dislikes": 8,
+      "likes": 34,
+      "dislikes": 9,
       "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
       "shareDate": "2015-09-09T14:53:56.482Z",
       "id": "e2fdbf82-54c3-488f-add4-9af3262c2572",
@@ -297,7 +326,7 @@
       "text": "Hello!",
       "category": "Home",
       "userId": "bd04b3b8-5586-47ad-bf8f-db6c531dbb73",
-      "likes": 12,
+      "likes": 13,
       "dislikes": 9,
       "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
       "shareDate": "2015-09-10T06:24:18.743Z",
@@ -306,7 +335,7 @@
     {
       "category": "custom",
       "text": "sponge bob is here",
-      "img": "http://nick.mtvnimages.com/nick/properties/spongebob-squarepants/characters/spongebob-about-web-desktop.jpg?quality=0.75",
+      "img": "http://nick.mtvnimages.com/nick/properties/spongebob-squarepants/characters/spongebob-about-web-desktop.jpg",
       "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
       "likes": 0,
       "dislikes": 0,
@@ -357,12 +386,23 @@
     {
       "category": "custom reshared",
       "text": "sponge bob is here reshared",
-      "img": "http://nick.mtvnimages.com/nick/properties/spongebob-squarepants/characters/spongebob-about-web-desktop.jpg?quality",
+      "img": "http://nick.mtvnimages.com/nick/properties/spongebob-squarepants/characters/spongebob-about-web-desktop.jpg",
       "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
       "likes": 0,
       "dislikes": 0,
       "shareDate": "2015-09-10T17:19:48.955Z",
-      "id": "a01d125a-e7d9-43a8-b4f3-65ff376217b4"
+      "id": "a01d125a-e7d9-43a8-b4f3-65ff376217b4",
+      "hours": 21
+    },
+    {
+      "category": "WOrk 2",
+      "text": "May the Force with you",
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "userId": "106fb0da-ecba-479b-ad01-5be2533dcd95",
+      "likes": 0,
+      "dislikes": 0,
+      "shareDate": "2015-09-10T18:00:26.913Z",
+      "id": "b0e046f3-91cd-40c0-abf6-fffc6ae8cbac"
     }
   ]
 }
