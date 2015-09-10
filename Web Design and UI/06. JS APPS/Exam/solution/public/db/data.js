@@ -88,7 +88,7 @@ function getCurrentUser() {
 
 // POSTS
 
-function getPosts(userFilter, patternFilter) {
+/*function getPosts(userFilter, patternFilter) {
     var url = 'post';
     url += `?user=${userFilter}&pattern=${patternFilter}`;
 
@@ -114,6 +114,54 @@ function addPost(post) {
                 reject(error);
             });
     });
+}*/
+
+// COOKIES
+
+function getCookies() {
+    return new Promise(function (resolve, reject) {
+        jsonRequester.get('api/cookies')
+            .then(function (res) {
+                resolve(res);
+            }, function (error) {
+                reject(error);
+            });
+    });
+}
+
+function getHourlyFortuneCookie() {
+    var options = {
+        headers: {
+            'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY)
+        }
+    };
+
+    return new Promise(function (resolve, reject) {
+        jsonRequester.get('api/my-cookie', options)
+            .then(function (resp) {
+                resolve(resp);
+            }, function (error) {
+                reject(error);
+            });
+    });
+}
+
+function shareCookie(cookie) {
+    var options = {
+        data: cookie,
+        headers: {
+            'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY)
+        }
+    };
+
+    return new Promise(function (resolve, reject) {
+        jsonRequester.post('api/cookies', options)
+            .then(function (resp) {
+                resolve(resp);
+            }, function (error) {
+                reject(error);
+            });
+    });
 }
 
 export default {
@@ -123,11 +171,12 @@ export default {
         register,
         hasUser,
         get: usersGet,
-            getCurrent: getCurrentUser
+        getCurrent: getCurrentUser
     },
-    posts: {
-        get: getPosts,
-        add: addPost
+    cookies: {
+        get: getCookies,
+        getMy: getHourlyFortuneCookie,
+        share: shareCookie
     },
     constants: {
         LOCAL_STORAGE_USERNAME_KEY,

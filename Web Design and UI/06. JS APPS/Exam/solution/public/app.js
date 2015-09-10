@@ -3,9 +3,12 @@ import Sammy from 'sammy';
 import toastr from 'toastr';
 
 import data from 'db/data.js';
-import homeController from 'controllers/home-controller.js';
+// import homeController from 'controllers/home-controller.js';
 import usersController from 'controllers/users-controller.js';
-import postsController from 'controllers/posts-controller.js';
+// import myCookieController from 'controllers/my-cookie-controller.js';
+import cookiesController from 'controllers/cookies-controller.js';
+
+
 
 
 var sammyApp = Sammy('#content', function () {
@@ -14,13 +17,13 @@ var sammyApp = Sammy('#content', function () {
         context.redirect('#/home');
     });
 
-    this.get('#/home', homeController.show);
+    this.get('#/home', cookiesController.all);
+    this.get('#/my-cookie', cookiesController.my);
+    this.get('#/cookies/share', cookiesController.share);
 
     this.get('#/users', usersController.showAll);
     this.get('#/users/register', usersController.showRegisterForm);
 
-    this.get('#/posts', postsController.show);
-    this.get('#/posts/add', postsController.add);
 
 
 });
