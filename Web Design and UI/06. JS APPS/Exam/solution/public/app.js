@@ -20,6 +20,8 @@ var sammyApp = Sammy('#content', function () {
     this.get('#/home', cookiesController.all);
     this.get('#/my-cookie', cookiesController.my);
     this.get('#/cookies/share', cookiesController.share);
+    // this.get('#/cookies/:id', cookiesController.like);
+
 
     this.get('#/users', usersController.showAll);
     this.get('#/users/register', usersController.showRegisterForm);

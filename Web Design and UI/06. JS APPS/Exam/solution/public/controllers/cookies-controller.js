@@ -36,6 +36,34 @@ function all(context) {
         })
         .then(function (template) {
             context.$element().html(template(cookies));
+
+            $('.like').on('click', function () {
+                var clickedCookie = this;
+                data.cookies.like(this.id)
+                    .then(function () {
+                        var selector = ('p#'+clickedCookie.id) + ' span.likes';
+                        var likesConatiner = $(selector);
+                        var likes = +likesConatiner.html();
+                        likes++;
+                        likesConatiner.html(likes);
+                    }, function (error) {
+                        toastr.error(JSON.parse(error.responseText) + ' Probably not logged in');
+                    });
+            });
+
+            $('.dislike').on('click', function () {
+                var clickedCookie = this;
+                data.cookies.dislike(this.id)
+                    .then(function () {
+                        var selector = ('p#'+clickedCookie.id) + ' span.dislikes';
+                        var dislikesConatiner = $(selector);
+                        var dislikes = +dislikesConatiner.html();
+                        dislikes++;
+                        dislikesConatiner.html(dislikes);
+                    }, function (error) {
+                        toastr.error(JSON.parse(error.responseText) + ' Probably not logged in');
+                    });
+            }); 
         });
 }
 
@@ -69,5 +97,5 @@ function share(context) {
 export default {
     my,
     all,
-    share
+    share,
 };

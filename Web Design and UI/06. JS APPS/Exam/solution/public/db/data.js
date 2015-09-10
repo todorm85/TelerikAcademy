@@ -164,6 +164,50 @@ function shareCookie(cookie) {
     });
 }
 
+function likeCookie(id) {
+    var options = {
+        data: {
+            type: 'like'
+        },
+        headers: {
+            'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY)
+        }
+    };
+
+    var url = 'api/cookies/' + id;
+
+    return new Promise(function (resolve, reject) {
+        jsonRequester.put(url, options)
+            .then(function (resp) {
+                resolve(resp);
+            }, function (error) {
+                reject(error);
+            });
+    });
+}
+
+function dislikeCookie(id) {
+    var options = {
+        data: {
+            type: 'dislike'
+        },
+        headers: {
+            'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY)
+        }
+    };
+
+    var url = 'api/cookies/' + id;
+
+    return new Promise(function (resolve, reject) {
+        jsonRequester.put(url, options)
+            .then(function (resp) {
+                resolve(resp);
+            }, function (error) {
+                reject(error);
+            });
+    });
+}
+
 export default {
     users: {
         signIn,
@@ -176,7 +220,9 @@ export default {
     cookies: {
         get: getCookies,
         getMy: getHourlyFortuneCookie,
-        share: shareCookie
+        share: shareCookie,
+        like: likeCookie,
+        dislike: dislikeCookie
     },
     constants: {
         LOCAL_STORAGE_USERNAME_KEY,
