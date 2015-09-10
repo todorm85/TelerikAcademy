@@ -1,0 +1,35 @@
+<a href="#/posts/add" class="btn btn-default">Add Post</a>
+<button class="btn btn-default" id="btn-refresh">Refresh</button>
+
+<fieldset>
+    <legend>Filter posts</legend>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="tb-filter-username">Filter username:</label>
+                <input type="text" class="form-control" id="tb-filter-username" />
+            </div>
+            <div class="form-group">
+                <label for="tb-filter-pattern">Filter Pattern:</label>
+                <input type="text" class="form-control" id="tb-filter-pattern" />
+            </div>
+        </div>
+    </div>
+</fieldset>
+Sort by:
+<select id="sort-selector">
+    <option value="">none</option>
+    <option value="title">by title</option>
+    <option value="postDate">by date</option>
+</select>
+
+{{#if this}}
+    {{#this}}
+        <h2>{{title}}</h2>
+        <p>{{body}}</p>
+        <p>posted at {{postDate}} by {{user.username}}</p>
+    {{/this}}
+{{else}}
+    <h2>No posts!</h2>
+{{/if}}
