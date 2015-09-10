@@ -1,6 +1,7 @@
 import toastr from 'toastr';
 import templates from 'db/templates.js';
 import data from 'db/data.js';
+import moment from 'moment';
 
 function my(context) {
     var cookie;
@@ -18,9 +19,12 @@ function my(context) {
         });
 }
 
+var currentSortProp = '';
+
 function all(context) {
     var cookies;
     var category = context.params.category;
+    var sortBy = context.params.sortBy || currentSortProp;
 
     data.cookies.get()
         .then(function (response) {
@@ -31,6 +35,16 @@ function all(context) {
                     return cookie.category === category;
                 });
             }
+
+            if (sortBy) {
+                cookies.sort(function (a, b) {
+                    return a[sortBy] < b[sortBy];
+                });
+            }
+
+            cookies.forEach(function (cookie) {
+                cookie.shareDate = moment(cookie.shareDate).fromNow();
+            });
 
             return templates.get('cookies-all')
         })
@@ -64,6 +78,13 @@ function all(context) {
                         toastr.error(JSON.parse(error.responseText) + ' Probably not logged in');
                     });
             }); 
+
+            $(`#sort-selector option[value="${currentSortProp}"]`).attr('selected', '');
+            $('#btn-sort').on('click', function () {
+                var sortBy = $('#sort-selector option:selected').val();
+                currentSortProp = sortBy;
+                context.redirect(`#/home?sortBy=${sortBy}`);
+            });
         });
 }
 
