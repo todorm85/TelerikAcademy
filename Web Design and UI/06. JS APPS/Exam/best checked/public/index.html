@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fortune cookies</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="bower_components/jt.timepicker/jquery.timepicker.css">
+    <link rel="stylesheet" href="bower_components/toastr/toastr.css">
+    <link rel="stylesheet" href="assets/css/flat-ui.css"/>
+    <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+    <div id="menu">
+    <div class="row demo-row">
+    <div class="col-xs-12">
+    <nav class="navbar navbar-embossed" role="navigation">
+        <div class="wrapper-nav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="#/home">Fortune cookies</a>
+            </div>
+            <div class="collapse navbar-collapse header-partial" id="navbar-collapse-01">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#/home">Home</a></li>
+                    <li><a href="#/share-cookie" class="logged-in-only hidden">Share</a></li>
+                    <li><a href="#/my-cookie" class="logged-in-only hidden">My cookie</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right" id="header-logged-out">
+                    <li><a href="#/login">Log in</a></li>
+                    <li><a href="#/register">Register</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden" id="header-logged-in">
+                    <li><a>Hi, <span id="header-username"></span></a></li>
+                    <li><a href="#/logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+    </div>
+    </div>
+
+    <div id="content">
+
+    </div>
+
+    <footer class="footer-bar">
+        <div class="wrapper">
+            <span>Copyright © 2015. All Rights Reserved - </span>
+            <span>Batman &amp; Robin</span>
+           <span class="navbar-right">
+               <span class="fui-facebook footer-link"></span>
+               <span class="fui-skype footer-link"></span>
+               <span class="fui-twitter footer-link"></span>
+               <span class="fui-linkedin footer-link"></span>
+               <span class="fui-paypal footer-link"></span>
+               <span class="fui-github footer-link"></span>
+           </span>
+        </div>
+    </footer>
+
+    <!-- Used globally and in libraries, that's why they're loaded here -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="bower_components/system.js/dist/system.js"></script>
+    <script src="app/config.js"></script>
+    <script>        
+        System.import('app/app.js');
+    </script>
+</body>
+</html>

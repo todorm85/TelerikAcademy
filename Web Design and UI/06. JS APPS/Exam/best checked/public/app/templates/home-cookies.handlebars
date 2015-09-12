@@ -1,0 +1,42 @@
+<div class="wrapper">
+    {{#if this}}
+        <div class="container">
+            <div class="row center-text margin-vertical">
+                Choose cookies category:
+                <select class="bootstrap-select" id="cookies-category">
+                    <option value="All">All</option>
+                </select>
+                &nbsp;Sort by:
+                <select class="bootstrap-select" id="cookies-sort">
+                    <option value="likes">Likes</option>
+                    <option value="date">Date</option>
+                </select>
+            </div>
+            <hr/>
+            {{#each this}}
+                <div class="cookie-item">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-7 col-xs-7">
+                            <img src="{{img}}" alt="Cookie image" class="force-img"/>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-5">
+                            <h6 class="cookie-text"><span class="cookie-title">{{text}}</span></h6>
+                            <p><strong>Author:</strong> <span class="cookie-author">{{userId}}</span></p>
+                            <p><strong>Category:</strong> <span class="cookie-category">{{category}}</span></p>
+                            <p><strong>Likes:</strong> <span class="cookie-likes">{{likes}}</span></p>
+                            <p><strong>Dislikes:</strong> <span class="cookie-dislikes">{{dislikes}}</span></p>
+                            <p><strong>Posted:</strong> <span class="cookie-date">{{shareDate}}</span></p>
+                            <div class="cookie-submit-buttons" data-cookie-id="{{id}}">
+                                <a class="btn btn-success" id="cookie-like">Like</a>
+                                <a class="btn btn-danger" id="cookie-dislike">Dislike</a>
+                                <a class="btn btn-info" id="cookie-reshare">Re-share</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    {{else}}
+        <h4 class="center-text margin-vertical">No cookies found</h4>
+    {{/if}}
+</div>

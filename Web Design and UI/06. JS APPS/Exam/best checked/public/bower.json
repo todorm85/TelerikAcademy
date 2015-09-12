@@ -1,0 +1,28 @@
+{
+  "name": "public",
+  "version": "0.0.1",
+  "authors": [
+    "Batman"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "handlebars": "~4.0.0",
+    "jquery": "~2.1.4",
+    "jquery-ui": "jqueryui#~1.11.4",
+    "js-sha1": "http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js",
+    "moment": "~2.10.6",
+    "sammy": "~0.7.6",
+    "system.js": "~0.18.17",
+    "toastr": "~2.1.2",
+    "underscore": "~1.8.3"
+  }
+}

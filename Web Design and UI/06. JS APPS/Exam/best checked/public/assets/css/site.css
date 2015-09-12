@@ -1,0 +1,171 @@
+textarea:focus, input:focus, select:focus{
+    outline: 0;
+}
+
+body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, textarea, ul {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+hr {
+    border-bottom: 2px solid #eee;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.margin-vertical {
+    margin: 15px 0;
+}
+
+.margin-horizontal {
+    margin: 0 25px;
+}
+
+.margin {
+    margin: 15px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.wrapper {
+    width: 1200px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.wrapper-nav {
+    width: 1200px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+#content {
+    margin: 0 auto;
+}
+
+.login {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    margin-right: 15px;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    margin: 5px;
+}
+
+.demo-row {
+    margin-bottom: 0;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.jumbotron p {
+    margin: 10px 0;
+}
+
+.footer-bar {
+    color: #34495E;
+    padding: 13px;
+}
+
+.login-screen {
+    padding: 35px 0;
+    min-height: 200px;
+}
+
+.login-form {
+    max-width: 90%;
+    width: 700px;
+    margin: 30px auto;
+}
+
+.navbar-nav > li > a {
+    padding: 18px 13px 15px 12px;
+}
+
+.footer-link {
+    padding: 0 3px;
+}
+
+#not-found {
+    text-align: center;
+}
+
+#not-found h2 {
+    margin: 15px 15px 0 15px;
+}
+
+#not-found h4 {
+    margin-bottom: 25px;
+}
+
+.force-img {
+    float: right;
+    height: 230px;
+    width: 400px;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 230px;
+    min-height: 230px;
+}
+
+.cookie-item {
+    margin: 25px 0;
+}
+
+.btn:hover {
+    background-position: 0 -60px;
+}
+
+.login-link {
+    color: #555;
+}
+
+select {
+    background-color: #dddddd;
+    border-color: transparent;
+
+}
+
+.cookie-text {
+    margin-bottom: 5px;
+}
+
+.cookie-submit-buttons {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper-nav {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
