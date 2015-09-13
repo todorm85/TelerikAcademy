@@ -195,8 +195,8 @@ ModelManifest.xml
 **/course_videos/
 **/course_repo/
 **/teamwork/
-# this ignores every directory starting with '_'
+# this ignores every directory ending with '_'
+**/*_/
 **/*.ffs_db
 **/desktop.ini
-**/*_/
 **/*.sublime-*
