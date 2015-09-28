@@ -18,6 +18,7 @@
 | 3. | [JavaScript - Essentials](#javascript---essentials) |
 | 4. | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming) |
 | 5. | [JavaScript - UI and DOM](#javascript---ui-and-dom) |
+| 6. | [JavaScript - Applications](#javascript---applications) |
 
 ## C# - Part I
 
@@ -109,3 +110,9 @@
 7. [jQuery Overview](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/homeworks/09.%20jQuery%20Overview) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/homeworks/09.%20jQuery%20Overview/README.md))
 5. [jQuery Plugins](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/homeworks/10.%20jQuery%20Plugins) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/homeworks/10.%20jQuery%20Plugins/README.md))
 6. [HTML Templates](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/homeworks/11.%20HTML%20Templates) - ([assignment](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/05.%20JS%20UIDOM/homeworks/11.%20HTML%20Templates/README.md))
+
+##  JavaScript - UI and DOM
+
+1. [Teamwork](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/06.%20JS%20APPS)
+2. [Practice](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/06.%20JS%20APPS/Practice)
+3. [Exam](https://github.com/todorm85/TelerikAcademy/tree/master/Web%20Design%20and%20UI/06.%20JS%20APPS/Exam)
