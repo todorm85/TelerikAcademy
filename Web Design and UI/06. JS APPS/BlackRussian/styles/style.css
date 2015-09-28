@@ -1,0 +1,37 @@
+/*#buttons{
+    display: none;
+}*/
+
+#game-rules {
+    display: none;
+}
+
+.text-center {
+    align: text-center;
+}
+
+#start-menu {
+    display: none;
+}
+
+#registerPanel {
+    display: none;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+#signoutButton{
+    display: none;
+}
+
+#play-button{
+    display: none;
+}
+
+#bestResults{
+    display: none;
+    width:50%;
+    margin-left:20%;
+    margin-top:10px;
+}
