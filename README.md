@@ -1,15 +1,7 @@
-<p align="center">
- <a href="http://academy.telerik.com/?utm_source=site&utm_medium=banner&utm_content=728x90&utm_campaign=community" title="Уроци по програмиране уроци по програмиране"><img width="728" height="90" src="http://academy.telerik.com/images/default-album/telerik-academy-banner-728x90.jpg?sfvrsn=2" alt="Telerik Academy"/></a>
-</p>
+# Telerik Academy 2015
+<a href="http://academy.telerik.com/?utm_source=site&utm_medium=banner&utm_content=728x90&utm_campaign=community" title="Уроци по програмиране уроци по програмиране"><img width="728" height="90" src="http://academy.telerik.com/images/default-album/telerik-academy-banner-728x90.jpg?sfvrsn=2" alt="Telerik Academy"/></a>
 
-<h2 align="center">2015 Curriculum</h2>
-
-<p align="center">
- <a href="http://academy.telerik.com/academy/curriculum-detailed/">
-  <img src="http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0"/>
- </a>
-</p>
-
+### Index table
 
 | Programming | Web Design | Software Technologies |
 | :---: | :---: | :---: |
@@ -19,6 +11,12 @@
 | [High-Quality Code](#high-quality-code) | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming) |
 |  | [JavaScript - UI and DOM](#javascript---ui-and-dom) |
 |  | [JavaScript - Applications](#javascript---applications) |
+
+### Curriculum
+
+ <a href="http://academy.telerik.com/academy/curriculum-detailed/">
+  <img src="http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0"/>
+ </a>
 
 -----
 
