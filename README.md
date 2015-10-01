@@ -1,12 +1,16 @@
-
-
+<p align="center">
  <a href="http://academy.telerik.com/?utm_source=site&utm_medium=banner&utm_content=728x90&utm_campaign=community" title="Уроци по програмиране уроци по програмиране"><img width="728" height="90" src="http://academy.telerik.com/images/default-album/telerik-academy-banner-728x90.jpg?sfvrsn=2" alt="Telerik Academy"/></a>
+</p>
 
-## Curriculum
+<p align="center">
+ <h2>2015 Curriculum</h2>
+</p>
 
-<a href="http://academy.telerik.com/academy/curriculum-detailed/">
-    <img src="http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0"/>
-</a>
+<p align="center">
+ <a href="http://academy.telerik.com/academy/curriculum-detailed/">
+  <img src="http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0"/>
+ </a>
+</p>
 
 ## Homeworks/Teamworks 2015
 
