@@ -1,8 +1,18 @@
-# Telerik Academy Homeworks/Teamworks 2015
+<p align="center">
+    # Telerik Academy Homeworks/Teamworks 2015
+</p>
 
-<a href="http://academy.telerik.com/?utm_source=site&amp;utm_medium=banner&amp;utm_content=468x60&amp;utm_campaign=community" title="Уроци по програмиране">
-    <img src="http://academy.telerik.com/images/default-album/telerik-academy-banner.jpg?sfvrsn=2" alt="Академия на Телерик" />
-</a>
+<p align="center">
+    <a href="http://academy.telerik.com/?utm_source=site&amp;utm_medium=banner&amp;utm_content=468x60&amp;utm_campaign=community" title="Уроци по програмиране">
+        <img src="https://github.com/lnikod4s/Telerik-Software-Academy/blob/master/Modul%201/Sources/telerik-logo.png"/>
+    </a>
+</p>
+
+<p align="center">
+    <a href="http://academy.telerik.com/academy/curriculum-detailed/">
+        <img src="http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0"/>
+    </a>
+</p>
 
 | | Programming 2015 |
 | --- | --- |
@@ -20,9 +30,11 @@
 | 5. | [JavaScript - UI and DOM](#javascript---ui-and-dom) |
 | 6. | [JavaScript - Applications](#javascript---applications) |
 
+
+
 ## C# - Part I
 
-1. [Introduction to Programming](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/01.%20C%23%20Part%201/01%20Intro%20to%20Programming) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/01.%20C%23%20Part%201/01%20Intro%20to%20Programming/README.md))
+1. [Introduction to Programming](../../tree/master/Programming/01. C%23 Part 1/01 Intro to Programming)
 2. [Primitive Data Types and Variables](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/01.%20C%23%20Part%201/02%20Data%20Types%20and%20Variables) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/01.%20C%23%20Part%201/02%20Data%20Types%20and%20Variables/README.md))
 3. [Operators, Expressions and Statements](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/01.%20C%23%20Part%201/03%20Operators%20and%20Expressions) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/01.%20C%23%20Part%201/03%20Operators%20and%20Expressions/README.md))
 4. [Console Input/Output](https://github.com/todorm85/TelerikAcademy-Homeworks/tree/master/Programming/01.%20C%23%20Part%201/04%20Console%20Input%20Output) - ([assignment](https://github.com/todorm85/TelerikAcademy-Homeworks/blob/master/Programming/01.%20C%23%20Part%201/04%20Console%20Input%20Output/README.md))
