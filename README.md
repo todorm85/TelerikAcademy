@@ -2,9 +2,7 @@
  <a href="http://academy.telerik.com/?utm_source=site&utm_medium=banner&utm_content=728x90&utm_campaign=community" title="Уроци по програмиране уроци по програмиране"><img width="728" height="90" src="http://academy.telerik.com/images/default-album/telerik-academy-banner-728x90.jpg?sfvrsn=2" alt="Telerik Academy"/></a>
 </p>
 
-<p align="center">
- <h2>2015 Curriculum</h2>
-</p>
+<h2 align="center">2015 Curriculum</h2>
 
 <p align="center">
  <a href="http://academy.telerik.com/academy/curriculum-detailed/">
@@ -12,24 +10,15 @@
  </a>
 </p>
 
-## Homeworks/Teamworks 2015
 
-| | Programming 2015 |
-| --- | --- |
-| 1. | [C# - Part I](#c---part-i) |
-| 2. | [C# - Part II](#c---part-ii) |
-| 3. | [Object-Oriented Programming](#object-oriented-programming) |
-| 4. | [High-Quality Code](#high-quality-code) |
-
-| | Web Design 2015 |
-| --- | --- |
-| 1. | [HTML Basics](#html-basics) |
-| 2. | [CSS Styling](#css-styling) |
-| 3. | [JavaScript - Essentials](#javascript---essentials) |
-| 4. | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming) |
-| 5. | [JavaScript - UI and DOM](#javascript---ui-and-dom) |
-| 6. | [JavaScript - Applications](#javascript---applications) |
-
+| Programming | Web Design | Software Technologies |
+| :---: | :---: | :---: |
+| [C# - Part I](#c---part-i) | [HTML Basics](#html-basics) | Databases (#databases)|
+| [C# - Part II](#c---part-ii) | [CSS Styling](#css-styling) |
+| [Object-Oriented Programming](#object-oriented-programming) | [JavaScript - Essentials](#javascript---essentials) |
+| [High-Quality Code](#high-quality-code) | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming) |
+|  | [JavaScript - UI and DOM](#javascript---ui-and-dom) |
+|  | [JavaScript - Applications](#javascript---applications) |
 
 
 ## C# - Part I
