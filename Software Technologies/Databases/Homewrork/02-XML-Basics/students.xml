@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="students-style.xsl"?>
+
+<students xmlns="urn:students"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:students students-schema.xsd">
+    <student>
+        <name>Alfred</name>
+        <gender>male</gender>
+        <birth_date>2015-01-01</birth_date>
+        <phone>+359886111111</phone>
+        <email>alfred@alfred.com</email>
+        <course>java</course>
+        <specialty>QA</specialty>
+        <faculty_number>111</faculty_number>
+        <exams>
+            <exam>
+                <name>C#1</name>
+                <tutor>Gosho</tutor>
+                <score>6</score>
+            </exam>
+        </exams>
+    </student>
+    <student>
+        <name>Dana</name>
+        <gender>female</gender>
+        <birth_date>2015-01-01</birth_date>
+        <phone>+359886222111</phone>
+        <email>dana@alfred.com</email>
+        <course>Java Script</course>
+        <specialty>Developer</specialty>
+        <faculty_number>1111</faculty_number>
+        <exams>
+            <exam>
+                <name>C#1</name>
+                <tutor>Gosho</tutor>
+                <score>5</score>
+            </exam>
+        </exams>
+    </student>
+</students>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:students"
+           xmlns="urn:students"
+           elementFormDefault="qualified">
+    <!-- For more info on this method of schema definition see: http://www.w3schools.com/schema/schema_example.asp -->
+
+    <!-- simple elements -->
+
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="gender" type="xs:string"/>
+    <xs:element name="birth_date" type="xs:date"/>
+    <xs:element name="phone" type="xs:string"/>
+    <xs:element name="email" type="xs:string"/>
+    <xs:element name="course" type="xs:string"/>
+    <xs:element name="specialty" type="xs:string"/>
+    <xs:element name="faculty_number" type="xs:string"/>
+    <xs:element name="tutor" type="xs:string"/>
+    <xs:element name="score" type="xs:decimal"/>
+
+    <!-- complex elements -->
+
+    <xs:element name="exams">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="exam" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="name"/>
+                            <xs:element ref="tutor"/>
+                            <xs:element ref="score"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="students">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="name"/>
+                            <xs:element ref="gender"/>
+                            <xs:element ref="birth_date"/>
+                            <xs:element ref="phone"/>
+                            <xs:element ref="email"/>
+                            <xs:element ref="course"/>
+                            <xs:element ref="specialty"/>
+                            <xs:element ref="faculty_number"/>
+                            <xs:element ref="exams"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
