@@ -1,18 +1,14 @@
-<p align="center">
-    # Telerik Academy Homeworks/Teamworks 2015
-</p>
 
-<p align="center">
-    <a href="http://academy.telerik.com/?utm_source=site&amp;utm_medium=banner&amp;utm_content=468x60&amp;utm_campaign=community" title="Уроци по програмиране">
-        <img src="https://github.com/lnikod4s/Telerik-Software-Academy/blob/master/Modul%201/Sources/telerik-logo.png"/>
-    </a>
-</p>
 
-<p align="center">
-    <a href="http://academy.telerik.com/academy/curriculum-detailed/">
-        <img src="http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0"/>
-    </a>
-</p>
+ <a href="http://academy.telerik.com/?utm_source=site&utm_medium=banner&utm_content=728x90&utm_campaign=community" title="Уроци по програмиране уроци по програмиране"><img width="728" height="90" src="http://academy.telerik.com/images/default-album/telerik-academy-banner-728x90.jpg?sfvrsn=2" alt="Telerik Academy"/></a>
+
+## Curriculum
+
+<a href="http://academy.telerik.com/academy/curriculum-detailed/">
+    <img src="http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0"/>
+</a>
+
+## Homeworks/Teamworks 2015
 
 | | Programming 2015 |
 | --- | --- |
