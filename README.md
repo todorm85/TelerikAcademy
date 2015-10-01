@@ -1,7 +1,9 @@
-# Telerik Academy 2015
+# Telerik Academy 2015 
 <a href="http://academy.telerik.com/?utm_source=site&utm_medium=banner&utm_content=728x90&utm_campaign=community" title="Уроци по програмиране уроци по програмиране"><img width="728" height="90" src="http://academy.telerik.com/images/default-album/telerik-academy-banner-728x90.jpg?sfvrsn=2" alt="Telerik Academy"/></a>
 
-### Index table
+This repository contains all my __homework__, __practice__ and __teamwork projects__ during my study at Telerik Academy, season 2015.
+
+## Index table
 
 | Programming | Web Design | Software Technologies |
 | :---: | :---: | :---: |
@@ -12,7 +14,7 @@
 |  | [JavaScript - UI and DOM](#javascript---ui-and-dom) |
 |  | [JavaScript - Applications](#javascript---applications) |
 
-### Curriculum
+## Curriculum
 
  <a href="http://academy.telerik.com/academy/curriculum-detailed/">
   <img src="http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0"/>
