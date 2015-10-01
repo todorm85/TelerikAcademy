@@ -192,9 +192,6 @@ ModelManifest.xml
 **/*.mp4
 **/node_modules/
 **/bower_components/
-**/course_videos/
-**/course_repo/
-**/teamwork/
 # this ignores every directory ending with '_'
 **/*_/
 **/*.ffs_db
