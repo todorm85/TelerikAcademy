@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<albums>
+    <album>
+        <name>artist 1 album 1</name>
+        <artist>artist 1</artist>
+        <year>1900</year>
+        <producer>producer 1</producer>
+        <price>10</price>
+        <songs>
+            <song>
+                <title>artist 1 album 1 song 1</title>
+                <duration>1:00</duration>
+            </song>
+            <song>
+                <title>artist 1 album 1 song 2</title>
+                <duration>2:00</duration>
+            </song>
+            <song>
+                <title>artist 1 album 1 song 3</title>
+                <duration>2:00</duration>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <name>artist 1 album 2</name>
+        <artist>artist 1</artist>
+        <year>2014</year>
+        <producer>producer 1</producer>
+        <price>20</price>
+        <songs>
+            <song>
+                <title>artist 1 album 2 song 1</title>
+                <duration>1:00</duration>
+            </song>
+            <song>
+                <title>artist 1 album 2 song 2</title>
+                <duration>2:00</duration>
+            </song>
+            <song>
+                <title>artist 1 album 2 song 3</title>
+                <duration>2:00</duration>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <name>artist 2 album 1</name>
+        <artist>artist 2</artist>
+        <year>1900</year>
+        <producer>producer 1</producer>
+        <price>30</price>
+        <songs>
+            <song>
+                <title>artist 2 album 1 song 1</title>
+                <duration>1:00</duration>
+            </song>
+            <song>
+                <title>artist 2 album 1 song 2</title>
+                <duration>2:00</duration>
+            </song>
+            <song>
+                <title>artist 2 album 1 song 3</title>
+                <duration>2:00</duration>
+            </song>
+        </songs>
+    </album>
+</albums>

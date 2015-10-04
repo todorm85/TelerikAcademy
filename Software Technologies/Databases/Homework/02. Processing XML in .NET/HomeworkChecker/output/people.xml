@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<people>
+    <person>
+        <name>Ivan</name>
+        <address>Ivan Vazov 51, bl.56, ap.4</address>
+        <tel>0885443456</tel>
+    </person>
+    <person>
+        <name>Petar Milushev</name>
+        <address>Gen. Petko Voyvoda 4</address>
+        <tel>0886445433</tel>
+    </person>
+    <person>
+        <name>Dragana Cankova</name>
+        <address>Akad. Ivan Geshov 32, bl.43, fl.3, ap,5</address>
+        <tel>
+        </tel>
+    </person>
+</people>

@@ -19,6 +19,16 @@
                 <tutor>Gosho</tutor>
                 <score>6</score>
             </exam>
+            <exam>
+                <name>C#2</name>
+                <tutor>Gosho</tutor>
+                <score>4</score>
+            </exam>
+            <exam>
+                <name>JS</name>
+                <score>3</score>
+                <tutor>Dragancho</tutor>
+            </exam>
         </exams>
     </student>
     <student>
@@ -35,6 +45,33 @@
                 <name>C#1</name>
                 <tutor>Gosho</tutor>
                 <score>5</score>
+            </exam>
+        </exams>
+    </student>
+    <student>
+        <name>Haralampi</name>
+        <gender>male</gender>
+        <birth_date>2013-01-01</birth_date>
+        <phone>+359886131541</phone>
+        <email>dsfd@haralampi.com</email>
+        <course>html</course>
+        <specialty>front-end</specialty>
+        <faculty_number>114</faculty_number>
+        <exams>
+            <exam>
+                <name>C#1</name>
+                <tutor>Gosho</tutor>
+                <score>3</score>
+            </exam>
+            <exam>
+                <name>C#2</name>
+                <tutor>Gosho</tutor>
+                <score>2</score>
+            </exam>
+            <exam>
+                <name>JS</name>
+                <score>6</score>
+                <tutor>Dragancho</tutor>
             </exam>
         </exams>
     </student>

@@ -25,11 +25,11 @@
             <xs:sequence>
                 <xs:element name="exam" maxOccurs="unbounded">
                     <xs:complexType>
-                        <xs:sequence>
+                        <xs:all>
                             <xs:element ref="name"/>
                             <xs:element ref="tutor"/>
                             <xs:element ref="score"/>
-                        </xs:sequence>
+                        </xs:all>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>

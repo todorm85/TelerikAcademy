@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dir name="HomeworkChecker">
+  <file name="App.config" />
+  <file name="EntryPoint.cs" />
+  <file name="HomeworkChecker.csproj" />
+  <dir name="bin">
+    <dir name="Debug">
+      <file name="AlbumsCatalog.dll" />
+      <file name="AlbumsCatalog.pdb" />
+      <file name="DirectoryTraversal.dll" />
+      <file name="DirectoryTraversal.pdb" />
+      <file name="HomeworkChecker.exe" />
+      <file name="HomeworkChecker.exe.config" />
+      <file name="HomeworkChecker.pdb" />
+      <file name="HomeworkChecker.vshost.exe" />
+      <file name="HomeworkChecker.vshost.exe.config" />
+      <file name="People.dll" />
+      <file name="People.pdb" />
+    </dir>
+    <dir name="Release" />
+  </dir>
+  <dir name="input">
+    <file name="catalog-schema.xsd" />
+    <file name="catalog-style.xslt" />
+    <file name="catalog.xml" />
+    <file name="invalid-catalog.xml" />
+    <file name="people.txt" />
+  </dir>
+  <dir name="obj">
+    <dir name="Debug">
+      <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+      <file name="HomeworkChecker.csproj.FileListAbsolute.txt" />
+      <file name="HomeworkChecker.csprojResolveAssemblyReference.cache" />
+      <file name="HomeworkChecker.exe" />
+      <file name="HomeworkChecker.pdb" />
+      <file name="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+      <file name="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+      <file name="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+      <dir name="TempPE" />
+    </dir>
+  </dir>
+  <dir name="output">
+    <file name="album.xml" />
+    <file name="catalog.html" />
+    <file name="catalog_cheap_albums.xml" />
+    <file name="dirs.xml" />
+    <file name="dirsLINQ.xml" />
+    <file name="people.xml" />
+    <file name="README.md" />
+  </dir>
+  <dir name="Properties">
+    <file name="AssemblyInfo.cs" />
+  </dir>
+</dir>
