@@ -188,11 +188,11 @@ GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 
-## Custom ignore
+#   Custom ignore
 **/*.mp4
 **/node_modules/
 **/bower_components/
-# this ignores every directory ending with '_'
+#   Next line ignores every directory ending with '_'
 **/*_/
 **/*.ffs_db
 **/desktop.ini
