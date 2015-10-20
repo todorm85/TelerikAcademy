@@ -11,7 +11,7 @@ namespace Ado.NETHomework
 {
     class Program
     {
-        static void Main()
+        static void Tasks()
         {
             Console.WriteLine("1 Write a program that retrieves from the Northwind sample database in MS SQL Server the number of rows in the Categories table.");
             Task1GetCategoriesCount();
@@ -57,6 +57,14 @@ namespace Ado.NETHomework
 
             Console.WriteLine("8 Write a program that reads a string from the console and finds all products that contain this string.");
             Task8FindProductsByString();
+            Console.WriteLine(new String('-', 50));
+            Console.WriteLine("Task finished. Press a key to continue to next.");
+            Console.ReadKey();
+        }
+        static void Main()
+        {
+            Console.WriteLine("6 Read an Excel file with 2 columns: name and score");
+            Task6ReadExcel();
             Console.WriteLine(new String('-', 50));
             Console.WriteLine("Task finished. Press a key to continue to next.");
             Console.ReadKey();
