@@ -190,6 +190,7 @@ ModelManifest.xml
 
 #   Custom ignore
 **/*.mp4
+**/packages/
 **/node_modules/
 **/bower_components/
 #   Next line ignores every directory ending with '_'
