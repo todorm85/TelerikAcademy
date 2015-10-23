@@ -130,7 +130,7 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 
 ## Databases
 
-1. [XML Basics](../../tree/master/Software Technologies/Databases/Homework/01.%20XML%20Basics)
+1. [XML Basics](../../tree/master/Software%20Technologies/Databases/Homework/01.%20XML%20Basics)
 1. [Processing XML in .NET](../../tree/master/Software%20Technologies/Databases/Homework/02.%20Processing%20XML%20in%20.NET)
 1. [Processing JSON in .NET](../../tree/master/Software Technologies/Databases/Homework/03.%20Processing-JSON-in-.NET)
 1. [Database Systems - Overview](../../tree/master/Software Technologies/Databases/Homework/04.%20Database%20Systems%20-%20Overview) 
