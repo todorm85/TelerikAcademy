@@ -130,4 +130,16 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 
 ## Databases
 
-1. [XML Basics](../../tree/master/Software Technologies/Databases/Homework/02-XML-Basics)
+1. [XML Basics](../../tree/master/Software%20Technologies/Databases/Homework/01.%20XML%20Basics)
+1. [Processing XML in .NET](../../tree/master/Software%20Technologies/Databases/Homework/02.%20Processing%20XML%20in%20.NET)
+1. [Processing JSON in .NET](../../tree/master/Software Technologies/Databases/Homework/03.%20Processing-JSON-in-.NET)
+1. [Database Systems - Overview](../../tree/master/Software Technologies/Databases/Homework/04.%20Database%20Systems%20-%20Overview) 
+1. [SQL Server and MySQL - Introduction](../../tree/master/Software Technologies/Databases/Homework/05.%20SQL%20Server%20and%20MySQL%20-%20Introduction)
+1. [Database Modelling](../../tree/master/Software Technologies/Databases/Homework/06.%20Database%20Modeling)
+1. [Structured Query Language (SQL)](../../tree/master/Software Technologies/Databases/Homework/07.%20Intro%20to%20SQL)
+1. [Advanced SQL](../../tree/master/Software Technologies/Databases/Homework/08.%20Advanced%20SQL)
+1. [Transact SQL](../../tree/master/Software Technologies/Databases/Homework/09.%20Transact-SQL)
+1. [ADO.NET](../../tree/master/Software Technologies/Databases/Homework/10.%20ADO.NET) 
+1. [Entity Framework](../../tree/master/Software Technologies/Databases/Homework/11.%20Entity%20Framework)
+1. [Entity Framework Code First](../../tree/master/Software Technologies/Databases/Homework/13.%20Entity%20Framework%20Code%20First)
+1. [](../../tree/master/Software Technologies/Databases/Homework/)
