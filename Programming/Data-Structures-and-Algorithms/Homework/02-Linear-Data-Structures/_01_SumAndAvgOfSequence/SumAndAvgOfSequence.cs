@@ -19,8 +19,8 @@ namespace _01_SumAndAvgOfSequence
 
         public static void Main()
         {
-            var numbers = DataProvider.GetNumbersListInput<uint>(breakLine: string.Empty);
-            //var numbers = DataProvider.GetRandomNumbersList<uint>(5);
+            //var numbers = DataProvider.GetNumbersListInput<uint>(breakLine: string.Empty);
+            var numbers = DataProvider.GetRandomNumbersList<uint>(5);
 
             var sum = CalculateSum(numbers);
 
