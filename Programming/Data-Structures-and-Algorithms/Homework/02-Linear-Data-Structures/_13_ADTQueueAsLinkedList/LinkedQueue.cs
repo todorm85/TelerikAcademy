@@ -8,12 +8,12 @@
     {
         public LinkedQueueItem<T> FirstItem { get; private set; }
         public LinkedQueueItem<T> LastItem { get; private set; }
-        private List<LinkedQueueItem<T>> EnqueuedInstances { get; set; }
+        private HashSet<LinkedQueueItem<T>> EnqueuedInstances { get; set; }
         public LinkedQueue()
         {
             this.FirstItem = null;
             this.LastItem = null;
-            this.EnqueuedInstances = new List<LinkedQueueItem<T>>();
+            this.EnqueuedInstances = new HashSet<LinkedQueueItem<T>>();
         }
 
         public void Enqueue(LinkedQueueItem<T> item)

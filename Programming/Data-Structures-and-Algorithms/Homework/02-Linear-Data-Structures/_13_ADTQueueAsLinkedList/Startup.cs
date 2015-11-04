@@ -22,20 +22,20 @@
                 Console.WriteLine(e.Message);
             }
 
-            Console.WriteLine("Enqueuing 1");
+            Console.WriteLine("-----Enqueuing 1");
             q.Enqueue(first);
-            Console.WriteLine("Dequeuing");
+            Console.WriteLine("-----Dequeuing");
             Console.WriteLine(q.Dequeue().Value);
-            Console.WriteLine("Enqueuing value 1");
+            Console.WriteLine("-----Enqueuing value 1");
             q.Enqueue(first);
-            Console.WriteLine("Enqueuing value 2");
+            Console.WriteLine("-----Enqueuing value 2");
             q.Enqueue(sec);
-            Console.WriteLine("Dequeuing");
+            Console.WriteLine("-----Dequeuing");
             Console.WriteLine(q.Dequeue().Value);
-            Console.WriteLine("Dequeuing");
+            Console.WriteLine("-----Dequeuing");
             Console.WriteLine(q.Dequeue().Value);
 
-            Console.WriteLine("Dequeuing");
+            Console.WriteLine("-----Dequeuing");
             try
             {
                 Console.WriteLine(q.Dequeue());
@@ -45,11 +45,11 @@
                 Console.WriteLine(e.Message);
             }
 
-            Console.WriteLine("Enqueuing value 1");
+            Console.WriteLine("-----Enqueuing value 1");
             q.Enqueue(first);
             try
             {
-                Console.WriteLine("Enqueuing value 1");
+                Console.WriteLine("-----Enqueuing value 1");
                 q.Enqueue(first);
             }
             catch (InvalidOperationException e)
@@ -59,7 +59,7 @@
 
             try
             {
-                Console.WriteLine("Enqueuing null");
+                Console.WriteLine("-----Enqueuing null");
                 q.Enqueue(null);
             }
             catch (ArgumentNullException e)
