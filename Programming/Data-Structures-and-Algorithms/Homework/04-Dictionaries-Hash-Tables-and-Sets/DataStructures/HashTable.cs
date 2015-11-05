@@ -30,6 +30,12 @@
                 innerListArray[index] = new LinkedList<KeyValuePair<TKey, TVal>>();
             }
 
+            if (CheckIfKeyExists(key))
+            {
+                throw new InvalidOperationException("Key already exists.");
+            }
+            
+
             innerListArray[index].AddLast(new KeyValuePair<TKey, TVal>(key, value));
             this.Count++;
 
@@ -67,7 +73,10 @@
 
         public TVal Find(TKey key)
         {
-            ValidateKeyExistance(key);
+            if (!CheckIfKeyExists(key))
+            {
+                throw new ArgumentException("Key does not exist.");
+            }
 
             var index = key.GetHashCode() % this.Capacity;
             var foundValue = this.innerListArray[index].First(x => x.Key.CompareTo(key) == 0).Value;
@@ -77,7 +86,10 @@
 
         public void Remove(TKey key)
         {
-            ValidateKeyExistance(key);
+            if (!CheckIfKeyExists(key))
+            {
+                throw new ArgumentException("Key does not exist.");
+            }
 
             var index = key.GetHashCode() % this.Capacity;
             var foundKVPair = this.innerListArray[index].First(x => x.Key.CompareTo(key) == 0);
@@ -86,15 +98,17 @@
             this.Count--;
         }
 
-        private void ValidateKeyExistance(TKey key)
+        private bool CheckIfKeyExists(TKey key)
         {
             var index = key.GetHashCode() % this.Capacity;
 
             if (innerListArray[index] == null
                             || !this.innerListArray[index].Any(x => x.Key.CompareTo(key) == 0))
             {
-                throw new ArgumentException("Key not found.");
+                return false;
             }
+
+            return true;
         }
 
         public void Clear()
@@ -151,7 +165,10 @@
         {
             get
             {
-                ValidateKeyExistance(key);
+                if (!CheckIfKeyExists(key))
+                {
+                    throw new ArgumentException("Key does not exist.");
+                }
 
                 return this.Find(key);
             }

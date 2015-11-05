@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-namespace DataStructures.Tests
+﻿namespace DataStructures.Tests
 {
     using System;
     using System.Collections.Generic;
@@ -290,6 +289,15 @@ namespace DataStructures.Tests
             }
 
             Assert.AreEqual(0, keys.Count);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void AddShouldThrowIfKeyToAddAlreadyExists()
+        {
+            var hashTable = new HashTable<int, int>();
+            hashTable.Add(3, 5);
+            hashTable.Add(3, 5);
         }
     }
 }
