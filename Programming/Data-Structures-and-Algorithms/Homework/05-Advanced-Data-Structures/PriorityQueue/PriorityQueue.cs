@@ -21,7 +21,6 @@
 
             var lastIndex = innerArray.Count - 1;
             var parentIndex = GetParentIndex(lastIndex);
-            // todo: if index is -1?
             while (innerArray[lastIndex].CompareTo(innerArray[parentIndex]) > 0)
             {
                 SwapElements(lastIndex, parentIndex);
