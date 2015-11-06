@@ -46,7 +46,6 @@
             using (fileReader)
             {
                 var sb = new StringBuilder();
-                var i = 0;
                 while (!fileReader.EndOfStream)
                 {
                     var symbol = (char)fileReader.Read();
@@ -59,7 +58,6 @@
                     }
 
                     sb.Append(symbol);
-                    i++;
                 }
             }
         }
