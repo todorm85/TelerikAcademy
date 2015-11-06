@@ -13,16 +13,29 @@
         //              for autocomplete or search suggestions, but in this case we only
         //              need to find the currently processed word in the data structure
         //              and increase the value associated with it, which in both hashmap
-        //              and trie is O(1). Of course hashmaps may have collisions. But the
-        //              overall algorithm complexity is still very close to constant. The
-        //              overhead being added by the hashfunction is also a constant and
-        //              usually hashfunctions are highly efficient calculations so they
-        //              don`t present any significant overhead.
+        //              and trie is O(1). We are sure to read the whole word since we are
+        //              processing a very large file with a stream, that goes through
+        //              every character. So wehn we encounter a full word we simply check
+        //              its existance in the hash O(1). If we were to use trie, we would
+        //              have to do this check for every character. Of course hashmaps may
+        //              have collisions. But the overall algorithm complexity is still
+        //              very close to constant. The overhead being added by the
+        //              hashfunction is also a constant and usually hashfunctions are
+        //              highly efficient calculations so they don`t present any
+        //              significant overhead.
 
-        private static readonly char[] wordDelimiters = new char[] { ' ', ',', ':', '-', '!', '.', ',', '?'};
+        private static readonly char[] wordDelimiters = new char[] { ' ', ',', ':', '-', '!', '.', ',', '?' };
         private const string FilePath = @"..\..\huge_lorem.txt";
 
-        private static Dictionary<string, int> words = new Dictionary<string, int>();
+        private static Dictionary<string, int> wordsSetToCount = new Dictionary<string, int>()
+        {
+            { "Minus", 1 },
+            { "Harum", 1 },
+            { "Odit", 1 },
+            { "Facere", 1 },
+            { "Tempore", 1 },
+        }
+    ;
 
         static void Main()
         {
@@ -33,7 +46,7 @@
 
         private static void PrintWordsCount()
         {
-            foreach (var kvPair in words)
+            foreach (var kvPair in wordsSetToCount)
             {
                 Console.WriteLine($"{kvPair.Key} : {kvPair.Value}");
             }
@@ -64,14 +77,14 @@
 
         private static void CountWord(string word)
         {
-            if (words.ContainsKey(word))
+            if (wordsSetToCount.ContainsKey(word))
             {
-                words[word]++;
+                wordsSetToCount[word]++;
             }
-            else
-            {
-                words.Add(word, 1);
-            }
+            //else
+            //{
+            //    wordsSetToCount.Add(word, 1);
+            //}
         }
     }
 }
