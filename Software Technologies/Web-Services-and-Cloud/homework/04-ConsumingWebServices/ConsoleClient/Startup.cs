@@ -1,7 +1,5 @@
 ﻿namespace ConsoleClient
 {
-    using System;
-
     internal class Startup
     {
         private static void Main(string[] args)

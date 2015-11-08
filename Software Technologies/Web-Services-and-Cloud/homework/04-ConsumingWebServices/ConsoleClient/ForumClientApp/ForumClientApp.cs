@@ -24,8 +24,10 @@
                     case "search":
                         SearchPosts();
                         break;
+
                     case "exit":
                         return;
+
                     default:
                         Console.WriteLine("Invalid input.");
                         break;
@@ -52,7 +54,6 @@
                     Console.WriteLine(e.Message);
                 }
             }
-
 
             Console.WriteLine("Found posts:");
             Console.WriteLine(string.Join("\n", result.ToArray()));
