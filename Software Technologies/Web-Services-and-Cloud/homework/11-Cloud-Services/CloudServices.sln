@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleConsoleChat", "SimpleChat\SimpleConsoleChat.csproj", "{62C4798B-F8CE-4529-AC01-BA2232B48189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleConsoleChatPubNub", "SimpleConsoleChatPubNub\SimpleConsoleChatPubNub.csproj", "{60065EAD-B729-49BF-AE34-E474CE6B20FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropboxGallery", "DropboxGallery\DropboxGallery.csproj", "{3E3BB2A4-BF27-4DE3-B3E5-CDB045C9D0B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62C4798B-F8CE-4529-AC01-BA2232B48189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C4798B-F8CE-4529-AC01-BA2232B48189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C4798B-F8CE-4529-AC01-BA2232B48189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C4798B-F8CE-4529-AC01-BA2232B48189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60065EAD-B729-49BF-AE34-E474CE6B20FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60065EAD-B729-49BF-AE34-E474CE6B20FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60065EAD-B729-49BF-AE34-E474CE6B20FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60065EAD-B729-49BF-AE34-E474CE6B20FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E3BB2A4-BF27-4DE3-B3E5-CDB045C9D0B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3BB2A4-BF27-4DE3-B3E5-CDB045C9D0B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3BB2A4-BF27-4DE3-B3E5-CDB045C9D0B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3BB2A4-BF27-4DE3-B3E5-CDB045C9D0B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalsServices", "AnimalsServices\AnimalsServices.csproj", "{2561B2BE-7F4D-4A94-9F90-30370DEC69A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals.Client", "Animals.Client\Animals.Client.csproj", "{7E746969-FAA2-4A80-988B-B8EEC0D395AA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2561B2BE-7F4D-4A94-9F90-30370DEC69A7} = {2561B2BE-7F4D-4A94-9F90-30370DEC69A7}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2561B2BE-7F4D-4A94-9F90-30370DEC69A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2561B2BE-7F4D-4A94-9F90-30370DEC69A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2561B2BE-7F4D-4A94-9F90-30370DEC69A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2561B2BE-7F4D-4A94-9F90-30370DEC69A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E746969-FAA2-4A80-988B-B8EEC0D395AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E746969-FAA2-4A80-988B-B8EEC0D395AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E746969-FAA2-4A80-988B-B8EEC0D395AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E746969-FAA2-4A80-988B-B8EEC0D395AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
