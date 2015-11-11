@@ -11,23 +11,28 @@
         private const char PassableCell = ' ';
         private const char TraversedCell = '.';
         private static bool pathIsFound = false;
-        private static Queue<Tuple<int, int, char[,]>> movesQueue = new Queue<Tuple<int, int, char[,]>>();
+        private static Queue<Tuple<int, int>> movesQueue = new Queue<Tuple<int, int>>();
 
         private static void Main()
         {
-            var matrix = new char[,]
+            int n = 100;
+            var matrix = GenerateLargeEmptyMatrix(n);
+
+            FindShortestPath(matrix, new Tuple<int, int>(0, 0), new Tuple<int, int>(n - 1, n - 1));
+        }
+
+        private static char[,] GenerateLargeEmptyMatrix(int n)
+        {
+            var matrix = new char[n, n];
+            for (int i = 0; i < n; i++)
             {
-                {'x', ' ', ' ', ' ' },
-                {'x', ' ', ' ', ' '  },
-                {' ', ' ', 'x' , ' ' },
-                {' ', ' ', 'x' , ' ' },
-                {' ', ' ', 'x' , ' ' },
-                {' ', ' ', 'x' , ' ' },
-                {' ', ' ', ' ' , ' ' },
+                for (int j = 0; j < n; j++)
+                {
+                    matrix[i, j] = PassableCell;
+                }
+            }
 
-            };
-
-            FindShortestPath(matrix, new Tuple<int, int>(4, 0), new Tuple<int, int>(2, 3));
+            return matrix;
         }
 
         private static void FindShortestPath(char[,] matrix, Tuple<int, int> startCell, Tuple<int, int> endCell)
@@ -44,53 +49,46 @@
             var startRow = startCell.Item1;
             var startCol = startCell.Item2;
 
-            var firstMove = new Tuple<int, int, char[,]> (startRow, startCol, matrix);
-            TraverseShortestPath(firstMove);
+            var firstMove = new Tuple<int, int>(startRow, startCol);
+            TraverseShortestPath(firstMove, matrix);
         }
 
-        private static void TraverseShortestPath(Tuple<int, int, char[,]> move)
+        private static void TraverseShortestPath(Tuple<int, int> move, char[,] matrix)
         {
-            var row = move.Item1;
-            var col = move.Item2;
-            var matrixState = move.Item3;
+            var startRow = move.Item1;
+            var startCol = move.Item2;
+            matrix[startRow, startCol] = TraversedCell;
 
-            if (pathIsFound)
+            while (true)
             {
-                return;
-            }
+                var row = move.Item1;
+                var col = move.Item2;
 
-            if (matrixState[row, col] == DestinationCell)
-            {
-                PrintMatrix(matrixState);
-                Console.WriteLine();
-                pathIsFound = true;
-                return;
-            }
 
-            matrixState[row, col] = TraversedCell;
-            var availableCells = GetAvailableNeighbourCells(move);
-            if (availableCells.Count <= 0)
-            {
-                return;
-            }
+                if (matrix[row, col] == DestinationCell)
+                {
+                    //PrintMatrix(matrix);
+                    Console.WriteLine("Path exists");
+                    return;
+                }
 
-            foreach (var availableCell in availableCells)
-            {
-                var newMove = new Tuple<int, int, char[,]>(availableCell.Item1, availableCell.Item2, (char[,])matrixState.Clone());
-                movesQueue.Enqueue(newMove);
-            }
+                //PrintMatrix(matrix);
 
-            while (movesQueue.Count > 0)
-            {
-                TraverseShortestPath(movesQueue.Dequeue());
+                var availableCells = GetAvailableNeighbourCells(move, matrix);
+                foreach (var availableCell in availableCells)
+                {
+                    var newMove = new Tuple<int, int>(availableCell.Item1, availableCell.Item2);
+                    movesQueue.Enqueue(newMove);
+                }
+
+                move = movesQueue.Dequeue();
             }
         }
 
-        private static List<Tuple<int, int>> GetAvailableNeighbourCells(Tuple<int, int, char[,]> move)
+        private static List<Tuple<int, int>> GetAvailableNeighbourCells(Tuple<int, int> move, char[,] matrix)
         {
             var row = move.Item1;
             var col = move.Item2;
-            var matrix = move.Item3;
 
             var rowsCount = matrix.GetLength(0);
             var colsCount = matrix.GetLength(1);
@@ -106,6 +104,11 @@
             {
                 if (matrix[newRow, col] == PassableCell || matrix[newRow, col] == DestinationCell)
                 {
+                    if (matrix[newRow, col] != DestinationCell)
+                    {
+                        matrix[newRow, col] = TraversedCell;
+                    }
+
                     possibleMoves.Add(new Tuple<int, int>(newRow, col));
                 }
             }
@@ -116,6 +119,11 @@
             {
                 if (matrix[newRow, col] == PassableCell || matrix[newRow, col] == DestinationCell)
                 {
+                    if (matrix[newRow, col] != DestinationCell)
+                    {
+                        matrix[newRow, col] = TraversedCell;
+                    }
+
                     possibleMoves.Add(new Tuple<int, int>(newRow, col));
                 }
             }
@@ -126,6 +134,11 @@
             {
                 if (matrix[row, newCol] == PassableCell || matrix[row, newCol] == DestinationCell)
                 {
+                    if (matrix[row, newCol] != DestinationCell)
+                    {
+                        matrix[row, newCol] = TraversedCell;
+                    }
+
                     possibleMoves.Add(new Tuple<int, int>(row, newCol));
                 }
             }
@@ -136,6 +149,11 @@
             {
                 if (matrix[row, newCol] == PassableCell || matrix[row, newCol] == DestinationCell)
                 {
+                    if (matrix[row, newCol] != DestinationCell)
+                    {
+                        matrix[row, newCol] = TraversedCell;
+                    }
+
                     possibleMoves.Add(new Tuple<int, int>(row, newCol));
                 }
             }
@@ -155,6 +173,8 @@
                 Console.WriteLine();
                 //Console.WriteLine(string.Join("-", new string[matrix.GetLength(0) + 1]));
             }
+            Console.WriteLine();
+            //Console.ReadLine();
         }
     }
 }
