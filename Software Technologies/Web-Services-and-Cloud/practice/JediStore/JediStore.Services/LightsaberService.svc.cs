@@ -18,15 +18,15 @@ namespace JediStore.Services
 
         public IQueryable<Lightsaber> GetAll()
         {
-            //return new List<Lightsaber>()
-            //{
-            //    new Lightsaber()
-            //    {
-            //        Color= Color.Blue,
-            //        Damage = 15,
-            //        Id = 1
-            //    }
-            //}.AsQueryable();
+            return new List<Lightsaber>()
+            {
+                new Lightsaber()
+                {
+                    Color= Color.Blue,
+                    Damage = 15,
+                    Id = 1
+                }
+            }.AsQueryable();
 
 
         }
