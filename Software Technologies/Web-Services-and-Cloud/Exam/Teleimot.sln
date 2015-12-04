@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{A9CAB721-3932-4431-B039-8766F4497BF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{455753EC-402F-4983-92C9-51DF1D7D5355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleimot.Data", "Data\Teleimot.Data\Teleimot.Data.csproj", "{44FBD415-928E-4537-85ED-C2FABC10E8C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleimot.Data.Models", "Data\Teleimot.Data.Models\Teleimot.Data.Models.csproj", "{7A094CE6-3991-494B-AB21-CA07164FEF8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleimot.Server.Api", "Server\Teleimot.Server.Api\Teleimot.Server.Api.csproj", "{7F65A7A9-A3CD-4EB6-8B28-C89C483CFE88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2D739E58-F28B-409D-9801-6350C79C23FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleimot.Services.Data", "Services\Teleimot.Services.Data\Teleimot.Services.Data.csproj", "{299E9F20-1C41-497C-9E50-EE2439F87E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleimot.Server.Models", "Server\Teleimot.Server.Models\Teleimot.Server.Models.csproj", "{F3AC02A1-32AA-41E5-9568-4CFB372F3D10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleimot.Server.Infrastructure", "Server\Teleimot.Server.Infrastructure\Teleimot.Server.Infrastructure.csproj", "{FB8B7B26-206F-47CC-9F66-9EF727CECF41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D55104B4-543D-482C-B4EA-1A68E89C48E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleimot.Common", "Common\Teleimot.Common\Teleimot.Common.csproj", "{19B2F587-16E9-4EEF-99F2-B7F3A6A3FE5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{66238EEA-80C5-46E6-817D-C65BA99ECDFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleimot.Server.Wcf", "Server\Teleimot.Server.Wcf\Teleimot.Server.Wcf.csproj", "{0A454EC4-3912-462F-8E68-B7D709A6ECDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleimot.Server.Api.Tests", "Tests\Teleimot.Server.Api.Tests\Teleimot.Server.Api.Tests.csproj", "{B31E7ADB-1459-42E3-8A19-43C70817A06D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44FBD415-928E-4537-85ED-C2FABC10E8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FBD415-928E-4537-85ED-C2FABC10E8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FBD415-928E-4537-85ED-C2FABC10E8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FBD415-928E-4537-85ED-C2FABC10E8C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A094CE6-3991-494B-AB21-CA07164FEF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A094CE6-3991-494B-AB21-CA07164FEF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A094CE6-3991-494B-AB21-CA07164FEF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A094CE6-3991-494B-AB21-CA07164FEF8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F65A7A9-A3CD-4EB6-8B28-C89C483CFE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F65A7A9-A3CD-4EB6-8B28-C89C483CFE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F65A7A9-A3CD-4EB6-8B28-C89C483CFE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F65A7A9-A3CD-4EB6-8B28-C89C483CFE88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299E9F20-1C41-497C-9E50-EE2439F87E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299E9F20-1C41-497C-9E50-EE2439F87E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299E9F20-1C41-497C-9E50-EE2439F87E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299E9F20-1C41-497C-9E50-EE2439F87E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3AC02A1-32AA-41E5-9568-4CFB372F3D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3AC02A1-32AA-41E5-9568-4CFB372F3D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3AC02A1-32AA-41E5-9568-4CFB372F3D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3AC02A1-32AA-41E5-9568-4CFB372F3D10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB8B7B26-206F-47CC-9F66-9EF727CECF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8B7B26-206F-47CC-9F66-9EF727CECF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8B7B26-206F-47CC-9F66-9EF727CECF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8B7B26-206F-47CC-9F66-9EF727CECF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B2F587-16E9-4EEF-99F2-B7F3A6A3FE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B2F587-16E9-4EEF-99F2-B7F3A6A3FE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B2F587-16E9-4EEF-99F2-B7F3A6A3FE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B2F587-16E9-4EEF-99F2-B7F3A6A3FE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A454EC4-3912-462F-8E68-B7D709A6ECDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A454EC4-3912-462F-8E68-B7D709A6ECDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A454EC4-3912-462F-8E68-B7D709A6ECDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A454EC4-3912-462F-8E68-B7D709A6ECDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31E7ADB-1459-42E3-8A19-43C70817A06D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31E7ADB-1459-42E3-8A19-43C70817A06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31E7ADB-1459-42E3-8A19-43C70817A06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31E7ADB-1459-42E3-8A19-43C70817A06D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44FBD415-928E-4537-85ED-C2FABC10E8C7} = {455753EC-402F-4983-92C9-51DF1D7D5355}
+		{7A094CE6-3991-494B-AB21-CA07164FEF8F} = {455753EC-402F-4983-92C9-51DF1D7D5355}
+		{7F65A7A9-A3CD-4EB6-8B28-C89C483CFE88} = {A9CAB721-3932-4431-B039-8766F4497BF6}
+		{299E9F20-1C41-497C-9E50-EE2439F87E72} = {2D739E58-F28B-409D-9801-6350C79C23FE}
+		{F3AC02A1-32AA-41E5-9568-4CFB372F3D10} = {A9CAB721-3932-4431-B039-8766F4497BF6}
+		{FB8B7B26-206F-47CC-9F66-9EF727CECF41} = {A9CAB721-3932-4431-B039-8766F4497BF6}
+		{19B2F587-16E9-4EEF-99F2-B7F3A6A3FE5B} = {D55104B4-543D-482C-B4EA-1A68E89C48E3}
+		{0A454EC4-3912-462F-8E68-B7D709A6ECDE} = {A9CAB721-3932-4431-B039-8766F4497BF6}
+		{B31E7ADB-1459-42E3-8A19-43C70817A06D} = {66238EEA-80C5-46E6-817D-C65BA99ECDFC}
+	EndGlobalSection
+EndGlobal
