@@ -1,0 +1,11 @@
+add TheMightyThor God 100
+add Artanis Protoss 100
+add Fenix Protoss 100
+add Spiderman MutatedHuman 100
+add XelNaga God 100
+power 3
+remove Artanis
+power 3
+add Artanis Protoss 2500
+power 3
+end

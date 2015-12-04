@@ -5,7 +5,7 @@
 
     public static class Combinatorics
     {
-        private static List<int[]> allSubsets = new List<int[]>();
+        private static List<int[]> allSubsets;
         private static int[] currentSubsetArray;
         private static int countOfNumbersInSubset;
         private static int endSetNumber;
@@ -66,6 +66,7 @@
             startSetNumber = startNumber;
             endSetNumber = endNumber;
             currentSubsetArray = new int[countOfNumbersInSubset];
+            allSubsets = new List<int[]>();
 
             GenerateSubsets(0);
             return allSubsets;

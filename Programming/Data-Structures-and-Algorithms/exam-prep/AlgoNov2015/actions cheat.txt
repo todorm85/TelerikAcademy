@@ -1,0 +1,89 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace Actions
+{
+    public class Node
+    {
+        public Node(int value)
+        {
+            this.Value = value;
+            this.Children = new List<Node>();
+            this.Parents = new List<Node>();
+        }
+ 
+ 
+        public int Value { get; set; }
+ 
+        public ICollection<Node> Children { get; set; }
+ 
+        public ICollection<Node> Parents { get; set; }
+    }
+ 
+    class Program
+    {
+        public static List<int> L = new List<int>();
+        public static IDictionary<int, Node> graph = new Dictionary<int, Node>();
+ 
+        static void Main(string[] args)
+        {
+            var input = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int nodesCount = input[0];
+            int connectionsCount = input[1];
+ 
+            for (int i = 0; i < nodesCount; i++)
+            {
+                graph.Add(i, new Node(i));
+            }
+ 
+            for (int i = 0; i < connectionsCount; i++)
+            {
+                var connection = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+                var first = connection[0];
+                var second = connection[1];
+ 
+                graph[first].Children.Add(graph[second]);
+                graph[second].Parents.Add(graph[first]);
+ 
+            }
+ 
+            var withoutIncomingEdges = new List<int>();
+ 
+            foreach (var pair in graph)
+            {
+                if (pair.Value.Parents.Count == 0)
+                {
+                    withoutIncomingEdges.Add(pair.Key);
+                }
+ 
+            }
+ 
+            while (withoutIncomingEdges.Count > 0)
+            {
+                var node = withoutIncomingEdges.Min();
+                withoutIncomingEdges.Remove(node);
+ 
+                L.Add(node);
+ 
+                var children = graph[node].Children.ToArray();
+                var parent = graph[node];
+ 
+                foreach (var child in children)
+                {
+                    graph[child.Value].Parents.Remove(parent);
+                    graph[parent.Value].Children.Remove(child);
+ 
+                    if(child.Parents.Count == 0)
+                    {
+                        withoutIncomingEdges.Add(child.Value);
+                    }
+                }
+            }
+ 
+            Console.WriteLine(string.Join("\n", L));
+        }
+    }
+}

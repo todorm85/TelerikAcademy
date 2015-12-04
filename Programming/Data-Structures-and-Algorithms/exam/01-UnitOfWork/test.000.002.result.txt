@@ -1,0 +1,10 @@
+SUCCESS: TheMightyThor added!
+SUCCESS: Artanis added!
+SUCCESS: Fenix added!
+SUCCESS: Spiderman added!
+SUCCESS: XelNaga added!
+RESULT: XelNaga[God](100), TheMightyThor[God](100), Spiderman[MutatedHuman](100), Fenix[Protoss](100), Artanis[Protoss](100)
+SUCCESS: Artanis removed!
+RESULT: XelNaga[God](100), TheMightyThor[God](100), Spiderman[MutatedHuman](100), Fenix[Protoss](100)
+SUCCESS: Artanis added!
+RESULT: XelNaga[God](100), TheMightyThor[God](100), Spiderman[MutatedHuman](100), Fenix[Protoss](100), Artanis[Protoss](2500)

@@ -1,0 +1,232 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BojiGol
+{
+	class Program
+	{
+		static List<int> minimums = new List<int>();
+		static int n;
+		public static void Main()
+		{
+			Graph graph = new Graph();
+			var nodes = new Dictionary<int, Node>();
+
+			n = int.Parse(Console.ReadLine().Trim());
+			var start = int.Parse(Console.ReadLine().Trim());
+
+			while (true)
+			{
+				var line = Console.ReadLine().Trim();
+
+				if (line == "end")
+				{
+					break;
+				}
+
+				var arguments = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
+
+				var value1 = arguments[0];
+				var value2 = arguments[1];
+				var time = arguments[2];
+
+				Node first;
+				Node second;
+				if (!nodes.ContainsKey(value1))
+				{
+					first = new Node(value1);
+					nodes[value1] = first;
+				}
+				else
+				{
+					first = nodes[value1];
+				}
+
+				if (!nodes.ContainsKey(value2))
+				{
+					second = new Node(value2);
+					nodes[value2] = second;
+				}
+				else
+				{
+					second = nodes[value2];
+				}
+				first.AddConnection(second, time, true);
+				graph.AddEdge(first, second);
+				graph.AddEdge(second, first);
+
+			}
+
+			for (int i = 0; i < nodes[start].Connections.Count(); i++)
+			{
+				var firstConn = nodes[start].Connections.ToArray()[i].Target;
+
+				LinkedList<Node> visited = new LinkedList<Node>();
+				visited.AddLast(nodes[start]);
+				BreadthFirst(graph, visited, firstConn);
+			}
+			Console.WriteLine(minimums.Min());
+		}
+
+
+		public static void BreadthFirst(Graph graph, LinkedList<Node> visited, Node end)
+		{
+			LinkedList<Node> nodes = graph.AdjacentNodes(visited.LastOrDefault());
+			// examine adjacent nodes
+			foreach (Node node in nodes)
+			{
+				if (visited.Contains(node))
+				{
+					continue;
+				}
+				if (node.Equals(end))
+				{
+					visited.AddLast(node);
+					PrintPath(visited);
+					visited.RemoveLast();
+					break;
+				}
+			}
+			// in breadth-first, recursion needs to come after visiting adjacent nodes
+			foreach (Node node in nodes)
+			{
+				if (visited.Contains(node) || node.Equals(end))
+				{
+					continue;
+				}
+				visited.AddLast(node);
+				BreadthFirst(graph, visited, end);
+				visited.RemoveLast();
+			}
+		}
+
+		private static void PrintPath(LinkedList<Node> visited)
+		{
+			if (visited.Count == n)
+			{
+				var arr = new Node[visited.Count];
+				var c = 0;
+				foreach (Node node in visited)
+				{
+					arr[c] = node;
+					c++;
+				}
+
+				var min = 0;
+				for (int i = 0; i < arr.Length - 1; i++)
+				{
+					var curr = arr[i];
+					var next = arr[i + 1];
+					var currMin = curr.Connections.FirstOrDefault(x => x.Target == next).Distance;
+					min +=  currMin;
+				}
+
+				var first = arr[0];
+				var last = arr[arr.Length - 1];
+				var mi = first.Connections.FirstOrDefault(x => x.Target == last).Distance;
+				min += mi;
+				minimums.Add(min);
+			}
+		}
+	}
+
+	public class Edge
+	{
+		public Edge(Node target, int distance)
+		{
+			this.Target = target;
+			this.Distance = distance;
+		}
+
+		public Node Target { get; private set; }
+
+		public int Distance { get; private set; }
+	}
+
+	public class Node
+	{
+		private readonly IList<Edge> connections;
+
+		public Node(int name)
+		{
+			this.Name = name;
+			this.connections = new List<Edge>();
+		}
+
+		public int Name { get; private set; }
+
+		public IEnumerable<Edge> Connections
+		{
+			get { return this.connections; }
+		}
+
+		public void AddConnection(Node targetNode, int distance, bool twoWay)
+		{
+			if (targetNode == null)
+			{
+				throw new ArgumentNullException("targetNode");
+			}
+
+			if (targetNode == this)
+			{
+				throw new ArgumentException("Node may not connect to itself.");
+			}
+
+			if (distance <= 0)
+			{
+				throw new ArgumentException("Distance must be positive.");
+			}
+
+			this.connections.Add(new Edge(targetNode, distance));
+			if (twoWay)
+			{
+				targetNode.AddConnection(this, distance, false);
+			}
+		}
+	}
+
+	public class Graph
+	{
+		private Dictionary<Node, HashSet<Node>> map = new Dictionary<Node, HashSet<Node>>();
+
+		public void AddEdge(Node node1, Node node2)
+		{
+			HashSet<Node> adjacent;
+
+			if (!map.ContainsKey(node1))
+			{
+				adjacent = new HashSet<Node>();
+				map.Add(node1, adjacent);
+			}
+			adjacent = map[node1];
+			adjacent.Add(node2);
+		}
+
+		public void AddConnection(Node fromNode, Node toNode, int distance)
+		{
+			fromNode.AddConnection(toNode, distance, true);
+		}
+
+		public bool IsConnected(Node node1, Node node2)
+		{
+			HashSet<Node> adjacent = map[node1];
+			if (adjacent == null)
+			{
+				return false;
+			}
+			return adjacent.Contains(node2);
+		}
+
+		public LinkedList<Node> AdjacentNodes(Node last)
+		{
+			if (!map.ContainsKey(last))
+			{
+				return new LinkedList<Node>();
+			}
+			return new LinkedList<Node>(map[last]);
+		}
+	}
+}
