@@ -5,12 +5,12 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 
 ## Index table
 
-| Programming | Web Design | Software Technologies |
-| :---: | :---: | :---: |
-| [C# - Part I](#c---part-i) | [HTML Basics](#html-basics) | [Databases](#databases)|
-| [C# - Part II](#c---part-ii) | [CSS Styling](#css-styling) |
-| [Object-Oriented Programming](#object-oriented-programming) | [JavaScript - Essentials](#javascript---essentials) |
-| [High-Quality Code](#high-quality-code) | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming) |
+| Programming | Web Design | Software Technologies
+| :---: | :---: | :---:
+| [C# - Part I](#c---part-i) | [HTML Basics](#html-basics) | [Databases](#databases)
+| [C# - Part II](#c---part-ii) | [CSS Styling](#css-styling) | [Web Services and Cloud](#web-services-and-cloud)
+| [Object-Oriented Programming](#object-oriented-programming) | [JavaScript - Essentials](#javascript---essentials) | [Single Page Application with AngularJS](#single-page-application-with-angularjs)
+| [High-Quality Code](#high-quality-code) | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming) | [Universal windows platform applications](#universal-windows-platform-applications)
 | [Data Structures and Algorithms](#data-structures-and-algorithms) | [JavaScript - UI and DOM](#javascript---ui-and-dom) |
 |  | [JavaScript - Applications](#javascript---applications) |
 
@@ -159,3 +159,22 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 1. [Sorting algorithms](../../tree/master/Programming/Data-Structures-and-Algorithms/Homework/09-Sorting-Algorithms)
 1. [Dynamic programming](../../tree/master/Programming/Data-Structures-and-Algorithms/Homework/11-DynamicProgramming)
 1. [Graphs](../../tree/master/Programming/Data-Structures-and-Algorithms/Homework/15-GraphAlgos)
+
+## Web Services and Cloud
+
+1. [Exam](../../tree/master/Software%20Technologies/Web-Services-and-Cloud/Exam)
+1. [Homework](../../tree/master/Software%20Technologies/Web-Services-and-Cloud/homework)
+1. [Practice](../../tree/master/Software%20Technologies/Web-Services-and-Cloud/practice)
+
+## Single Page Application With AngularJS
+
+1. [Exam](../../tree/master/Software%20Technologies/AngularJS/Exam)
+1. [Exam training](../../tree/master/Software%20Technologies/AngularJS/Exam-training)
+1. [Homework](../../tree/master/Software%20Technologies/AngularJS/TicTacToeGame)
+1. [Practice](../../tree/master/Software%20Technologies/AngularJS/live-demos)
+
+## Universal windows platform applications
+
+1. [Homework](../../tree/master/Software%20Technologies/UWP-Apps/Homework)
+1. [Pracitice](../../tree/master/Software%20Technologies/AngularJS/live-demos)
+1. [Teamwork project](../../tree/master/Software%20Technologies/AngularJS/RoomMeasurer)
