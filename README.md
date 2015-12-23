@@ -176,5 +176,5 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 ## Universal windows platform applications
 
 1. [Homework](../../tree/master/Software%20Technologies/UWP-Apps/Homework)
-1. [Pracitice](../../tree/master/Software%20Technologies/AngularJS/live-demos)
-1. [Teamwork project](../../tree/master/Software%20Technologies/AngularJS/RoomMeasurer)
+1. [Pracitice](../../tree/master/Software%20Technologies/UWP-Apps/live-demos)
+1. [Teamwork project](../../tree/master/Software%20Technologies/UWP-Apps/RoomMeasurer)
