@@ -142,13 +142,15 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 1. [ADO.NET](../../tree/master/Software Technologies/Databases/Homework/10.%20ADO.NET) 
 1. [Entity Framework](../../tree/master/Software Technologies/Databases/Homework/11.%20Entity%20Framework)
 1. [Entity Framework Code First](../../tree/master/Software Technologies/Databases/Homework/13.%20Entity%20Framework%20Code%20First)
-1. [](../../tree/master/Software Technologies/Databases/Homework/)
 
 ## Data Structures and Algorithms
 
+1. [AI competition](../../tree/master/Programming/Data-Structures-and-Algorithms/AI-competition)
+1. [Exam](../../tree/master/Programming/Data-Structures-and-Algorithms/exam)
+1. [Workshops](../../tree/master/Programming/Data-Structures-and-Algorithms/workshops)
 1. [Algorithm complexity](../../tree/master/Programming/Data-Structures-and-Algorithms/Homework/01-Data-Structures-Algorithms-and-Complexity)
 1. [Linear data structures](../../tree/master/Programming/Data-Structures-and-Algorithms/Homework/02-Linear-Data-Structures)
-1. [Trees and traversals](../../tree/master/Programming/Data-Structures-and-Algorithms/Homework/03-Trees-and-traversals)
+1. [Trees and traversals](../../tree/master/Programming/Data-Structures-and-Algorithms/Homework/03-Trees-and-Traversals)
 1. [Dictionaries, hashtables and sets](../../tree/master/Programming/Data-Structures-and-Algorithms/Homework/04-Dictionaries-Hash-Tables-and-Sets)
 1. [Advanced data structures](../../tree/master/Programming/Data-Structures-and-Algorithms/Homework/05-Advanced-Data-Structures)
 1. [Algorithms efficiency](../../tree/master/Programming/Data-Structures-and-Algorithms/Homework/06-Data-Structure-Efficiency)
