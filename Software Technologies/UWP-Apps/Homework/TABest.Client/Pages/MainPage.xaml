@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="TABest.Client.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TABest.Client"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:convertes="using:TABest.Client.Helpers.Converters" >
+
+    <Page.Resources>
+        <convertes:StringFormatConverter x:Key="StringFormatConverter" />
+        <DataTemplate x:Key="projectDataTemplate">
+            <StackPanel Orientation="Vertical"
+                            HorizontalAlignment="Stretch">
+                <Image Source="{Binding MainImageUrl}"
+                       MaxWidth="640"/>
+                <TextBlock Style="{StaticResource TextBlockStyle}"
+                    Text="{Binding Title}"
+                           FontSize="35"/>
+                <TextBlock Style="{StaticResource TextBlockStyle}"
+                    Text="{Binding ShortDate}" />
+                <TextBlock Style="{StaticResource TextBlockStyle}"
+                    Text="{Binding Likes,
+                    Converter={StaticResource StringFormatConverter}, 
+                    ConverterParameter='Likes: {0}!'}" />
+
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{StaticResource BackgroundColorBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+            Style="{StaticResource TitleStyle}"
+            Text="TA Homework" />
+
+        <ListBox Grid.Row="1"
+                 x:Name="lbProjects"
+                 ItemsSource="{Binding Projects}"
+                 SelectedValuePath="Id"
+                 ItemTemplate="{StaticResource projectDataTemplate}"
+                 Background="{StaticResource BackgroundColorBrush}">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+
+    </Grid>
+</Page>
