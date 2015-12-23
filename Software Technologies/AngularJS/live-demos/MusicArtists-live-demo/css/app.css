@@ -1,0 +1,32 @@
+.dark-back {
+    background-color: #95a5a6;
+}
+
+.dark-back a {
+    color: white;
+}
+
+.dark-text {
+    color: #2c3e50;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+input.ng-invalid.ng-dirty.form-validation {
+    background-color: pink;
+}
+
+input.ng-valid.ng-dirty.form-validation {
+    background-color: lightgreen;
+}
+
+.error {
+    color: red;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

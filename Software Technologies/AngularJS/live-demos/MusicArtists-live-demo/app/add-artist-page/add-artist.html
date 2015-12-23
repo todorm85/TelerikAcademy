@@ -1,0 +1,76 @@
+<div class="row">
+   <div class="col-md-6">
+
+      <form class="form-horizontal" name="vm.artistForm">
+
+         <fieldset>
+
+            <legend class="col-md-offset-2">Main information</legend>
+
+            <div class="form-group">
+               <label for="name" class="col-lg-2 control-label">Name</label>
+               <div class="col-lg-10">
+                  <input ng-model="vm.artist.name" required="required" type="text" class="form-control form-validation" id="name" placeholder="Name">
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label for="image-url" class="col-lg-2 control-label">Image url</label>
+               <div class="col-lg-10">
+                  <input ng-pattern="/^http.*(jpg|gif|png)/" ng-model="vm.artist.image" required="required" type="text" class="form-control form-validation" id="image-url" placeholder="Image url">
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label for="date-created" class="col-lg-2 control-label">Date created</label>
+               <div class="col-lg-10">
+                  <input ng-model="vm.artist.created" ng-pattern="/\d\d/\d\d/\d\d\d\d/" datepicker required="required" type="text" class="form-control form-validation" id="date-created" placeholder="Date created dd/mm/yyyy">
+               </div>
+            </div>
+
+         </fieldset>
+
+         <fieldset>
+
+            <legend class="col-md-offset-2">Additional information</legend>
+
+            <div class="form-group">
+               <label for="location" class="col-lg-2 control-label">Location</label>
+               <div class="col-lg-10">
+                  <input ng-model="vm.artist.additionalInformation.location" type="text" class="form-control" id="location" placeholder="Location">
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label for="albums" class="col-lg-2 control-label">Albums</label>
+               <div class="col-lg-10">
+                  <input ng-model="vm.artist.additionalInformation.albums" type="text" class="form-control" id="albums" placeholder="Albums">
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label for="singles" class="col-lg-2 control-label">Singles</label>
+               <div class="col-lg-10">
+                  <input ng-model="vm.artist.additionalInformation.singles " type="text" class="form-control" id="singles" placeholder="Singles">
+               </div>
+            </div>
+
+         </fieldset>
+
+         <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+               <button ng-click="vm.cancel()" class="btn btn-default">Cancel</button>
+               <button ng-click="vm.saveArtist(vm.artist, vm.artistForm)" ng-disabled="vm.artistForm.$invalid" class="btn btn-primary">Save</button>
+            </div>
+         </div>
+
+      </form>
+
+   </div>
+   <div class="col-md-6">
+
+      <img ng-src="{{vm.artist.image}}">
+
+   </div>
+
+</div>

@@ -1,0 +1,16 @@
+<div ng-controller="ListArtistsController" class="jumbotron row">
+   <div class="row">
+      <div class="col-md-4 pull-right">
+         <div artist-search search="search"></div>
+      </div>
+   </div>
+
+   <div ng-repeat="artist in vm.artists" class="col-md-3 pull-left">
+      <h2>
+         <a href="#/artist-details/{{artist.id}}" class="dark-text">
+            {{artist.name}}
+            <img ng-src={{artist.image}} />
+         </a>
+      </h2>
+   </div>
+</div>

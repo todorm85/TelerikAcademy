@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>TicTacToeApp</title>
+   <!-- libs -->
+   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
+   <link rel="stylesheet" href="lib/jQueryUI/jquery-ui.min.css">
+   <link rel="stylesheet" href="lib/toastr/toastr.min.css">
+   <!-- custom style -->
+   <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body ng-app="TicTacToeApp" ng-controller="PageController as pc" ng-cloak>
+
+   <div class="navbar navbar-default">
+      <div class="container">
+
+         <div class="navbar-header col-md-3">
+            <a href="#/home" class="navbar-brand">TicTacToe App</a>
+         </div>
+
+         <ul class="nav navbar-nav">
+            <li ng-if="pc.globallyLoggedInUser"> <a href="#/game/list-games">List games</a> </li>
+            <li ng-if="pc.globallyLoggedInUser"> <a href="#/game/my-games">My games</a> </li>
+            <li ng-if="pc.globallyLoggedInUser"> <a href="" ng-click="pc.createGame()">Create game</a> </li>
+         </ul>
+
+         <ul class="nav navbar-nav pull-right" ng-if="!pc.globallyLoggedInUser">
+            <li> <a href="#/register-user">Register</a> </li>
+            <li> <a href="#/login-user">Login</a> </li>
+         </ul>
+
+         <ul class="nav navbar-nav pull-right" ng-if="pc.globallyLoggedInUser">
+            <li> <a href="#/">{{pc.globallyLoggedInUser}}</a> </li>
+            <li> <a href="#/home" ng-click="pc.logout()">Logout</a> </li>
+         </ul>
+
+      </div>
+   </div>
+
+   <div class="container" ng-view>
+      
+   </div>
+
+   <footer class="text-center">
+      <hr />
+      <small>
+            Author: {{pc.author}} &nbsp&nbsp&nbsp Year: {{pc.year}}
+        </small>
+   </footer>
+
+   <!-- libs -->
+   <script src="lib/jQuery/jquery-2.1.4.min.js"></script>
+   <script src="lib/angular/angular-1.4.8/angular.min.js"></script>
+   <script src="lib/angular/angular-1.4.8/angular-resource.min.js"></script>
+   <script src="lib/angular/angular-1.4.8/angular-route.min.js"></script>
+   <script src="lib/angular/angular-1.4.8/angular-cookies.min.js"></script>
+
+   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+   <script src="lib/jQueryUI/jquery-ui.min.js"></script>
+   <script src="lib/toastr/toastr.min.js"></script>
+
+   <!-- app -->
+   <script src="app/app.js"></script>
+
+   <!-- common controllers-->
+   <script src="app/common/controllers/PageController.js"></script>
+
+   <!-- common directives-->
+   <script type="text/javascript" src="app/common/directives/datepicker.js"></script>
+
+   <!-- common filters -->
+   <script src="app/common/filters/statusFilter.js"></script>
+
+   <!-- common services -->
+   <script src="app/common/services/gameDataSvc.js"></script>
+
+   <!-- register user page -->
+   <script src="app/register-user-page/RegisterUserController.js"></script>
+
+   <!-- login user page-->
+   <script src="app/login-user-page/LoginController.js"></script>
+
+   <!-- identity service-->
+   <script src="app/identity/auth-service.js"></script>
+   <script src="app/identity/identity-service.js"></script>
+
+   <!-- home page-->
+   <script src="app/home-page/HomePageController.js"></script>
+
+   <!-- game page-->
+   <script src="app/game-page/GamePageController.js"></script>
+   <script src="app/game-page/game-state-filter.js"></script>
+   <script src="app/game-page/cell-state-filter.js"></script>
+   <script src="app/game-page/game-board-directive.js"></script>
+
+   <!-- list games page-->
+   <script src="app/list-games-page/ListGamesController.js"></script>
+
+   <!-- my games page-->
+   <script src="app/my-games-page/MyGamesController.js"></script>
+
+</body>
+
+</html>

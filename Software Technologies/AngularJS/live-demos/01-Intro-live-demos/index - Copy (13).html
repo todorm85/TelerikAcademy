@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="HomeController as vm">
+        <span>{{2 * 3 - 5}}</span>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript">
+        var myApp = angular.module('myApp', [])
+            .controller('HomeController',['$sce', function($sce) {
+                var vm = this;
+            }]);
+    </script>
+</body>
+
+</html>

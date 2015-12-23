@@ -1,0 +1,12 @@
+<div class="row">
+   <div ng-repeat="game in vm.games" class="jumbotron row">
+
+      <p><strong>GameId:</strong> {{game.Id}}</p>
+      <p><strong>FirstPlayer:</strong> {{game.FirstPlayer}} </p>
+      <p><strong>SecondPlayer:</strong> {{game.SecondPlayer}} </p>
+      <p><strong>Status:</strong> {{game.Status | gameState}}</p>
+
+      <a href="" class="btn btn-success" ng-click="vm.join(game.Id)">Join</a>
+
+   </div>
+</div>

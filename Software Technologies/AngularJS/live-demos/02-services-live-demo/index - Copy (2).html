@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Angular services</title>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="home">
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script>
+        angular.module('myApp', [])
+            .constant('baseUrl', 'http://api.github.com')
+            .factory('catsData', ['$http', 'baseUrl', '$q',
+                function($http, baseUrl, q) {
+                    return {
+                        get: function get () {
+                            var deferred = q.defer();
+                            $http.get(baseUrl)
+                                .then(function (result) {
+                                    deferred.resolve(result);
+                                });
+
+                            return deferred.promise;
+                        }
+                    };
+                }
+            ])
+            .controller('home', ['$scope', 'catsData', function($scope, catsData) {
+                catsData.get()
+                    .then(function (result) {
+                        console.log(result);
+                    });
+            }]);
+    </script>
+</body>
+
+</html>

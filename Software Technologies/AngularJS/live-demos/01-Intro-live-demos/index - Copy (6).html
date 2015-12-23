@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="HomeController as vm">
+        <li ng-repeat="number in vm.numbers">{{number}} {{$index+1}}</li>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript">
+        var myApp = angular.module('myApp', [])
+            .controller('HomeController', function() {
+                var vm = this;
+                vm.numbers = [10,2,3,4];
+            });
+    </script>
+</body>
+
+</html>
