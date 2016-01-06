@@ -1,0 +1,19 @@
+extends ../shared/layout
+block main-content
+    .container.jumbotron
+        .row
+            table.table.table-striped.table-hover
+                thead
+                    tr
+                        th Model
+                        th Screen
+                        th Battery
+                tbody
+                    each item in items
+                        tr
+                            td
+                                =item.model
+                            td
+                                =item.screenSize
+                            td
+                                =item.batteryCapacity
