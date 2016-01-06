@@ -1,0 +1,16 @@
+extends ../shared/layout
+
+block main-content
+    button#add-input-file More files
+    br
+    br
+    form#form-upload(method="post" enctype="multipart/form-data")
+        input(type="file" name="file_0")
+        input(type="checkbox" name="private_0")
+        span Private
+        br
+        br
+        input(type="submit")
+
+block page-scripts
+    script(src="js/upload.js")
