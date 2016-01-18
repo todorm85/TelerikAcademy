@@ -170,7 +170,7 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 
 1. [Exam](../../tree/master/Software%20Technologies/AngularJS/Exam)
 1. [Exam training](../../tree/master/Software%20Technologies/AngularJS/Exam-training)
-1. [Homework](../../tree/master/Software%20Technologies/AngularJS/TicTacToeGame)
+1. [Homework - TicTacToeGame](../../tree/master/Software%20Technologies/AngularJS/TicTacToeGame)
 1. [Practice](../../tree/master/Software%20Technologies/AngularJS/live-demos)
 
 ## Universal windows platform applications
