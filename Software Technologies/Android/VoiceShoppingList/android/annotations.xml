@@ -1,5 +1,0 @@
-<root>
-  <item name='android.Manifest.permission GET_TASKS'>
-    <annotation name='java.lang.annotation.Deprecated' />
-  </item>
-</root>

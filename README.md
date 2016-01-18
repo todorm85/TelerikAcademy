@@ -11,8 +11,8 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 | [C# - Part II](#c---part-ii) | [CSS Styling](#css-styling) | [Web Services and Cloud](#web-services-and-cloud)
 | [Object-Oriented Programming](#object-oriented-programming) | [JavaScript - Essentials](#javascript---essentials) | [Single Page Application with AngularJS](#single-page-application-with-angularjs)
 | [High-Quality Code](#high-quality-code) | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming) | [Universal windows platform applications](#universal-windows-platform-applications)
-| [Data Structures and Algorithms](#data-structures-and-algorithms) | [JavaScript - UI and DOM](#javascript---ui-and-dom) |
-|  | [JavaScript - Applications](#javascript---applications) |
+| [Data Structures and Algorithms](#data-structures-and-algorithms) | [JavaScript - UI and DOM](#javascript---ui-and-dom) | [Nodejs](#nodejs)
+|  | [JavaScript - Applications](#javascript---applications) | [Android](#android)
 
 ## Curriculum
 
@@ -177,4 +177,14 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 
 1. [Homework](../../tree/master/Software%20Technologies/UWP-Apps/Homework)
 1. [Pracitice](../../tree/master/Software%20Technologies/UWP-Apps/live-demos)
-1. [Teamwork project](../../tree/master/Software%20Technologies/UWP-Apps/RoomMeasurer)
+1. [Teamwork project](https://github.com/todorm85/RoomMeasurer)
+
+## Android
+
+1. [Teamwork project](https://github.com/todorm85/VoiceShoppingList)
+
+## Nodejs
+
+1. [Homework](../../tree/master/Software%20Technologies/Nodejs/Homework)
+1. [Exam](../../tree/master/Software%20Technologies/Nodejs/live-demos)
+1. [Teamwork project](https://github.com/todorm85/WebServerXplorer)
