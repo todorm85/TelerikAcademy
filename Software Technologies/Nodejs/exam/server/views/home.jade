@@ -1,0 +1,35 @@
+extends shared/layout
+block main-content
+    h1 
+        if currentUser
+            | Welcome, #{currentUser.username}!
+        else
+            | Welcome, Anonymous!
+    .container
+        .row
+            h3 Top Eight Public Playlists!
+        .row: .col-md-6
+            table.table.table-bordered.table-striped
+                tr
+                    th
+                        | Title
+                    th
+                        | Creator
+                    th
+                        | isPrivate
+                    th
+                        | Category
+                    th
+                        | Rating
+                each pl in playlists
+                    tr
+                        td
+                            a(href="/playlist/#{pl._id}") #{pl.title}
+                        td
+                            | #{pl.creator}
+                        td
+                            | #{pl.isPrivate}
+                        td
+                            | #{pl.category}
+                        td
+                            | #{pl.rating}

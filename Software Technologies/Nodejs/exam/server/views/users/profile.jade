@@ -1,0 +1,26 @@
+extends ../shared/layout
+block main-content
+    form(method="post" id="form-create-playlist")
+        
+        label(for="firstName") First name
+        input(id="firstName" type="text" name="firstName" value="#{firstName}" class ="form-control")
+
+        label(for="lastName") Last name
+        input(id="lastName" type="text" name="lastName" value="#{lastName}" class ="form-control")
+
+        label(for="email") email
+        input(id="email" type="text" name="email" value="#{email}" class ="form-control")
+
+        label(for="avatar") avatar
+        input(id="avatar" type="text" name="avatar" value="#{avatar}" class ="form-control")
+
+        label(for="youTube") youTube
+        input(id="youTube" type="text" name="youTube" value="#{youTube || ''}" class ="form-control")
+
+        label(for="facebook") facebook
+        input(id="facebook" type="text" name="facebook" value="#{facebook || ''}" class ="form-control")
+
+        label(for="newPassword") newPassword
+        input(id="newPassword" type="text" name="newPassword" placeholder="new password" class ="form-control")
+
+        input(type="submit" value="Update" class="btn btn-lg")

@@ -1,0 +1,30 @@
+extends ../shared/layout
+block main-content
+    .container
+        .row
+            h3 Playlists
+        .row: .col-md-6
+            table.table.table-bordered.table-striped
+                tr
+                    th
+                        | Title
+                    th
+                        | Creator
+                    th
+                        | isPrivate
+                    th
+                        | Category
+                    th
+                        | Rating
+                each pl in playlists
+                    tr
+                        td
+                            a(href="/playlist/#{pl._id}") #{pl.title}
+                        td
+                            | #{pl.creator}
+                        td
+                            | #{pl.isPrivate}
+                        td
+                            | #{pl.category}
+                        td
+                            | #{pl.rating}

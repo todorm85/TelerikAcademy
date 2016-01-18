@@ -1,0 +1,41 @@
+extends ../shared/layout
+block main-content
+    form(method="post" id="form-create-playlist")
+        label(for="title") title
+        input(id="title" type="text" name="title" placeholder="title" class ="form-control")
+
+        br
+
+        label(for="description") description
+        input(id="description" type="text" name="description" placeholder="description" class ="form-control")
+
+    
+        br
+        label Video urls
+        br
+        input(type="button" id="add-input-url" value="More urls" class="btn btn-sm")
+        br
+        .div#video-urls
+            input(id="video_0" type="text" name="video_0" placeholder="video" class ="form-control")
+
+        br
+        
+        label(for="category") category
+        select(id="category" class="form-control" name="category")
+            option(value="") Choose Category (Wisely)
+            each category in categories
+                option(value="#{category}") #{category}
+
+        br
+        
+        .checkbox
+            label(for="isPrivate") 
+                input(id="isPrivate" type="checkbox" name="isPrivate")
+                | isPrivate
+
+        br
+
+        input(type="submit" value="Create" class="btn btn-lg")
+
+block page-scripts
+    script(type="text/javascript" src="/js/create-playlist.js")

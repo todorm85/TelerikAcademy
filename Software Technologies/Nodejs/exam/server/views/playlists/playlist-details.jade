@@ -1,0 +1,68 @@
+extends ../shared/layout
+block main-content
+    .container
+        .row
+            h3 Playlist #{pl.title} details
+        .row
+            .col-md-6
+            table.table.table-bordered.table-striped
+                tr
+                    th
+                        | Title
+                    th
+                        | Creator
+                    th
+                        | isPrivate
+                    th
+                        | Category
+                tr
+                    td
+                        a(href="/playlist/#{pl._id}") #{pl.title}
+                    td
+                        | #{pl.creator}
+                    td
+                        | #{pl.isPrivate}
+                    td
+                        | #{pl.category}
+        .row
+            .col-md-6
+                table.table.table-bordered.table-striped
+                    tr
+                        th
+                            | Playlist urls
+                        if currentUser
+                            th
+                                | Delete
+                    each url, index in pl.videoUrls
+                        tr
+                            td
+                                a(href="#{url}") #{url}
+                            if currentUser
+                                td
+                                    a(href="/playlist/delete-video/#{pl._id}/#{index}")
+                                        | del
+                if currentUser
+                    a(href="/playlist/delete-playlist/#{pl._id}" class="btn btn-warn")
+                        | Delete playlist
+
+            .col-md-6
+                table.table.table-bordered.table-striped
+                    tr
+                        th
+                            | Comments
+                        th
+                            | Creator
+                    each comment in pl.comments
+                        tr
+                            td
+                                | #{comment.content}
+                            td
+                                | #{comment.username}
+
+        .row
+            if currentUser
+                form(method="post" id="form-create-playlist" action="/playlist/add-comment/#{pl._id}")
+                    label(for="comment") Comment
+                    input(id="comment" type="textbox" name="comment" placeholder="comment" class ="form-control")
+
+                    input(type="Submit" value="Send" class="btn btn-sm")
