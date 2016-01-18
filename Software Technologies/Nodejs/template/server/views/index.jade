@@ -1,0 +1,7 @@
+extends shared/layout
+block main-content
+    h1 
+        if currentUser
+            | Welcome, #{currentUser.username}!
+        else
+            | Welcome, Anonymous!

@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var encryption = require('../../services/encryption');
+var encryption = require('../services/encryption');
 
 module.exports.init = function () {
     var userSchema = mongoose.Schema({
