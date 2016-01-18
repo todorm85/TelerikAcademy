@@ -198,3 +198,4 @@ ModelManifest.xml
 **/*.ffs_db
 **/desktop.ini
 **/*.sublime-*
+*.zip
