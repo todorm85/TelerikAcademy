@@ -185,6 +185,6 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 
 ## Nodejs
 
-1. [Homework](../../tree/master/Software%20Technologies/Nodejs/Homework)
-1. [Exam](../../tree/master/Software%20Technologies/Nodejs/live-demos)
+1. [Homework](../../tree/master/Software%20Technologies/Nodejs/homework)
+1. [Exam](../../tree/master/Software%20Technologies/Nodejs/exam)
 1. [Teamwork project](https://github.com/todorm85/WebServerXplorer)
