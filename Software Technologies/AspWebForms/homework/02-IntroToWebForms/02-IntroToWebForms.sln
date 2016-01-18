@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-HelloWorldApp", "01-HelloWorldApp\01-HelloWorldApp.csproj", "{EBC459AC-AA1B-42CB-8C06-F3E19DD1138D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-PageEvents", "PageEvents\02-03-PageEvents.csproj", "{3EDA0F50-C017-4390-A673-4D7A506E74A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBC459AC-AA1B-42CB-8C06-F3E19DD1138D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC459AC-AA1B-42CB-8C06-F3E19DD1138D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC459AC-AA1B-42CB-8C06-F3E19DD1138D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC459AC-AA1B-42CB-8C06-F3E19DD1138D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EDA0F50-C017-4390-A673-4D7A506E74A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EDA0F50-C017-4390-A673-4D7A506E74A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EDA0F50-C017-4390-A673-4D7A506E74A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EDA0F50-C017-4390-A673-4D7A506E74A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
