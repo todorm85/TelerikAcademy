@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        style="@style/ViewMicResult"
+        android:tag="@string/mic_result_tag" />
+
+    <TextView
+        android:id="@+id/tv_command_result"
+        style="@style/CommandsResultTextView"
+        android:tag="@string/commands_result_text_view_tag" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.telerik.academy.voiceshoppinglist.MainActivityFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout="@layout/fragment_main" />
+</LinearLayout>
+
