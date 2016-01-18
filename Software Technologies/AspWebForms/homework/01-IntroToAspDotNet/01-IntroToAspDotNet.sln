@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspWebFormsCalculator", "AspWebForms\AspWebFormsCalculator.csproj", "{7DC20F3C-4890-4446-A037-238E47D824C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspMvcCalculator", "AspMvc\AspMvcCalculator.csproj", "{A4BDDFE3-6B7B-4A85-9A2B-DD44F0A8D501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text2PNG", "Text2PNG\Text2PNG.csproj", "{3899668C-E696-4359-B723-3E4CCDA2EB99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DC20F3C-4890-4446-A037-238E47D824C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC20F3C-4890-4446-A037-238E47D824C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC20F3C-4890-4446-A037-238E47D824C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC20F3C-4890-4446-A037-238E47D824C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BDDFE3-6B7B-4A85-9A2B-DD44F0A8D501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BDDFE3-6B7B-4A85-9A2B-DD44F0A8D501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BDDFE3-6B7B-4A85-9A2B-DD44F0A8D501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BDDFE3-6B7B-4A85-9A2B-DD44F0A8D501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3899668C-E696-4359-B723-3E4CCDA2EB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3899668C-E696-4359-B723-3E4CCDA2EB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3899668C-E696-4359-B723-3E4CCDA2EB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3899668C-E696-4359-B723-3E4CCDA2EB99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

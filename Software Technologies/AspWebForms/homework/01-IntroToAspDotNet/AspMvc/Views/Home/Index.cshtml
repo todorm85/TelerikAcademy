@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET MVC Calculator</h1>
+    <p class="lead">This is numbers sumator in MVC.</p>
+</div>
+
+<form class="form-horizontal" method="post" action="~/Home/calculate" name="numbers">
+    <fieldset>
+        <legend>Calculator</legend>
+
+        <div class="form-group">
+            <label for="firstNumber" class="col-lg-2 control-label">FirstNumber</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="firstNumber" name="FirstNumber" placeholder="First Number" value="@ViewBag.FirstNumber">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="secondNumber" class="col-lg-2 control-label">SecondNumber</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="secondNumber" name="SecondNumber" placeholder="Second Number" value="@ViewBag.SecondNumber">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p class="col-lg-2 control-label">Result:</p>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="result" disabled="" value="@ViewBag.Result">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="submit" class="btn btn-primary">Calculate</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
