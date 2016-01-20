@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Gosholandia.master.cs" Inherits="_02_InternationalCorporation.Gosholandia.Gosholandia" %>
+
+<asp:Content ID="meta" ContentPlaceHolderID="MetaContent" runat="server">
+</asp:Content>
+
+<asp:Content ID="header" ContentPlaceHolderID="HeaderContent" runat="server">
+    <h2>Big Bad Corp - Gosholandia</h2>
+    <nav>
+        <ul>
+            <li><a href="/default.aspx">To international</a></li>
+            <li><a href="/gosholandia/home.aspx">home</a></li>
+            <li><a href="/gosholandia/about.aspx">about</a></li>
+            <li><a href="/gosholandia/contact.aspx">contacts</a></li>
+        </ul>
+    </nav>
+</asp:Content>
+
+<asp:Content ID="main" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+</asp:Content>

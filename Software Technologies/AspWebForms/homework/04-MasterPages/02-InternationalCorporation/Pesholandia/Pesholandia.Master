@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Pesholandia.Master.cs" Inherits="_02_InternationalCorporation.Pesholandia.Pesholandia" %>
+
+<asp:Content ID="meta" ContentPlaceHolderID="MetaContent" runat="server">
+</asp:Content>
+
+<asp:Content ID="header" ContentPlaceHolderID="HeaderContent" runat="server">
+    <h2>Голяма Лоша Корпорация - Пешоландия</h2>
+    <nav>
+        <ul>
+            <li><a href="/default.aspx">Към интернационалния</a></li>
+            <li><a href="/pesholandia/home.aspx">Хоум</a></li>
+            <li><a href="/pesholandia/about.aspx">Относно</a></li>
+            <li><a href="/pesholandia/contact.aspx">Контакти</a></li>
+        </ul>
+    </nav>
+</asp:Content>
+
+<asp:Content ID="main" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+</asp:Content>

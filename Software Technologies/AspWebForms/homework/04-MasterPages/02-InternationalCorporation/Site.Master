@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="_02_InternationalCorporation.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="MetaContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <h1>Big Bad Corp</h1>
+        <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+            </asp:ContentPlaceHolder>
+    </header>
+    
+    <main>
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </main>
+
+    <footer>&copy; <%: DateTime.Now.Year %> Big Bad Corp</footer>
+</body>
+</html>
