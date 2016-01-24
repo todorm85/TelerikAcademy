@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using SolutionTemplate.Data;
 
-namespace Template
+namespace SolutionTemplate
 {
 	public partial class _Default : Page
 	{
@@ -13,5 +15,5 @@ namespace Template
 		{
 
 		}
-	}
+    }
 }

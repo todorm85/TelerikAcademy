@@ -1,6 +1,0 @@
-1. Rename dirs and project names (scproj and scproj.user files)
-1. Readd projects
-1. replace all old name in entire solution matching case, not a whole word with new name
-1. Delete all bin and obj folders
-1. Rename in project properties assembly names
-

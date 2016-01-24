@@ -1,0 +1,7 @@
+open solution and rename:
+solution
+projects
+DbContextFile
+search and replace all SolutionTemplate (match case, don`t match whole word)
+delete all bin and obj (make them appear in projects)
+

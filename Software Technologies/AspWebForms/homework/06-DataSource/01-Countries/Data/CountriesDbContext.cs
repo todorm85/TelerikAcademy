@@ -14,6 +14,12 @@
         {
         }
 
+        public virtual IDbSet<Town> Towns { get; set; }
+
+        public virtual IDbSet<Country> Countries { get; set; }
+
+        public virtual IDbSet<Continent> Continents { get; set; }
+
         public static CountriesDbContext Create()
         {
             return new CountriesDbContext();
