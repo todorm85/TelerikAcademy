@@ -16,13 +16,31 @@ namespace Todos
     {
         TodosDbContext data = new TodosDbContext();
 
+        private const int PageSize = 5;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                ViewState["page"] = 0;
+            }
         }
 
         public IQueryable<Todo> ListViewTodos_GetData()
         {
-            return data.Todos.OrderBy(x => x.Id);
+            var todos = data.Todos.OrderBy(x => x.Id);
+            var dateOrder = (string)ViewState["orderByDate"];
+            if (dateOrder != null && dateOrder == "asc")
+            {
+                todos = todos.OrderBy(x => x.LastChanged);
+            }
+            else if (dateOrder != null && dateOrder == "des")
+            {
+                todos = todos.OrderByDescending(x => x.LastChanged);
+            }
+
+            int page = (int)ViewState["page"];
+            return todos.Skip(PageSize * page).Take(PageSize);
         }
 
         public IQueryable<Category> GetGategories()
@@ -44,20 +62,19 @@ namespace Todos
 
         protected void ListViewTodos_ServerClick(object sender, EventArgs e)
         {
-            var anchor = sender as HtmlAnchor;
-            var id = anchor.Name;
-            ViewState["selectedTodo"] = id;
+            var element = (HtmlControl)sender;
+            var id = element.Attributes["itemid"];
+            ViewState.Add("selectedTodo", id);
+            FormViewTodoDetails.ChangeMode(FormViewMode.ReadOnly);
             this.FormViewTodoDetails.DataBind();
         }
 
         public void FormViewTodoDetails_UpdateItem(int id)
         {
             Todo item = null;
-            // Load the item here, e.g. item = MyDataLayer.Find(id);
             item = data.Todos.Find(id);
             if (item == null)
             {
-                // The item wasn't found
                 ModelState.AddModelError("", String.Format("Item with id {0} was not found", id));
                 return;
             }
@@ -68,8 +85,7 @@ namespace Todos
             {
                 data.Entry(item).State = EntityState.Modified;
                 data.SaveChanges();
-                // Save changes here, e.g. MyDataLayer.SaveChanges();
-
+                DisplayMessage("Item updated");
             }
         }
 
@@ -90,14 +106,8 @@ namespace Todos
                 var id = data.Todos.Add(item);
                 data.SaveChanges();
                 var master = this.Master as Site;
-                master.ShowSuccessMessage("Item added");
+                DisplayMessage("Item added");
                 this.ListViewTodos.DataBind();
-
-                var pageSize = ListViewTodosPager.MaximumRows;
-                var todosCount = data.Todos.Count();
-                var correctionIndex = (todosCount % pageSize == 0) ? pageSize : todosCount % pageSize;
-                var startItemIndex = todosCount - correctionIndex;
-                this.ListViewTodosPager.SetPageProperties(startItemIndex , pageSize, true);
             }
         }
 
@@ -106,25 +116,67 @@ namespace Todos
             var item = data.Todos.Find(id);
             data.Todos.Remove(item);
             data.SaveChanges();
-            var master = this.Master as Site;
-            master.ShowSuccessMessage("Item deleted");
+            DisplayMessage("Item deleted");
             ViewState["selectedTodo"] = null;
             this.ListViewTodos.DataBind();
-
-            var pageSize = ListViewTodosPager.MaximumRows;
-            var pageParam = Request.Params.Get("page");
-            var currentPage = 0;
-            if (pageParam != null)
-            {
-                currentPage = int.Parse(pageParam);
-            }
-            this.ListViewTodosPager.SetPageProperties((currentPage-1)*pageSize, pageSize, true);
+            this.FormViewTodoDetails.DataBind();
         }
 
-        // The id parameter name should match the DataKeyNames value set on the control
-        public void ListViewTodos_DeleteItem(int id)
+        private void DisplayMessage(string msg)
         {
+            var master = this.Master as Site;
+            master.ShowSuccessMessage(msg);
+        }
 
+        protected void orderByDate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var dropDown = (DropDownList)sender;
+            var selectedItem = dropDown.SelectedItem;
+            ViewState.Add("orderByDate", selectedItem.Text);
+            FirstPage_ServerClick(new { }, new EventArgs());
+            this.ListViewTodos.DataBind();
+        }
+
+        protected void NextPage_ServerClick(object sender, EventArgs e)
+        {
+            int page = (int)ViewState["page"];
+            if (page * PageSize < data.Todos.Count() - PageSize)
+            {
+                ViewState["page"] = ++page;
+                this.ListViewTodos.DataBind();
+            }
+
+        }
+
+        protected void PrevPage_ServerClick(object sender, EventArgs e)
+        {
+            int page = (int)ViewState["page"];
+            if (page > 0)
+            {
+                ViewState["page"] = --page;
+                this.ListViewTodos.DataBind();
+            }
+        }
+
+        protected void FirstPage_ServerClick(object sender, EventArgs e)
+        {
+            ViewState["page"] = 0;
+            this.ListViewTodos.DataBind();
+
+        }
+
+        protected void LastPage_ServerClick(object sender, EventArgs e)
+        {
+            var totalCount = data.Todos.Count();
+
+            var lastPage = totalCount / PageSize;
+            if (totalCount % PageSize == 0)
+            {
+                lastPage--;
+            }
+
+            ViewState["page"] = lastPage;
+            this.ListViewTodos.DataBind();
         }
     }
 }

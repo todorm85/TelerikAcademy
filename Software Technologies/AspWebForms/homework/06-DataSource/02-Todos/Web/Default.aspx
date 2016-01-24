@@ -6,6 +6,14 @@
         Text="Add new"
         OnClick="AddNewButton_Click"
         CssClass="btn btn-default" />
+    SortByDate:
+    <asp:DropDownList runat="server" ID="orderByDate"
+        OnSelectedIndexChanged="orderByDate_SelectedIndexChanged"
+        AutoPostBack="true">
+        <asp:ListItem Selected="True" Text="none" Value="0" />
+        <asp:ListItem Text="asc" Value="1" />
+        <asp:ListItem Text="des" Value="2" />
+    </asp:DropDownList>
     <div class="row">
         <div class="col-md-6">
 
@@ -19,32 +27,58 @@
                     <ul class="list-group">
                         <asp:PlaceHolder runat="server" ID="itemPlaceholder"></asp:PlaceHolder>
                     </ul>
+
                 </LayoutTemplate>
+
                 <ItemTemplate>
                     <li class="list-group-item" runat="server" id="li1">
                         <a href="#" runat="server"
-                            name="<%# Item.Id %>"
+                            itemid="<%# Item.Id %>"
                             onserverclick="ListViewTodos_ServerClick">
                             <%#: Item.Title %></a>
+                        <br />
+                        <span>Last modified: <%#: String.Format("{0:d/m/yy HH:mm:ss}",Item.LastChanged) %></span>
                         <asp:Button ID="ButtonDelete" runat="server"
-                                CommandName="Delete"
-                                Text="Delete"
-                                CssClass="btn btn-default" />
+                            CommandName="Delete"
+                            Text="Delete"
+                            CssClass="btn btn-default" />
+                        <button id="ButtonDetails" runat="server"
+                            onserverclick="ListViewTodos_ServerClick"
+                            itemid="<%# Item.Id %>"
+                            class="btn btn-default">
+                            Details</button>
                     </li>
                 </ItemTemplate>
+
             </asp:ListView>
 
-            <asp:DataPager ID="ListViewTodosPager" runat="server"
-                PagedControlID="ListViewTodos" PageSize="5"
-                QueryStringField="page">
-                <Fields>
-                    <asp:NextPreviousPagerField ShowFirstPageButton="true"
-                        ShowNextPageButton="false" ShowPreviousPageButton="false" />
-                    <asp:NumericPagerField />
-                    <asp:NextPreviousPagerField ShowLastPageButton="true"
-                        ShowNextPageButton="false" ShowPreviousPageButton="false" />
-                </Fields>
-            </asp:DataPager>
+            <ul class="pagination">
+                <li>
+                    <button id="FirstPage" runat="server"
+                        onserverclick="FirstPage_ServerClick"
+                        class="btn btn-default">
+                        First</button>
+                </li>
+                <li>
+                    <button id="PrevPage" runat="server"
+                        onserverclick="PrevPage_ServerClick"
+                        class="btn btn-default">
+                        Prev</button>
+                </li>
+                <li runat="server" id="pageNumber"><%: ViewState["page"] %></li>
+                <li>
+                    <button id="NextPage" runat="server"
+                        onserverclick="NextPage_ServerClick"
+                        class="btn btn-default">
+                        Next</button>
+                </li>
+                <li>
+                    <button id="LastPage" runat="server"
+                        onserverclick="LastPage_ServerClick"
+                        class="btn btn-default">
+                        Last</button>
+                </li>
+            </ul>
 
         </div>
 

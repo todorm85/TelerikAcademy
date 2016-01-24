@@ -30,25 +30,22 @@ namespace Todos.Data.Migrations
             //    );
             //
 
-            var categoriesCount = 5;
-            var categories = new Category[categoriesCount];
-            for (int i = 1; i <= categoriesCount; i++)
+            if (context.Todos.Count() > 0)
             {
-                categories[i - 1] = new Category { Id = i, Name = $"Category_{i}" };
+                return;
             }
 
-            context.Categories.AddOrUpdate(categories);
-
             var todosCount = 50;
+            var catCount = 5;
             var todos = new Todo[todosCount];
             for (int i = 1; i <= todosCount; i++)
             {
                 todos[i - 1] = new Todo
                 {
                     Id = i,
-                    CategoryId = (i % categoriesCount) + 1,
                     Title = $"Todo_{i}",
                     Body = $"Todo_{i}_body",
+                    Category = new Category { Id = (i % catCount) + 1, Name = $"Category_{i%5}" },
                 };
             }
 

@@ -8,6 +8,7 @@
     {
         public static void Initialize()
         {
+            //Database.Delete("Todos");
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<TodosDbContext, Configuration>());
             TodosDbContext.Create().Database.Initialize(true);
         }

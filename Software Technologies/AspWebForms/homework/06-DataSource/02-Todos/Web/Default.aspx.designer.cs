@@ -22,6 +22,15 @@ namespace Todos {
         protected global::System.Web.UI.WebControls.Button AddNewButton;
         
         /// <summary>
+        /// orderByDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList orderByDate;
+        
+        /// <summary>
         /// ListViewTodos control.
         /// </summary>
         /// <remarks>
@@ -31,13 +40,49 @@ namespace Todos {
         protected global::System.Web.UI.WebControls.ListView ListViewTodos;
         
         /// <summary>
-        /// ListViewTodosPager control.
+        /// FirstPage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataPager ListViewTodosPager;
+        protected global::System.Web.UI.HtmlControls.HtmlButton FirstPage;
+        
+        /// <summary>
+        /// PrevPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton PrevPage;
+        
+        /// <summary>
+        /// pageNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pageNumber;
+        
+        /// <summary>
+        /// NextPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton NextPage;
+        
+        /// <summary>
+        /// LastPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton LastPage;
         
         /// <summary>
         /// FormViewTodoDetails control.
