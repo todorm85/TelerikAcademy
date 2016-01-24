@@ -12,17 +12,12 @@ using Todos.Web;
 
 namespace Todos
 {
-	public partial class _Default : Page
-	{
+    public partial class _Default : Page
+    {
         TodosDbContext data = new TodosDbContext();
 
-		protected void Page_Load(object sender, EventArgs e)
-		{
-		}
-
-        protected void Page_PreRender(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
-            
         }
 
         public IQueryable<Todo> ListViewTodos_GetData()
@@ -52,11 +47,9 @@ namespace Todos
             var anchor = sender as HtmlAnchor;
             var id = anchor.Name;
             ViewState["selectedTodo"] = id;
-            this.FormViewTodoDetails.SelectMethod = "";
-            this.FormViewTodoDetails.SelectMethod = "FormViewTodos_GetData";
+            this.FormViewTodoDetails.DataBind();
         }
 
-        // The id parameter name should match the DataKeyNames value set on the control
         public void FormViewTodoDetails_UpdateItem(int id)
         {
             Todo item = null;
@@ -98,25 +91,40 @@ namespace Todos
                 data.SaveChanges();
                 var master = this.Master as Site;
                 master.ShowSuccessMessage("Item added");
+                this.ListViewTodos.DataBind();
+
+                var pageSize = ListViewTodosPager.MaximumRows;
+                var todosCount = data.Todos.Count();
+                var correctionIndex = (todosCount % pageSize == 0) ? pageSize : todosCount % pageSize;
+                var startItemIndex = todosCount - correctionIndex;
+                this.ListViewTodosPager.SetPageProperties(startItemIndex , pageSize, true);
             }
         }
 
-        //protected void ListView1_ItemDataBound(object sender, ListViewItemEventArgs e)
-        //{
-        //    if (e.Item.ItemType == ListViewItemType.DataItem)
-        //    {
-        //        Button btn = e.Item.FindControl("Button1") as Button;
-        //        string script = this.ClientScript.GetPostBackClientHyperlink(btn, "", true);
-        //        var p = e.Item.FindControl("li1") as HtmlGenericControl;
-        //        p.Attributes.Add("onclick", script);
-        //    }
-        //}
+        public void FormViewTodoDetails_DeleteItem(int id)
+        {
+            var item = data.Todos.Find(id);
+            data.Todos.Remove(item);
+            data.SaveChanges();
+            var master = this.Master as Site;
+            master.ShowSuccessMessage("Item deleted");
+            ViewState["selectedTodo"] = null;
+            this.ListViewTodos.DataBind();
 
-        //protected void ListViewTodos_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    ViewState["selectedTodo"] = this.ListViewTodos.SelectedDataKey.Value;
-        //    this.FormViewTodoDetails.SelectMethod = "";
-        //    this.FormViewTodoDetails.SelectMethod = "FormViewTodos_GetData";
-        //}
+            var pageSize = ListViewTodosPager.MaximumRows;
+            var pageParam = Request.Params.Get("page");
+            var currentPage = 0;
+            if (pageParam != null)
+            {
+                currentPage = int.Parse(pageParam);
+            }
+            this.ListViewTodosPager.SetPageProperties((currentPage-1)*pageSize, pageSize, true);
+        }
+
+        // The id parameter name should match the DataKeyNames value set on the control
+        public void ListViewTodos_DeleteItem(int id)
+        {
+
+        }
     }
 }

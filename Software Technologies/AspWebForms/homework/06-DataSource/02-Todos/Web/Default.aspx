@@ -2,28 +2,34 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h3>Todos</h3>
+    <asp:Button ID="AddNewButton" runat="server"
+        Text="Add new"
+        OnClick="AddNewButton_Click"
+        CssClass="btn btn-default" />
     <div class="row">
         <div class="col-md-6">
 
             <asp:ListView runat="server" ID="ListViewTodos"
+                DataKeyNames="Id"
                 SelectMethod="ListViewTodos_GetData"
-                ItemType="Countries.Data.Models.Todo">
+                ItemType="Countries.Data.Models.Todo"
+                DeleteMethod="FormViewTodoDetails_DeleteItem">
 
                 <LayoutTemplate>
-                    <asp:Button ID="AddNewButton" runat="server"
-                                Text="Add new"
-                                OnClick="AddNewButton_Click"
-                                CssClass="btn btn-default" />
                     <ul class="list-group">
                         <asp:PlaceHolder runat="server" ID="itemPlaceholder"></asp:PlaceHolder>
                     </ul>
                 </LayoutTemplate>
                 <ItemTemplate>
                     <li class="list-group-item" runat="server" id="li1">
-                        <a href="#" runat="server" 
-                            name="<%# Item.Id %>" 
+                        <a href="#" runat="server"
+                            name="<%# Item.Id %>"
                             onserverclick="ListViewTodos_ServerClick">
                             <%#: Item.Title %></a>
+                        <asp:Button ID="ButtonDelete" runat="server"
+                                CommandName="Delete"
+                                Text="Delete"
+                                CssClass="btn btn-default" />
                     </li>
                 </ItemTemplate>
             </asp:ListView>
@@ -49,7 +55,9 @@
                 DataKeyNames="Id"
                 SelectMethod="FormViewTodos_GetData"
                 UpdateMethod="FormViewTodoDetails_UpdateItem"
-                InsertMethod="FormViewTodoDetails_InsertItem">
+                InsertMethod="FormViewTodoDetails_InsertItem"
+                DeleteMethod="FormViewTodoDetails_DeleteItem"
+                RenderOuterTable="false">
                 <EmptyDataTemplate>
                     <div class="panel panel-primary">
                         <div class="panel-body">
@@ -67,7 +75,11 @@
                             <p><%#: Item.Category.Name %></p>
                             <asp:Button ID="ButtonEdit" runat="server"
                                 CommandName="Edit"
-                                Text="Edit" 
+                                Text="Edit"
+                                CssClass="btn btn-default" />
+                            <asp:Button ID="ButtonDelete" runat="server"
+                                CommandName="Delete"
+                                Text="Delete"
                                 CssClass="btn btn-default" />
                         </div>
                     </div>
