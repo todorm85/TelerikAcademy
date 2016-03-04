@@ -13,6 +13,10 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 | [High-Quality Code](#high-quality-code) | [JavaScript - Object-Oriented Programming](#javascript---object-oriented-programming) | [Universal windows platform applications](#universal-windows-platform-applications)
 | [Data Structures and Algorithms](#data-structures-and-algorithms) | [JavaScript - UI and DOM](#javascript---ui-and-dom) | [Nodejs](#nodejs)
 |  | [JavaScript - Applications](#javascript---applications) | [Android](#android)
+|  |  | [IPhone Apps](#IPhone-and-IPad-Apps)
+|  |  | [IPhone Apps](#NativeScript-Multiplatform-Apps)
+|  |  | [ASP.NET Web Forms](#ASP.NET-Web-Forms)
+|  |  | [ASP.NET MVC](#ASP.NET-MVC)
 
 ## Curriculum
 
@@ -21,6 +25,26 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
  </a>
 
 -----
+
+#ASP.NET-MVC
+
+1. [Homework](../../tree/master/Software%20Technologies/AspNet%20MVC/HW)
+1. [Exam](../../tree/master/Software%20Technologies/AspNet%20MVC/exam)
+1. [Teamwork project](https://github.com/todorm85/HikingPlanAndRescue)
+
+## ASP.NET-Web-Forms
+
+1. [Homework](../../tree/master/Software%20Technologies/AspWebForms/homework)
+1. [Exam](../../tree/master/Software%20Technologies/AspWebForms/Exam)
+1. [Teamwork project](https://github.com/todorm85/VeloEventsManager)
+
+## NativeScript Multiplatform Apps
+
+1. [Project](https://github.com/todorm85/HikingPlanAndRescueMobile)
+
+## IPhone and IPad Apps
+
+1. [Project](https://github.com/todorm85/ExpenseTracker)
 
 ## C# - Part I
 
