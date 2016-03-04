@@ -29,7 +29,7 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 ## ASP MVC
 
 1. [Homework](../../tree/master/Software%20Technologies/AspNet%20MVC/HW)
-1. [Exam](../../tree/master/Software%20Technologies/AspNet%20MVC/exam)
+1. [Exam](../../tree/master/Software%20Technologies/AspNet%20MVC/Exam)
 1. [Teamwork project](https://github.com/todorm85/HikingPlanAndRescue)
 
 ## ASP Web Forms
