@@ -36,7 +36,7 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 
 1. [Homework](../../tree/master/Software%20Technologies/AspWebForms/homework)
 1. [Exam](../../tree/master/Software%20Technologies/AspWebForms/Exam)
-1. [Teamwork project](https://github.com/todorm85/VeloEventsManager)
+1. [Teamwork project](https://github.com/todorm85/AspWebForms/VeloEventsManager)
 
 ## NativeScript Multiplatform Apps
 
