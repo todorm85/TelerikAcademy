@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Movies.Web.Models.MovieViewModel>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row">
+    <div class="col-md-2 col-md-offset-3">
+        <div class="list-group">
+            @foreach (var movie in Model)
+            {
+                <div class="list-group-item">
+                    @Ajax.ActionLink(
+                       @movie.Title,
+                       "MovieDetails",
+                       new { id = movie.Id },
+                       new AjaxOptions
+                       {
+                           HttpMethod = "Get",
+                           UpdateTargetId = "movie-details",
+                           LoadingElementId = "loading-movie"
+                       })
+                </div>
+            }
+        </div>
+    </div>
+
+    <div id="loading-movie" style="display:none">Loading...</div>
+
+    <div class="col-md-4" id="movie-details">
+        
+    </div>
+    
+</div>

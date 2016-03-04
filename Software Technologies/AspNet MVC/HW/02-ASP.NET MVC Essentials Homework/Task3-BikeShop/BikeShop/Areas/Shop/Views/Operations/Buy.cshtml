@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Products list";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="container">
+    @for (int i = 0; i < 10; i++)
+    {
+        <div class="pull-left clearfix">
+            <h3>Item @i</h3>
+            <h4>Details:</h4>
+            <p>Item @i details description...</p>
+            <p>Price: @(i * 100)</p>
+        </div>
+    }
+</div>
+

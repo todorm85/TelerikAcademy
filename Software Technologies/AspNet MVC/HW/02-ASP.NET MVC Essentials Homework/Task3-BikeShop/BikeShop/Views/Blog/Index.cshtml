@@ -1,0 +1,14 @@
+﻿@model ICollection<BikeShop.Models.ArticleViewModel>
+@{
+    ViewBag.Title = "Blog Articles";
+}
+
+<h2>Blog articles list:</h2>
+<ul class="list-inline">
+    @foreach (var article in Model)
+    {
+        <li>
+            @Html.ActionLink(article.Title, "article", "blog", new { id = article.Id }, null)
+        </li>
+    }
+</ul>

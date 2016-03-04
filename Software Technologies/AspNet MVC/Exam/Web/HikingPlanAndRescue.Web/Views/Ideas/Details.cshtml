@@ -1,0 +1,126 @@
+﻿@model VoiceSystem.Web.ViewModels.Ideas.IdeaDetailsPageViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="col-md-2">
+    <div class="panel panel-body lead">
+        @Model.Idea.VoteCount
+        <br />
+        <small>votes</small>
+    </div>
+</div>
+<div class="col-md-10">
+    <h2>@Model.Idea.Title </h2>
+    <p> @Model.Idea.Description </p>
+    <p>Comments: <small> @Model.Idea.CreatedOn </small> </p>
+    <p class="lead">@Model.Idea.CommentsCount comments</p>
+</div>
+
+<div class="container row">
+    <input type="hidden" id="ideaId" value="@Model.Idea.Id" />
+
+    <div class="col-md-12">
+        <textarea placeholder="Add a comment..." id="commentContent" class="form-control" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="col-md-12">
+        <input type="text" placeholder="Add email" id="commentEmail" class="form-control" />
+    </div>
+
+    <div class="col-md-offset-0 col-md-12">
+        <button id="postComment" class="btn btn-default">Post Comment</button>
+    </div>
+</div>
+
+@foreach (var comment in Model.Comments)
+{
+    <h3>
+        @if (comment.Email != null)
+        {
+            @comment.Email
+        }
+        else
+        {
+            @comment.UserIp @:no email!
+        }
+        <small>commented on @comment.CreatedOn.ToShortDateString()</small>
+    </h3>
+    <p>
+        @comment.Content
+    </p>
+}
+
+<div>
+    <ul class="pagination">
+        @if (Model.Page <= 1)
+            {
+            <li class="disabled"><a href="">&laquo;</a></li>
+        }
+        else
+        {
+            <li><a href="/ideas/details/@Model.Idea.Id?Page=@(Model.Page-1)">&laquo;</a></li>
+        }
+
+        @for (int i = 1; i <= Model.PageCount; i++)
+            {
+                if (i == Model.Page)
+                {
+                <li class="active"><a href="/ideas/details/@Model.Idea.Id?Page=@i">@i</a></li>
+            }
+            else
+            {
+                <li><a href="/ideas/details/@Model.Idea.Id?Page=@i">@i</a></li>
+            }
+        }
+
+        @if (Model.Page >= Model.PageCount)
+            {
+            <li class="disabled"><a href="">&raquo;</a></li>
+        }
+        else
+        {
+            <li><a href="/ideas/details/@Model.Idea.Id?Page=@(Model.Page+1)">&raquo;</a></li>
+        }
+    </ul>
+</div>
+
+@Html.Partial("_Modal")
+
+@section Scripts{
+    
+<script id="add idea">
+        var post = $('#postComment');
+        post.on('click', function () {
+            var email = $('#commentEmail').val();
+            var content = $('#commentContent').val();
+            var ideaId = $('#ideaId').val();
+            var data = {
+                ideaId: ideaId,
+                email: email,
+                content: content
+            }
+
+            console.log(data);
+
+            $.post('/ideas/AddComment', data, function (res) {
+                if (res == 'ok') {
+                    $('#commentEmail').val('');
+                    $('#commentContent').val('');
+
+                    $('#modalTitle').html('Succes');
+                    $('#modalMessage').html('Added comment');
+                    $('#modal').modal();
+                    window.location.href = "/ideas/details/" + ideaId;
+                }
+                else {
+                    $('#modalTitle').html('Error');
+                    $('#modalMessage').html('Invalid comment data');
+                    $('#modal').modal();
+                }
+            });
+        });
+</script>
+    
+    }

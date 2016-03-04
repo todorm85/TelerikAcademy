@@ -1,0 +1,118 @@
+﻿@model VoiceSystem.Web.ViewModels.Ideas.IdeaIndexViewModel
+@{
+    ViewBag.Title = "Ideas";
+}
+
+<h1 class="text-center text-info">@ViewBag.Title</h1>
+<hr />
+
+<h4>I suggest you</h4>
+<div class="container row">
+    <div class="col-md-12">
+        <input type="text" placeholder="Enter title" id="title" class="form-control" />
+    </div>
+
+    <div class="col-md-12">
+        <textarea placeholder="Enter description" id="description" class="form-control" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="col-md-offset-0 col-md-12">
+        <button id="postIdea" class="btn btn-default">Post Idea</button>
+    </div>
+</div>
+
+<form method="get" action="/ideas">
+    <label>Serch:</label>
+    <input name="query" type="text" class="form-control"/>
+    <button>Search</button>
+</form>
+
+<div class="container">
+    @foreach (var idea in Model.Ideas)
+    {
+        <div class="col-md-2">
+            <div class="panel panel-body">
+                @idea.VoteCount
+                <br />
+                <small>votes</small>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <h2>
+                @Html.ActionLink(@idea.Title, "details", new { area = "", id = idea.Id })
+            </h2>
+            <p>
+                @idea.Description
+            </p>
+            <p>Comments: <small> @idea.CommentsCount </small> </p>
+        </div>
+    }
+</div>
+<div>
+    <ul class="pagination">
+        @if (Model.Page <= 1)
+            {
+            <li class="disabled"><a href="">&laquo;</a></li>
+        }
+        else
+        {
+            <li><a href="/ideas/index/@(Model.Page-1)">&laquo;</a></li>
+        }
+
+        @for (int i = 1; i <= Model.PageCount; i++)
+            {
+                if (i == Model.Page)
+                {
+                <li class="active"><a href="/ideas/index/@i">@i</a></li>
+            }
+            else
+            {
+                <li><a href="/ideas/index/@i">@i</a></li>
+            }
+        }
+
+        @if (Model.Page >= Model.PageCount)
+            {
+            <li class="disabled"><a href="">&raquo;</a></li>
+        }
+        else
+        {
+            <li><a href="/ideas/index/@(Model.Page+1)">&raquo;</a></li>
+        }
+    </ul>
+</div>
+
+@Html.Partial("_Modal")
+
+@section Scripts{
+    <script id="add idea">
+        var post = $('#postIdea');
+        post.on('click', function () {
+            var title = $('#title').val();
+            var descr = $('#description').val();
+            var data = {
+                Title: title,
+                Description: descr
+            }
+
+            console.log(data);
+
+            $.post('/ideas/create', data, function (res) {
+                if (res == 'ok') {
+                    $('#description').val('');
+                    $('#title').val('');
+
+                    //$('#modalTitle').html('Succes');
+                    //$('#modalMessage').html('Added idea');
+                    //$('#modal').modal();
+                    window.location.href = "/ideas";
+                }
+                else {
+                    $('#modalTitle').html('Error');
+                    $('#modalMessage').html('Invalid idea data');
+                    $('#modal').modal();
+                }
+            });
+        })
+    </script>
+}

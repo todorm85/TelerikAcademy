@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to Bike Shop</h1>
+    <p class="lead">Bike Shop Krystio is leader in bike sells in Sofia</p>
+</div>
+
+<div class="container">
+    <div class="well-lg pull-left">
+        <h2>Shop</h2>
+        <ul class="list-unstyled">
+            <li class="lead">
+                @Html.ActionLink("Buy", "Buy", "Operations", new { area = "Shop" }, null)
+            </li>
+            <li class="lead">
+                @Html.ActionLink("Sell", "Sell", "Operations", new { area = "Shop" }, null)
+            </li>
+        </ul>
+    </div>
+    <div class="well-lg pull-left">
+        <h2>Info</h2>
+        <p class="lead pull-left">
+            @Html.ActionLink("See our blog", "Index", "Blog")
+        </p>
+    </div>
+</div>

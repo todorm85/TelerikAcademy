@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Web", "Movies.Web\Movies.Web.csproj", "{ABEB8429-3911-44CB-BD44-C41EF31A0DCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Data", "Movies.Data\Movies.Data.csproj", "{5C06C8DF-C497-4A44-8164-9958DB8A1745}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABEB8429-3911-44CB-BD44-C41EF31A0DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABEB8429-3911-44CB-BD44-C41EF31A0DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABEB8429-3911-44CB-BD44-C41EF31A0DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABEB8429-3911-44CB-BD44-C41EF31A0DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C06C8DF-C497-4A44-8164-9958DB8A1745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C06C8DF-C497-4A44-8164-9958DB8A1745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C06C8DF-C497-4A44-8164-9958DB8A1745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C06C8DF-C497-4A44-8164-9958DB8A1745}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
