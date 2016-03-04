@@ -14,7 +14,7 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 | [Data Structures and Algorithms](#data-structures-and-algorithms) | [JavaScript - UI and DOM](#javascript---ui-and-dom) | [Nodejs](#nodejs)
 |  | [JavaScript - Applications](#javascript---applications) | [Android](#android)
 |  |  | [IPhone and IPad Apps](#iphone-and-ipad-apps)
-|  |  | [IPhone Apps](#nativescript-multiplatform-apps)
+|  |  | [NativeScript Multiplatform Apps](#nativescript-multiplatform-apps)
 |  |  | [ASP.NET Web Forms](#asp.net-web-forms)
 |  |  | [ASP.NET MVC](#asp.net-mvc)
 
