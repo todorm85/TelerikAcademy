@@ -15,8 +15,8 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 |  | [JavaScript - Applications](#javascript---applications) | [Android](#android)
 |  |  | [IPhone and IPad Apps](#iphone-and-ipad-apps)
 |  |  | [NativeScript Multiplatform Apps](#nativescript-multiplatform-apps)
-|  |  | [ASP.NET Web Forms](#asp-net-web-forms)
-|  |  | [ASP.NET MVC](#asp-net-mvc)
+|  |  | [ASP.NET Web Forms](#asp-web-forms)
+|  |  | [ASP.NET MVC](#asp-mvc)
 
 ## Curriculum
 
@@ -26,13 +26,13 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 
 -----
 
-#ASP.NET MVC
+## ASP MVC
 
 1. [Homework](../../tree/master/Software%20Technologies/AspNet%20MVC/HW)
 1. [Exam](../../tree/master/Software%20Technologies/AspNet%20MVC/exam)
 1. [Teamwork project](https://github.com/todorm85/HikingPlanAndRescue)
 
-## ASP.NET Web Forms
+## ASP Web Forms
 
 1. [Homework](../../tree/master/Software%20Technologies/AspWebForms/homework)
 1. [Exam](../../tree/master/Software%20Technologies/AspWebForms/Exam)
