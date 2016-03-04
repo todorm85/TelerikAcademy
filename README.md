@@ -15,8 +15,8 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 |  | [JavaScript - Applications](#javascript---applications) | [Android](#android)
 |  |  | [IPhone and IPad Apps](#iphone-and-ipad-apps)
 |  |  | [NativeScript Multiplatform Apps](#nativescript-multiplatform-apps)
-|  |  | [ASP.NET Web Forms](#asp.net-web-forms)
-|  |  | [ASP.NET MVC](#asp.net-mvc)
+|  |  | [ASP.NET Web Forms](#asp-net-web-forms)
+|  |  | [ASP.NET MVC](#asp-net-mvc)
 
 ## Curriculum
 
