@@ -1,0 +1,17 @@
+﻿@model IEnumerable<HikingPlanAndRescue.Web.Areas.Private.Models.TrainingListItemViewModel>
+
+@{ int i = 1;}
+
+@foreach (var training in Model)
+{
+    <div id="@training.Id.ToString()" class="col-md-4">
+        @Html.Partial("_TrainingListItem", training)
+    </div>
+
+    if (i%3 == 0)
+    {
+        <div class="clearfix"></div>
+    }
+
+    i++;
+}

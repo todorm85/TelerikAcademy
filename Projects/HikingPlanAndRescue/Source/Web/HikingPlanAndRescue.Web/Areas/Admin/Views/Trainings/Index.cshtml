@@ -1,0 +1,26 @@
+﻿@model IQueryable<HikingPlanAndRescue.Web.Areas.Admin.Models.Trainings.TrainingViewModel>
+
+@{
+    ViewBag.Title = "Admin Trainings";
+    Layout = "~/Views/Shared/_LayoutGridMvc.cshtml";
+}
+
+<h2>Trainings Administrator</h2>
+
+@Html.Grid(Model).Columns(columns =>
+{
+    columns.Add()
+            .Encoded(false)
+            .Sanitized(false)
+            .SetWidth(30)
+            .RenderValueAs(d =>
+            @<b>
+                @Html.ActionLink("Delete", "Delete", new { id = d.Id }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Edit", "Edit", new { id = d.Id }, new { @class = "btn btn-default" })
+            </b>);
+    columns.Add(foo => foo.Title);
+    columns.Add(foo => foo.StartDate);
+    columns.Add(foo => foo.EndDate);
+    columns.Add(foo => foo.PredictedEndDate);
+    columns.Add().RenderValueAs(foo => foo.User.FirstName + " " + foo.User.LastName).Titled("User");
+}).WithPaging(15).Sortable().Filterable().WithMultipleFilters()

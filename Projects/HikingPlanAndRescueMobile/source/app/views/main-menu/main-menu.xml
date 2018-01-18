@@ -1,0 +1,12 @@
+<Page loaded="pageLoaded">
+    <Page.actionBar>
+        <ActionBar title="Welcome"></ActionBar>
+    </Page.actionBar>
+    <StackLayout>
+
+        <Button text="My trainings" tap="myTrainings" />
+        <Button text="Get prognosis" tap="planTraining" />
+        <Button text="statistics" tap="statistics" />
+
+    </StackLayout>
+</Page>

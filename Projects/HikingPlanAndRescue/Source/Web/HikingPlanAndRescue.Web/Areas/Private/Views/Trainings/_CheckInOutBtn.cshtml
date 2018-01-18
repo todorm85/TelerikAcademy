@@ -1,0 +1,37 @@
+﻿@{ 
+    string btnType = "";
+    if (ViewBag.Command == "checkin")
+    {
+        btnType = "btn btn-success";
+    }
+    else if (ViewBag.Command == "checkout")
+    {
+        btnType = "btn btn-warning";
+    }
+    else if (ViewBag.Command == "reset")
+    {
+        btnType = "btn btn-default";
+    }
+}
+
+@Ajax.ActionLink(
+    (string)ViewBag.Text,
+    "AjaxWatch",
+    new
+    {
+        area = "private",
+        TrainingId = ViewBag.TrainingId,
+        Command = ViewBag.Command
+    },
+    new AjaxOptions
+    {
+        HttpMethod = "GET",
+        OnSuccess = "onCheckInOutSuccess",
+        //UpdateTargetId = ViewBag.TrainingId.ToString(),
+        //InsertionMode = InsertionMode.Replace
+    },
+    new
+    {
+        @class = btnType,
+        id = "btnWatch"
+    })

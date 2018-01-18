@@ -1,0 +1,27 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="My trainings">
+            <ActionBar.titleView>
+                <StackLayout orientation="horizontal">
+                    <Label text="My trainings" textWrap="true" />
+                    <Button text="Main Menu" tap="mainMenu" />
+                </StackLayout>
+            </ActionBar.titleView>
+        </ActionBar>
+    </Page.actionBar>
+    <GridLayout rows="auto, *" columns="2*, *">
+        <Button text="Add training" tap="addTraining" colSpan="2" />
+        <ListView items="{{ trainingsList }}" id="trainingsList" row="1" colSpan="2">
+            <ListView.itemTemplate>
+
+                <GridLayout columns="*, auto">
+                    <Label text="{{ title }}" horizontalAlignment="left" verticalAlignment="center" tap="showDetails" />
+                    <Image src="res://ic_menu_delete" col="1" tap="delete" />
+                </GridLayout>
+
+            </ListView.itemTemplate>
+        </ListView>
+
+        <ActivityIndicator busy="{{ isLoading }}" rowSpan="2" colSpan="2" />
+    </GridLayout>
+</Page>

@@ -1,0 +1,29 @@
+{
+  "name": "HikingPlanAndRescueMobile",
+  "version": "1.0.0",
+  "description": "A NativeScript-built iOS and Android mobile cient app for http://hikingplanandrescue.azurewebsites.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/todorm85/HikingPlanAndRescueMobile.git"
+  },
+  "keywords": [
+    "NativeScript"
+  ],
+  "author": "todorm85",
+  "license": "MIT",
+  "homepage": "https://github.com/todorm85/HikingPlanAndRescueMobile.git",
+  "nativescript": {
+    "id": "org.nativescript.hikingplanandrescue",
+    "tns-android": {
+      "version": "1.6.1"
+    },
+    "tns-ios": {
+      "version": "1.6.0"
+    }
+  },
+  "dependencies": {
+    "email-validator": "^1.0.4",
+    "nativescript-telerik-ui": "^0.2.4",
+    "tns-core-modules": "1.6.0"
+  }
+}

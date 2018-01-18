@@ -1,0 +1,14 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Training Details"></ActionBar>
+    </Page.actionBar>
+    <StackLayout rows="auto, *" columns="2*, *">
+        <Label text="{{ 'Title: ' + training.title }}"/>
+        <Label text="{{ 'Start Date: ' + training.startDate }}"/>
+        <Label text="{{ 'End Date: ' + training.endDate }}"/>
+        <Label text="{{ 'Predicted End Date: ' + training.predictedEndDate }}"/>
+        <Label text="{{ 'Water: ' + training.water }}"/>
+        <Label text="{{ 'Calories: ' + training.calories }}"/>
+        <Button text="Edit" tap="edit" />
+    </StackLayout>
+</Page>

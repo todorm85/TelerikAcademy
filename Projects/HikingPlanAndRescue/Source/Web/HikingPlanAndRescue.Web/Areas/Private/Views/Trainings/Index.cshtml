@@ -1,0 +1,63 @@
+﻿@model HikingPlanAndRescue.Web.Areas.Private.Models.Trainings.TrainingsIndexViewModel
+
+@{
+    ViewBag.Title = "My Trainings";
+
+    ViewBag.AjaxPagingAction = "AjaxLoadNextTrainings";
+    ViewBag.AjaxPagingArea = "private";
+    Layout = "~/Views/Shared/_LayoutGridAjaxPaging.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Add", "create", "trainings", null, new { @class = "btn btn-primary btn-lg" })
+</p>
+
+<div class="row container">
+    <form action="/private/trainings/Index" method="get">
+        <h3>Filters</h3>
+        <div class="pull-left panel-body">
+            From Start Date: @(Html.Kendo().DateTimePicker().Name("fromDate"))
+        </div>
+        <div class="pull-left panel-body">
+            To End Date: @(Html.Kendo().DateTimePicker().Name("toDate"))
+        </div>
+        <div class="pull-left panel-body">
+            <button type="submit" id="btnFilter" class="btn btn-default">Filter</button>
+        </div>
+    </form>
+</div>
+
+<div class="row container">
+    @Html.Partial("_TrainingsStats", Model.Stats)
+</div>
+
+<h1 class="text-center">My Trainings</h1>
+
+<div id="items-list" class="row container">
+    @Html.Partial("_TrainingsList", Model.Trainings)
+</div>
+
+@Html.Partial("_Modal")
+
+@section Scripts {
+    <script id="ajax-checkin">
+        function onCheckInOutSuccess(data) {
+            if (data.error) {
+                $('#modalTitle').html('Error');
+                $('#modalMessage').html(data.error);
+                $('#modal').modal();
+            }
+
+            $('#' + data.id).html(data.data);
+        }
+    </script>
+    <script>
+        var loadMoreTrainingsBtn = jQuery('#loadMoreTrainings');
+        var hrefString = loadMoreTrainingsBtn.attr('href');
+        var fromDate = $('#fromDate');
+        var toDate = $('#toDate');
+        hrefString += '&fromDate=' + fromDate.val() + '&toDate=' + toDate.val();
+        console.log(hrefString);
+        loadMoreTrainingsBtn.attr('href', hrefString);
+    </script>
+}

@@ -1,0 +1,20 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Edit training"></ActionBar>
+    </Page.actionBar>
+    <ScrollView>
+        <StackLayout>
+            <TextField text="{{ training.title }}" hint="Title" />
+            <TextField text="{{ training.startDate }}" hint="Start Date (M/d/yy hh:mm)" />
+            <TextField text="{{ training.endDate }}" hint="End Date (M/d/yy hh:mm)" />
+            <TextField text="{{ training.water }}" hint="Water" />
+            <TextField text="{{ training.calories }}" hint="Calories" />
+            <Label text="Track" />
+            <TextField text="{{ training.track.Title }}" hint="Track title" />
+            <TextField text="{{ training.track.Length }}" hint="Length" />
+            <TextField text="{{ training.track.Ascent }}" hint="Ascent" />
+            <TextField text="{{ training.track.AscentLength }}" hint="Ascent length" />
+            <Button text="Edit" tap="edit" />
+        </StackLayout>
+    </ScrollView>
+</Page>

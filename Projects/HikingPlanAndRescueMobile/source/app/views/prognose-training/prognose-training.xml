@@ -1,0 +1,32 @@
+<Page loaded="pageLoaded">
+    <Page.actionBar>
+        <ActionBar title="Prognose"></ActionBar>
+    </Page.actionBar>
+    <GridLayout rows="auto, *" columns="">
+
+        <StackLayout row="0">
+            <TextField hint="Start (M/d/yy hh:mm)" text="{{ trainingViewModel.startDate }}" />
+            <TextField hint="length (km)" text="{{ trainingViewModel.track.length }}" />
+            <TextField hint="ascent(m)" text="{{ trainingViewModel.track.ascent }}" />
+            <TextField hint="ascent length (km)" text="{{ trainingViewModel.track.ascentLength }}" />
+
+            <Button text="Predict" tap="predict" />
+        </StackLayout>
+
+        <StackLayout row="1">
+            <Label text="Prognosis" textWrap="true" />
+
+            <Label text="Finish time:" textWrap="true" />
+            <Label text="{{ prognosis.EndDate }}" textWrap="true" />
+            
+            <Label text="Required water:" textWrap="true" />
+            <Label text="{{ prognosis.Water }}" textWrap="true" />
+
+            <Label text="Required calories:" textWrap="true" />
+            <Label text="{{ prognosis.Calories }}" textWrap="true" />
+            
+            <ActivityIndicator busy="{{ isLoading }}" row="1" rowSpan="2" />
+        </StackLayout>
+
+    </GridLayout>
+</Page>

@@ -1,0 +1,95 @@
+﻿@model IEnumerable<HikingPlanAndRescue.Web.Areas.Private.Models.TrainingCheckedInListItemViewModel>
+
+@{
+    ViewBag.Title = "Checked-In Trainings";
+
+    ViewBag.AjaxPagingAction = "AjaxLoadNextTrainings";
+    ViewBag.AjaxPagingArea = "private";
+    Layout = "~/Views/Shared/_LayoutGridAjaxPaging.cshtml";
+}
+
+<div class="text-center page-header">
+    <h1>
+        @ViewBag.Title
+        <br />
+        <small id="clock">
+        </small>
+    </h1>
+</div>
+
+<div id="items-list" class="row container">
+    @Html.Partial("_CheckedInTrainingsList", Model)
+</div>
+
+@Html.Partial("_Modal")
+
+@section Scripts {
+    <script>
+        function updateTime(){
+            var currentTime = new Date();
+            var day = currentTime.getDate();
+            var month = currentTime.getMonth() + 1;
+            var year = currentTime.getFullYear();
+
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var sec = currentTime.getSeconds();
+
+            if (minutes < 10){
+                minutes = "0" + minutes
+            }
+            if (sec < 10) {
+                sec = "0" + sec;
+            }
+            var t_str = day + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + sec + " ";
+
+            if(hours > 11){
+                t_str += "PM";
+            } else {
+                t_str += "AM";
+            }
+            t_str += " (Local Time)";
+            document.getElementById('clock').innerHTML = t_str;
+        }
+        setInterval(updateTime, 1000);
+    </script>
+    <script id="training-resolutions">
+        function btnAddResolutionClick(clickedBtn) {
+            $(clickedBtn).hide();
+            var trainingId = $(clickedBtn).attr('data-id');
+            $(`.resolution-form[data-id="${trainingId}"]`).show();
+        }
+
+        function btnSubmitResolutionClick(clickedBtn) {
+            var trainingId = $(clickedBtn).attr('data-id');
+            var resolutionSubmitForm = $(`.resolution-form[data-id="${trainingId}"]`);
+            resolutionSubmitForm.hide();
+            var comment = resolutionSubmitForm.find('textarea').val();
+            $.post(`/private/resolutions/add`, {
+                trainingId,
+                comment
+            }, function (response) {
+                if (response.error) {
+                    $('#modalTitle').html('Error');
+                    $('#modalMessage').html(response.error);
+                    $('#modal').modal();
+                } else {
+                    var resolutionsList = $(`.resolutions-list[data-id=${trainingId}]`);
+                    resolutionsList.append(response);
+                    var listContainer = $(`.resolutions-list-container[data-id="${trainingId}"]`);
+                    listContainer.show();
+                }
+            });
+        }
+
+        function btnShowHideResolutionClick(clickedBtn) {
+            var trainingId = $(clickedBtn).attr('data-id');
+            var listContainer = $(`.resolutions-list-container[data-id="${trainingId}"]`);
+            if (listContainer.css('display') == 'none') {
+                listContainer.show();
+            } else {
+                listContainer.hide();
+            }
+        }
+    </script>
+}

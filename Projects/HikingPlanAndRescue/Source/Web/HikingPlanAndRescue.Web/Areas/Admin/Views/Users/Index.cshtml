@@ -1,0 +1,48 @@
+﻿@model IQueryable<HikingPlanAndRescue.Web.Areas.Admin.Models.Users.UserViewModel>
+
+@{
+    ViewBag.Title = "Admin Users";
+    Layout = "~/Views/Shared/_LayoutGridMvc.cshtml";
+}
+
+<h2>Users Administrator</h2>
+
+<p>
+    @Html.ActionLink("Add", "create", "users", null, new { @class = "btn btn-primary btn-lg" })
+</p>
+
+@Html.Grid(Model).Columns(columns =>
+{
+
+    columns.Add()
+            .Encoded(false)
+            .Sanitized(false)
+            .SetWidth(30)
+            .RenderValueAs(d =>
+            @<b>
+                 @Html.ActionLink("Delete", "Delete", new { id = d.Id }, new { @class="btn btn-warning"})
+                @Html.ActionLink("Edit", "Edit", new { id = d.Id }, new { @class = "btn btn-default" })
+            </b>);
+
+    columns.Add(o => o.FirstName)
+            .Titled("First Name")
+            .SetWidth(110);
+
+    columns.Add(o => o.LastName)
+            .Titled("Last Name")
+            .SetWidth(150);
+
+    columns.Add(o => o.GSM)
+            .Titled("GSM")
+            .SetWidth(150);
+
+    columns.Add(o => o.CreatedOn)
+            .Titled("Created on")
+            //.Format("{0:dd/MM/yyyy}")
+            .SetWidth(110);
+
+    columns.Add(o => o.ModifiedOn)
+            .Titled("Modified On")
+            .SetWidth(150);
+
+}).WithPaging(15).Sortable().Filterable().WithMultipleFilters()

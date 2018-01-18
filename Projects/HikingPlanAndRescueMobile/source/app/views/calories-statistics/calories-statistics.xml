@@ -1,0 +1,28 @@
+<Page loaded="onPageLoaded" xmlns:chart="nativescript-telerik-ui/chart" xmlns="http://www.nativescript.org/tns.xsd">
+    <Page.actionBar>
+        <ActionBar title="Calories statistics"></ActionBar>
+    </Page.actionBar>
+    <GridLayout rows="auto, *, auto">
+        <StackLayout row="0">
+            <TextField hint="From (M/d/yy hh:mm)" text="{{ statsViewModel.startDate }}" />
+            <TextField hint="From (M/d/yy hh:mm)" text="{{ statsViewModel.endDate }}" />
+            <Button text="Calculate" tap="calculate" />
+        </StackLayout>
+
+        <chart:RadCartesianChart id="cartesianChart" row="1">
+            <chart:RadCartesianChart.series>
+                <chart:LineSeries items="{{ statsViewModel.categoricalDataModel.categoricalSource }}" categoryProperty="Date" valueProperty="Calories">
+                    <chart:LineSeries.horizontalAxis>
+                        <chart:CategoricalAxis/>
+                    </chart:LineSeries.horizontalAxis>
+                    <chart:LineSeries.verticalAxis>
+                        <chart:LinearAxis/>
+                    </chart:LineSeries.verticalAxis>
+                </chart:LineSeries>
+            </chart:RadCartesianChart.series>
+        </chart:RadCartesianChart>
+
+        <ActivityIndicator busy="{{ isLoading }}" row="1" rowSpan="2" />
+    </GridLayout>
+
+</Page>
