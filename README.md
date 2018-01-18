@@ -46,6 +46,22 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 
 1. [Project](../../tree/master/Projects/ExpenseTracker)
 
+## Universal windows platform applications
+
+1. [Homework](../../tree/master/Courses/Software%20Technologies/UWP-Apps/Homework)
+1. [Pracitice](../../tree/master/Courses/Software%20Technologies/UWP-Apps/live-demos)
+1. [Teamwork project](../../tree/master/Projects/RoomMeasurer)
+
+## Android
+
+1. [Teamwork project](../../tree/master/Projects/VoiceShoppingList)
+
+## Nodejs
+
+1. [Homework](../../tree/master/Courses/Software%20Technologies/Nodejs/homework)
+1. [Exam](../../tree/master/Courses/Software%20Technologies/Nodejs/exam)
+1. [Teamwork project](../../tree/master/Projects/WebServerXplorer)
+
 ## C# - Part I
 
 1. [Introduction to Programming](../../tree/master/Courses/Programming/C%23%20Part%201/01%20Intro%20to%20Programming)
@@ -196,19 +212,3 @@ This repository contains all my __homework__, __practice__ and __teamwork projec
 1. [Exam training](../../tree/master/Courses/Software%20Technologies/AngularJS/Exam-training)
 1. [Homework - TicTacToeGame](../../tree/master/Courses/Software%20Technologies/AngularJS/TicTacToeGame)
 1. [Practice](../../tree/master/Courses/Software%20Technologies/AngularJS/live-demos)
-
-## Universal windows platform applications
-
-1. [Homework](../../tree/master/Courses/Software%20Technologies/UWP-Apps/Homework)
-1. [Pracitice](../../tree/master/Courses/Software%20Technologies/UWP-Apps/live-demos)
-1. [Teamwork project](../../tree/master/Projects/RoomMeasurer)
-
-## Android
-
-1. [Teamwork project](../../tree/master/Projects/VoiceShoppingList)
-
-## Nodejs
-
-1. [Homework](../../tree/master/Courses/Software%20Technologies/Nodejs/homework)
-1. [Exam](../../tree/master/Courses/Software%20Technologies/Nodejs/exam)
-1. [Teamwork project](../../tree/master/Projects/WebServerXplorer)
